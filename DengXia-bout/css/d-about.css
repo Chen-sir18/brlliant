@@ -1,0 +1,221 @@
+/*顶部的链接*/
+.d-about-links{
+	width: 100%;
+	height: 88px;
+	padding: 34px 0 30px;
+	color: #888888;
+	font-size: 14px;
+	border-top: 1px solid #DDDDDD;
+}
+.d-about-links .d-home-link{
+	color: #888888;
+}
+.d-about-links .d-home-link:hover{
+	color:#85B839;
+}
+.d-about-links .d-about-link{
+	color: #222;
+}
+@media only screen and (max-width:768px) {
+	.d-about-links{
+	width: 100%;
+	height: 70px;
+	padding: 25px 0 20px;
+	color: #888888;
+	font-size: 14px;
+}
+}
+/*页面标题*/
+.d-about-title{
+	width: 100%;
+	height: 80px;
+	font-size: 28px;
+	color: #222222;
+	font-weight: 600;
+	padding-bottom: 40px;
+}
+@media only screen and (max-width:768px) {
+.d-about-title{
+	height: 60px;
+	font-size: 22px;
+	padding-bottom: 30px;
+}	
+}
+
+
+@media only screen and (min-width:767px ){
+	.d-about-title{
+	height: 68px;
+	font-size: 26px;
+	padding-bottom: 30px;
+}	
+}
+@media only screen and (min-width: 1200px){
+	.d-about-title{
+		height: 80px;
+		font-size: 28px;
+		padding-bottom: 40px;
+	}
+}
+/*接下来的大图*/
+.d-about-banner{
+	width: 100%;
+	height: auto;
+	background: url(../img/about-background.jpg);
+}
+.d-about-banner-inner{
+	padding: 65px 15px;
+}
+.d-about-banner-title{
+	font-size: 36px;
+	color: #222222;
+	font-weight: 500;
+}
+.d-about-sub-title{
+	color: #888;
+	font-size: 16px;
+	margin-bottom: 35px;
+}
+.d-about-banner-inner .d-shop-btn{
+	width: 168px;
+	height: 42px;
+	background: #000000;
+	color: #FFFFFF;
+	font-size: 12px;
+	text-align:center;
+	border-radius: 21px;
+	line-height: 42px;
+	cursor: pointer;
+}
+/*服务的三个步骤*/
+.d-about-three{
+	border-bottom:1px solid #DDDDDD;
+}
+
+.d-about-three-item{
+	padding: 40px 0;
+}
+.d-about-three .d-logo{
+	color: #85B839;
+	font-size:50px;
+	line-height: 100px;
+	position: relative;
+	z-index:100;
+}
+.d-about-banner-text{
+	font-size: 80px;
+	color: #EEEEEE;
+	font-weight: 700;
+	position: absolute;
+	z-index:0;
+}
+.d-about-three-title{
+	color: #222222;
+	font-size: 18px;
+	font-weight: 700;
+}
+.d-about-three-text{
+	width: 100%;
+	font-size: 14px;
+	color: #888888;
+}
+@media only screen and (max-width:768px){
+	.d-about-three .d-logo,.d-about-three-title,.d-about-three-text{
+		text-align: center;
+	}
+}
+/*important person*/
+.d-important-person-title{
+	text-align: center;
+	color: #222222;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+@media only screen and (max-width:768px ) {
+	.d-important-person-title{
+		padding: 53px 0 37px;
+		font-size: 22px;
+	}
+}
+@media only screen and (min-width: 767px){
+	.d-important-person-title{
+		padding: 53px 0 37px;
+		font-size: 26px;
+	}
+}
+@media only screen and (min-width: 992px){
+	.d-important-person-title{
+		/*padding: 53px 0 37px;*/
+		font-size: 26px;
+	}
+}
+@media only screen and (min-width: 992px){
+	.d-important-person-title{
+		padding: 65px 0 50px;
+		font-size: 28px;
+	}
+}
+/*重要人物部分的轮播*/
+.d-important-person{
+	width: 100%;
+	padding-bottom: 50px;
+}
+.d-important-person-carousel{
+	width:100%;
+	height: auto;
+	overflow: hidden;
+	position: relative;
+}
+.d-person-carousel-inner{
+/*	margin-left:-400px;*/
+	/*position: relative;*/
+	/*display:flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	
+	flex-direction:row;	*/
+}
+
+.d-carousel-arrow{
+	font-size: 20px;
+	height: 30px;
+	color: #888;
+	position: absolute;
+	top: 50%;
+	margin-top: -15px;
+}
+.d-carousel-right{
+	right: 0px;
+}
+.d-important-person-item{
+	float: left;
+	padding: 0 15px;
+	display: flex;
+	flex-direction: column;
+}
+.d-important-person-img{
+	margin: auto;
+}
+.d-important-person-name{
+	margin: auto;
+	padding: 20px 0 3px;
+	color: #222222;
+	font-size: 18px;
+}
+.d-important-person-position{
+	margin: auto;
+	font-size: 14px;
+	color: #888888;	
+}
+
+
+@media only screen and (min-width:768px ) and (max-width:992px) {
+	.d-important-person-img{
+		width: 220px;
+	}	
+}
+@media only screen and (max-width: 768px) {
+	.d-important-person-img{
+		width: 100%;
+	}
+}
