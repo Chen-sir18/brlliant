@@ -1,0 +1,499 @@
+
+
+/*页面内容*/
+.sidebar-cont{
+	padding: 0;
+    padding-bottom: 65px;
+
+}
+/*头部导航ul*/
+.sidebar-cont .breadcrumb {
+    padding: 34px 0 30px;
+    background: #ffffff;
+    margin: 0;
+}
+.sidebar-cont .breadcrumb a{
+	color: #888888;
+	text-decoration: none;
+	cursor: pointer;
+}
+.sidebar-cont .breadcrumb a:hover{
+	color: #85B839;
+}
+.sidebar-cont .breadcrumb > li + li:before {
+    display: none;
+}
+.sidebar-cont .breadcrumb span{
+	color: #888888;
+}
+/*左侧内容*/
+/*图片*/
+
+/*图片下的小标题文字*/
+.category-blog{
+	margin: 15px 0 10px;
+}
+/*图片下的大标题文字*/
+.infor-title{
+	font-size: 28px;
+	margin: 0;
+	margin-bottom: 20px;
+}
+.infor-title a{
+	color: #333;
+}
+/*文字内容*/
+.infor-main, .infor-main p{
+	color: #888;
+	margin-bottom: 20px;
+}
+blockquote::before {
+    content: url(../img/quote-item.png);
+    display: block;
+}
+.infor-main blockquote{
+	
+	margin: 10px 0 38px;
+	font-weight: 600;
+    display: inline-block;
+    border-left: none;
+    color: #333;
+    font-size: 16px;
+    line-height: 26px;
+    border-bottom: 1px solid #f2f2f2;
+    border-top: 1px solid #f2f2f2;
+    padding: 20px 0;
+}
+.infor-main blockquote p{
+	color: #333;
+	font-style: italic;
+	font-size: 14px;
+}
+blockquote .author .name {
+    display: block;
+    color: #222;
+}
+blockquote .author .desc {
+    display: block;
+    color: #aaa;
+    font-size: 13px;
+    line-height: 14px;
+    font-weight: normal;
+}
+/*articles轮播*/
+.articles{
+	position: relative;
+}
+/*标题*/
+.articles-title{
+	font-size: 22px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 40px;
+    margin-top: -8px;
+}
+/*轮播*/
+.slick-list{  /*显示的盒子*/
+	position: relative;
+    display: block;
+    overflow: hidden;
+    margin-left: -15px;
+    padding: 0;
+    min-height: 277px;
+}
+/*显示的内容item*/ 
+.slick-item{
+    min-height: 1px;
+    margin: 0 15px;
+    padding: 0;
+    overflow: hidden;
+    display: block;
+    float: left;
+    height: 100%;
+    border: 1px solid #f4f4f4;
+}
+.articles .slick-item{
+	width: 570px;
+}
+/*轮播图片右侧的信息*/
+.item-info{
+	padding-left: 30px;
+    overflow: hidden;
+    position: relative;
+}
+.item-info .category-blog{
+	margin-top: 20px;
+}
+.item-info .item-title{
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+    line-height: inherit;
+    margin-bottom: 10px;
+}
+ .main-item-text{
+	margin-bottom: 20px;
+}
+ .main-item-text p{
+	color: #888888;
+    line-height: 24px;
+	margin: 0;
+}
+/*轮播中的用户*/
+.item-view{
+	display: inline-block;
+}
+ .view{
+    margin-right: 20px;
+    vertical-align: middle;
+    display: inline-block;
+}
+ .view .avt{
+	display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+}
+ .view .name{
+    display: inline-block;
+    overflow: hidden;
+    padding: 6px 0;
+    font-size: 14px;
+    color: #333;
+    padding-left: 5px;
+    margin: 0;
+    font-weight: 600;
+}
+/*按钮*/
+.an{
+	position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 24px;
+    border: 1px solid #eeeeee;
+    width: 37px;
+    height: 35px;
+    line-height: 31px;
+    color: #aaa;
+    text-align: center;
+    cursor: pointer;
+    background-color: #ffffff;
+    border-radius: 50%;
+    z-index: 1;
+}
+.an:hover{
+	color: #222;
+}
+.an-left{
+	margin-right: 47px;
+}
+/*轮播下的文字*/
+.infor .info-text{
+    margin-top: 40px;
+    margin-bottom: 45px;
+}
+.infor .info-text p{
+	margin-bottom: 20px;
+}
+/*tags导航按钮*/
+.tags-blog{
+	margin-bottom: 15px;
+}
+.tags-blog .widgettitle{
+	font-size: 16px;
+    color: #666;
+    display: inline-block;
+    padding-right: 10px;
+}
+/*ul列表*/
+.tags-blog .tags-lists{
+	display: inline-block;
+    padding: 0;
+    list-style: none;
+    margin-left: 0;
+}
+/*li*/
+.tags-blog .tags-lists .tags-link{
+    display: inline-block;
+    padding: 0 12px;
+    border: 1px solid #ececec;
+    height: 28px;
+    line-height: 24px;
+    text-align: center;
+    margin-right: 5px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 13px;
+    border-radius: 28px;
+}
+.tags-blog .tags-lists .tags-link.active a{
+	color: #111;
+}
+.tags-blog .tags-lists .tags-link a{
+	color: #888;
+}
+.tags-blog .tags-lists .tags-link a:hover{
+	color: #111;
+}
+/*share用户*/
+.view-share{
+	display: block;
+    padding-top: 20px;
+    border-top: 1px solid #f4f4f4;
+    border-bottom: 1px solid #f4f4f4;
+    padding-bottom: 13px;
+    margin-bottom: 50px;
+}
+.view-share .share{
+    padding: 6px 0;
+    display: inline-block;
+    vertical-align: middle;
+} 
+.view-share .share .title{
+    display: inline-block;
+    font-size: 16px;
+    color: #666;
+    padding-right: 5px;
+    margin: 0;
+}
+/*字体图标*/
+.view-share .share .iconfont{
+    font-size: 16px;
+    padding: 0 10px;
+    color: #222;
+    cursor: pointer;
+    display: inline-block;
+}
+/*comments部分*/
+.comments-area {
+    margin-bottom: 75px;
+}
+.comments-area .comment-form {
+    border: 1px solid #F1F1F1;
+    padding-top: 30px;
+    margin-bottom: 50px;
+}
+.comments-area .comment-form .comment-content{
+	padding: 0 30px;
+	margin-bottom: 20px;
+}
+.comment-form .comment-content .input-form{
+    border: none;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    border-radius: 0;
+    min-width: 100%;
+    line-height: 28px;
+    padding: 11px 26px;
+    height: auto;
+}
+.focus:focus{
+	outline: none;
+}
+.comment-form .form-submit{  /*form按钮*/
+	border-top: 1px solid #F1F1F1;
+    padding: 20px 30px;
+    margin: 0;
+    overflow: hidden;
+}
+.comment-form .form-submit .iconfont{
+	line-height: 43px;
+    padding: 0 8px;
+    font-size: 18px;
+    color: #888;
+    display: inline-block;
+}
+
+/*comment-list内容*/
+.comment-list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.comment-list li:last-child{
+    border: none;
+    margin-bottom: 0;
+}
+.date-reply-comment{
+    display: inline-block;
+    padding: 5px 0;
+    padding-left: 0px;
+    font-size: 14px;
+    color: #aaa;
+}
+/*comment-body文字内容*/
+.comment-link{
+	margin-bottom: 30px;
+}
+.comment-link > * {
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 14px;
+    color: #aaa;
+}
+/*children孩子*/
+.comment-list li .children{
+    list-style: none;
+    padding-left: 60px;
+    padding-top: 50px;
+    border-top: 1px solid #e6e6e6;
+}
+
+
+
+/*右侧内容*/
+/*跟着我们Follow us 一块样式*/
+input:focus{
+    outline: none;/*去掉默认input焦点边框*/
+}
+.widget {
+    margin-bottom: 40px;
+}
+.widget:last-child{
+	margin: 0;
+}
+.widget a {
+    color: #555555;
+}
+.widget ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.sidebar{
+	display: inline-block;
+}
+/*Follow*/
+.widget .widgettitle {
+    font-size: 16px;
+    text-transform: uppercase;  /*字母转大写*/
+    font-weight: 600;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    margin-top: -3px;
+    z-index: 1;
+    border-bottom: 1px solid #e8e8e8;
+}
+/*Follow下边线绿色小段*/
+.widget .widgettitle::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 50px;
+    border-bottom: 1px solid #85B839;
+}
+/*三个字体图标*/
+.social-list .social-item:first-child {
+    padding-left: 0;
+}
+.social-list .social-item {
+    font-size: 23px;
+    color: #222;
+    display: inline-block;
+    float: left;
+    padding: 0 15px;
+}
+.social-list .social-item .iconfont{
+	font-size: inherit;
+}
+/*复选框区*/
+.lab-text{
+    cursor: pointer;
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+    position: relative;
+    font-weight: normal;
+}
+/*含图片的列表*/
+.widget-item{
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+.widget-item .photo{
+	width: 100px;
+}
+.widget-item .post-cont{
+	overflow: hidden;
+    padding-left: 10px;
+}
+.widget-item .post-cont .cat {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #aaaaaa;
+    line-height: normal;
+    margin-top: -3px;
+}
+.cat a{
+	color: #aaaaaa;
+}
+.widget-title{
+    font-weight: 500;
+    margin-bottom: 0;
+    line-height: 20px;
+    margin-top: 6px;
+}
+.widget-title a{
+	 color: #333333;
+}
+/*newsletter-widget输入区*/
+.newsletter-widget{
+    padding: 20px;
+    padding-top: 30px;
+    padding-bottom: 32px;
+    border: 1px solid #F1F1F1;
+    position: relative;
+    border-radius: 8px;
+}
+.newsletter-widget .newsletter-wrap{
+    position: relative;
+    z-index: 2;
+}
+.newsletter-widget .newsletter-wrap .title {
+    font-size: 24px;
+    color: #222;
+    line-height: 30px;
+    margin-bottom: 10px;
+    font-family: inherit;
+}
+.newsletter-widget .newsletter-wrap .subtitle{
+    font-size: 15px;
+    color: #555;
+    line-height: 20px;
+    margin-bottom: 60px;
+}
+.newsletter-widget .newsletter-wrap .email{
+	width: 100%;
+    height: 42px;
+    text-align: center;
+    border-radius: 42px;
+    border: 1px solid #eeeeee;
+    max-width: 100%;
+    background: none;
+    margin-bottom: 10px;
+    padding: 7px 20px;
+}
+.newsletter-widget .newsletter-wrap .submit{
+	width: 100%;
+    text-align: center;
+}
+@media (max-width: 768px){
+	.content-area{
+		width: 100%;
+	}
+	.articles .slick-item .item-info{
+		width: 38%;
+	}
+	.content-area .blog img{
+		width: 100%;
+	}
+	.infor .infor-title{
+	    font-size: 20px;
+	}
+	.articles .item-title{
+		font-size: 18px;
+	}
+}

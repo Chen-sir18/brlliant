@@ -1,0 +1,86 @@
+
+/*公共部分开始*/
+/*鼠标悬浮时白色框*/
+.post-format{
+	position: relative;
+}
+.post-format:hover > a::before {  /*左上*/
+    left: 10px;
+    right: 10px;
+}
+.post-format > a::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    top: 6px;
+    bottom: 6px;
+    z-index: 9;
+    transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    border-top: 4px solid rgba(255,255,255, 0.6);
+    border-bottom: 4px solid rgba(255,255,255, 0.6);
+}
+.post-format:hover > a::after {   /*右下*/
+    top: 6px;
+    bottom: 6px;
+}
+.post-format > a::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    left: 6px;
+    right: 6px;
+    z-index: 9;
+    transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    border-left: 4px solid rgba(255,255,255, 0.6);
+    border-right: 4px solid rgba(255,255,255, 0.6);
+}
+/*文字颜色和背景色*/
+.load{
+	color: #fff;
+	background: #85B839;
+}
+/*文字颜色和背景色下的a   悬浮*/
+.load-more a:hover {
+	background: #85B839;
+    border-color: transparent;
+    color: #fff;
+}
+/*文字a标签hover时*/
+.post-title:hover{
+	color: #85B839;
+}
+/*导航列*/
+.active{
+	color: #222;
+	font-weight: 600;
+}
+/*a标签公共样式*/
+a:hover{
+	text-decoration: none;
+}
+.text-a{
+	color: #AAAAAA;
+}
+.text-a:hover{
+	color: #85B839;
+}
+/*按钮公共*/
+button{
+    display: inline-block;
+    padding: 9px 20px;
+    color: #fff;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    transition: all 0.4s ease 0s;
+    border-radius: 40px;
+}
+/*公共部分结束*/

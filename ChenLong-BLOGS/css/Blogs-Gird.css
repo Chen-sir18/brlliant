@@ -1,0 +1,43 @@
+
+/*gird部分*/
+.pad-0{
+	padding: 0;
+}
+.gird .site-main .row .slick-item{
+	margin-bottom: 30px;
+}
+.gird-btn{
+    text-align: center;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.gird-btn a{
+    display: inline-block;
+    height: 43px;
+    line-height: 38px;
+    border: 1px solid #f4f4f4;
+    padding: 0 10px;
+    width: 149px;
+    color: #222;
+    font-weight: 700;
+    border-radius: 40px;
+}
+
+.gird-btn .iconfont{
+    color: #aaa;
+    font-weight: normal;
+    margin-right: 5px;
+}
+
+@media only screen and (max-width:768px) {
+	.gird .site-main .row .slick-item{
+		margin-bottom: 30px;
+		padding: 20px;
+	}
+	.gird .slick-item .photo{
+		float: none;
+	}
+	.gird .slick-item .photo img{
+		width: 100%;
+	}
+}
