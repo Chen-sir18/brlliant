@@ -1,0 +1,865 @@
+/*最顶端*/
+.d-header-top{
+	height: 48px;
+	color: #ffffff;
+	position: relative;
+	z-index: 1001;
+} 
+.d-header-top .content-box{
+	padding: 0 15px;
+}
+.d-header-top .d-welcome{
+	line-height: 48px;
+}
+.d-header-top .login-or-register{
+	line-height: 48px;
+}
+.d-header-top .d-language{
+	line-height: 48px;
+	width: 136px;
+	height: 100%;
+}
+.d-language .languageType-box{
+	width: 175px;
+	box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.16);
+	opacity: 0;
+	margin-top: 20px;
+	position: relative;
+	z-index: 900;
+	display: none;
+}
+.d-language .languageType-box .languageType{
+	color: #888888;
+	font-size: 14px;
+	padding: 11px 20px;
+	line-height: initial;
+	background: #FFFFFF;
+}
+.d-language .languageType-box .languageType:hover{
+	color:#85B839;
+	background:#f1f1f1;
+}
+
+@media only screen and (max-width: 768px){
+	.d-header-top{
+		display: none;
+	}
+}
+/*标志和搜索框和购物车和登录注册*/
+.d-header-center{
+	position: relative !important;
+	z-index: 1000 !important;
+}
+
+.d-header-center-main{
+	width: 100%;
+	height: auto;
+	padding: 50px 10px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+	
+}
+/*中间的搜索框*/
+.d-search-box{
+	vertical-align: bottom;
+	height: 44px;
+	border-radius: 43px;
+	max-width: 584px;
+	border: 1px solid #eee;
+	display: flex;
+	flex-direction: row;
+	text-align:center;
+	justify-content: space-between;
+	color: #888888;
+}
+.d-search-box .d-goods-dropdown{
+	width: 154px;
+	font-size: 14px;
+	cursor: pointer;
+}
+.d-goods-dropdown .d-activegoodstype{
+	margin: 10px 0;
+	border-right: 1px solid #DDDDDD;
+}
+.d-goods-dropdown .d-goodstypes{
+	border: 1px solid #DDDDDD;
+	border-top: none;
+	background: #FFFFFF;
+	margin-top: 10px;
+	margin-left:2px ;
+	width: 152px;
+	display: none;
+	text-align: right;
+	position: relative;
+	z-index: 1000;
+}
+.d-goods-dropdown .d-goodstype{
+	text-align: initial;
+	padding: 6px 20px;
+	height: 30px;
+}
+.d-goods-dropdown .d-goodstype.active{
+	background: #F6F6F6;
+}
+
+.d-goods-dropdown .d-goodstype:hover{
+	background: #f6f6f6;
+}
+.d-search-box .d-input-box{
+	width:60%;
+	height: 100%;
+	padding: 7px 20px;
+	color: #888888;	
+}
+.d-search-box .d-input-box input{
+	width: 100%;
+	border: none;
+	height: 100%;
+}
+
+.d-search-box .d-search-logo{
+	width: 60px;
+	padding: 8px;
+	text-align: center;	
+}
+
+/*购物车注册*/
+.d-shopcar-logon-register{
+	color: #777 !important;
+	position: relative;
+	cursor: pointer;
+	z-index: 100;
+}
+.d-shopcar-logon-register .d-shopcar{
+	display: inline-block;
+	margin-right: 20px;
+	line-height: 44px;
+	position: relative;
+}
+.d-shopcar-logon-register .d-shopcar .d-shopcar-box{
+	width: 300px;
+	position: absolute;
+	z-index: 100;
+	box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.16);
+	right: 0;
+	margin-top: 32px;
+	display: none;
+	background: #FFFFFF;
+}
+.d-shopcar .d-shopcar-box .reminder{
+	font-size: 14px;
+	height: 64px;
+	padding: 15px 20px;
+	line-height: 34px;
+	color: #888888;
+	font-weight: 600;
+	text-align: center;
+}
+.d-shopcar-box .reminder .d-shopcar-count{
+	color: #85b839;
+}
+.d-shopcar-logon-register .d-shopcargoods{
+	position: absolute;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    top: -11px;
+    left: 30px;
+    font-size: 12px;
+    background-color: #85B839;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 22px;
+}
+/*注册*/
+.d-shopcar-logon-register .d-logon-register{
+	display: inline-block;
+}
+.d-shopcar-logon-register .d-logon-register:hover{
+	color: #85B839;
+}
+.d-shopcar-logon-register .d-login-and-register{
+	position: absolute;
+	margin-top: 32px;
+	right: 0;
+	width: 270px;
+	background: #FFFFFF;
+	display: none;
+	box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.16);
+}
+.d-shopcar-logon-register .d-form-title{
+	font-size: 16px;
+	height: 56px;
+	padding: 15px 20px;
+	line-height: 26px;
+	color: #aaaaaa;
+	font-weight: 600;
+	width: 100%;
+	border-bottom:1px solid #F1F1F1;
+	
+}
+.d-shopcar-logon-register .d-form-title span{
+	margin-right: 16px;
+}
+.d-shopcar-logon-register .d-form-title span.active{
+	color: #85b839;
+}
+.d-shopcar-logon-register .d-form-body{
+	padding: 15px 20px;
+	width: 100%;
+}
+
+.d-shopcar-logon-register .d-input-box{
+	width: 100%;
+	height: 42px;
+	border-radius: 21px;
+	border:1px solid #F1F1F1;
+	padding: 7px 20px;
+	margin-bottom: 14px;
+}
+.d-shopcar-logon-register .d-input-box .d-input{
+	width: 100%;
+	height: 100%;
+	font-size: 12px;
+	color: #888;
+	font-weight: initial;
+	border: none;
+	vertical-align: top;
+}
+.d-form-body .d-readme{
+	background: #FFFFFF;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #F1F1F1;
+}
+.d-form-body .readme{
+font-size: 14px;
+margin-left: 10px;
+vertical-align:super;
+}
+.d-public-btn{
+	padding: 10px 40px;
+	background: #85B839;
+	font-size:12px;
+	color: #FFFFFF;
+	font-weight: 600;
+	text-align: center;
+	border-radius: 18px;
+	margin: 10px 0;
+}
+.d-form-body .d-lostpassword{
+	color: #85B839;
+	font-size: 12px;
+	font-weight: 600;
+	
+}
+.d-768-hide-btn{
+	display: none;
+}
+.d-768-hide-btn span{
+	width: 40px;
+	height: 40px;
+	padding:11px 11px ;
+	font-size: 14px;
+	border: 1px solid #dedede;
+	border-radius: 8px;
+}
+.d-1200-hide-navbtn{
+	    width: 40px;
+}
+
+/*小框时候的搜索框和*/
+.d-little-drop{
+	width: 100%;
+	height: 146px;
+	background: yellow;
+	position: absolute;
+	background:#FFFFFF;
+	padding: 50px 15px 15px;
+	margin-top: 32px;
+	display: none;
+	box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.16);
+}
+
+.d-little-drop-close{
+	display: inline-block;
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	width:30px;
+	height: 30px;
+	border: 1px solid #F1F1F1;
+	text-align: center;
+	line-height: 28px;
+	float: right;
+}
+.d-little-drop .d-little-search-box{
+	width: 100%;
+	height: 100%;
+	padding: 20px 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.d-little-search-box .d-search-input{
+	border-radius: 20px;
+	padding: 7px 10px;
+	width: calc(100% - 100px);
+	height: 42px;
+	color: #999999;
+	border: 1px solid #DDDDDD;
+	font-size: 12px;
+}
+.d-little-search-box .d-search-input:focus{
+	border: 1px solid #85B839;
+}
+.d-little-search-box .d-submit{
+	width: 90px;
+	height: 42px;
+	border-radius:20px;
+	background: #85bb39;
+	/*padding: 9px 20px;*/
+	color: #FFFFFF;
+	font-weight: 600;
+	font-size: 12px;
+	text-align: center;
+	line-height: 40px;
+	cursor: pointer;
+}
+
+.d-language-lists{
+	border-top: 1px solid #DDDDDD;
+	padding-top:14px ;
+}
+.d-language-list{
+	color: #999999;
+	margin:0 10px ;
+}
+@media only screen and (min-width: 768px) {
+	.d-little-drop{
+		display: none;
+	}
+}
+	/*小框时候的主菜单*/
+ .d-left-main-menu{
+		width: 320px;
+		position:fixed;
+		display: none;
+		z-index:1003;
+		height: 100%;
+		left:-100%;
+		bottom:0;
+		background:#FFFFFF;
+		box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.16);
+	}
+.d-left-main-menu .d-mian-menu-content{
+	border-bottom: 1px solid #DDDDDD;
+	height: 50px;
+	width: 100%;
+	padding: 0 20px;
+	font-size: 14px;
+	color: #000000;	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+	line-height:49px;
+	position: relative;
+	
+}
+.d-left-main-menu .d-main-menu-title{
+	padding: 0;
+	text-align: center;
+	position: relative;
+}
+.d-left-main-menu 	.d-main-menu-close{
+	position: absolute;
+	right: 0;
+	display: inline-block;
+	border-left: 1px solid #DDDDDD;
+	width: 50px;
+	height: 50px;
+	color: #000000;
+}
+.d-left-main-menu 	.d-main-menu-return{
+	position: absolute;
+	left: 0;
+	display: inline-block;
+	border-right: 1px solid #DDDDDD;
+	width: 50px;
+	height: 50px;
+	color: #000000;
+	font-size: 12px;
+	line-height: 48px;
+}
+.d-mian-menu-content .d-right-trangle{
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+/*小框时候的主菜单结束*/	
+@media only screen and (max-width: 767px){
+	.d-header-center-main{
+		justify-content: space-between;
+		padding:25px 10px ;
+	}
+	.d-vereesa-logo{
+		width: 140px;
+		height: 44px;
+	}
+	
+	.d-search-box{
+		display: none;
+	}
+	.d-768-hide-btn{
+		display: inline-block;
+	}
+	.d-1200-hide-navbtn{
+		display: inline-block;
+		width: 40px;
+		height: 40px;
+		padding: 10px 10px 0px;
+		margin-right: 8px;
+		border: 1px solid #dedede;
+		border-radius: 8px;
+		vertical-align: top;
+	}
+	 	
+}	
+@media only screen and (max-width: 767px) {
+		.d-shopcar-logon-register .d-logon-register,.d-shopcar-logon-register .d-shopcar,.d-shopcar-logon-register .d-shopcargoods{
+			display: none;
+		}
+}
+
+	
+@media only screen and (min-width: 768px){
+	.d-search-box{
+		width: 500px;
+	}
+	.d-1200-hide-navbtn{
+		display: inline-block;
+	}
+	.d-shopcar-logon-register{
+		margin-top: 16px;
+	}
+
+	.d-1200-hide-navbtn{
+		display: inline-block;
+		width: 40px;
+		height: 40px;
+		padding: 10px 9px 10px;
+		margin-left: 18px;
+		display: inline-block;
+		border: 1px solid #dedede;
+		border-radius: 8px;
+		vertical-align: top;
+	}
+}
+
+@media only screen and (min-width: 992px){
+	.d-search-box{
+		width: 455px;
+	}
+	.d-shopcar-logon-register{
+		margin-top: 0px;
+	}
+	.d-1200-hide-navbtn{
+		display: inline-block;
+		border: 1px solid #dedede;
+		border-radius: 8px;
+		vertical-align: top;
+	}	
+}
+
+@media only screen and (min-width: 1200px){
+	.d-search-box{
+		width: 670px;
+		box-sizing: border-box;
+		margin:0 43px 0;
+	}
+	.d-shopcar-logon-register{
+		margin-top: 0px;
+	}
+	.d-1200-hide-navbtn{
+		display: none;
+	}
+}
+
+/*导航条*/
+.d-nav{
+	width: 100%;
+	height: 60px;
+	background: #EBEBEB;
+	position: relative;
+}
+.d-nav .d-content{
+	position: relative;
+}
+.d-nav .d-block-title{
+width: 270px;
+height: 66px;
+background: #85B839;
+position:absolute;
+bottom: 0;
+border-top-left-radius:4px;
+border-top-right-radius:4px;
+padding: 15px 30px;
+cursor: pointer;
+}
+.d-block-title .d-block-title-logo{
+	color: #FFFFFF;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+.d-block-title .d-block-title-text{
+	font-size:15px;
+	color: #FFFFFF;
+	font-weight: 600;
+	margin-top: 10px;
+}
+/*控制商品分类下拉列表*/
+.d-block-title .d-goods-class{
+	width: 270px;
+	background:blue;
+	position: absolute;
+	top: 100%;
+	margin-top:40px;
+	left: 0;
+	padding: 20px 25px;
+	box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.16);
+	background-color: #fff;
+	display:none;
+}
+.d-goods-class .d-goods-classify{
+	display: inline-block;
+	width: 100%;
+	color: #555555;
+	height: 42px;
+	font-size: 15px;
+	border-bottom: 1px solid #F1F1F1;
+	line-height: 40px;
+}
+.d-goods-classify .d-right-trangle{
+	margin-left: 100px;
+	font-size: 12px;
+}
+.d-goods-class .d-goods-classify:hover{
+	color: #85B839;
+}
+.d-nav .d-nav-title-lists{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	height:100%;
+	cursor:pointer;
+	flex-wrap:nowrap;
+	margin-left:290px;
+}
+.d-nav .d-nav-title-lists .d-drop-logo{
+	color: #AAAAAA;
+}
+.d-nav .d-nav-title-list{
+	font-size:14px;
+	color:#222222;
+	font-weight:600;
+	padding: 20px 20px;
+}
+
+.d-content .d-drop-menu{
+	min-width:175px;
+	background:#FFFFFF;
+	position:absolute;
+	top: 100%;
+	z-index:100;
+	color:#555555;
+}
+.d-content .d-home-part{
+	left:290px;
+}
+.d-content .d-shop-part{
+	left:390px;
+}
+.d-content .d-pages-part{
+	width: 100%;
+}
+/*控制每一个导航栏的下拉框的出现和消失*/
+.d-drop-menu .d-nav-ul{
+	width: 100%;
+	box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.16);
+	background-color: #fff;
+	display: none;
+}
+.d-drop-menu .d-nav-li{
+	width: 100%;
+	padding: 11px 20px;
+	font-size: 14px;
+	position: relative;
+}
+.d-drop-menu .d-nav-li:hover{
+	background: #F1F1F1;
+	color: #85B839;
+	cursor: pointer;
+}
+.d-drop-menu .d-nav-li:hover .d-nav-li-li{
+	background: #FFFFFF;
+	color: #555555;
+}
+.d-nav-ul .d-pages-content{
+	padding: 50px 0 40px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	background: url(../img/mega-bg.jpg);
+}
+
+.d-pages-content .d-left-box{
+	width: 25%;
+	padding:  0 40px;
+}
+.d-pages-content .d-title{
+	font-size: 18px;
+	color: #000000;
+	font-weight: 700;
+	margin: 10px 0;
+}
+.d-pages-content .d-green-line{
+	width: 30px;
+	border-top: 1px solid #85B839;
+}
+.d-pages-content .d-pages-li{
+	padding: 10px 0;
+	font-size: 14px;
+}
+.d-pages-content .d-pages-li:hover{
+	color: #85B839;
+	cursor: pointer;
+}
+.d-pages-content .d-center-box{
+	width: 25%;
+	padding:  0 40px;
+}
+.d-blogs-part{
+	left:590px
+}
+.d-blogs-li:hover .d-nav-ul-ul{
+	display: block;
+}
+.d-nav-ul-ul{
+	position: absolute;
+	left: 100%;
+	top: 0;
+	width: 100%;
+	box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.16);
+	background-color: #fff;
+	display: none;
+}
+.d-nav-li .d-nav-li-li{
+	width: 100%;
+	padding: 11px 20px;
+	font-size: 14px;
+	position: relative;
+}
+.d-nav-li .d-nav-li-li:hover{
+	background: #F1F1F1 !important;
+	color: #85B839 !important;
+	cursor: pointer !important;
+}
+@media only screen and (max-width: 1200px){
+	.d-nav{
+		display: none;
+	}
+}
+/*导航栏结束*/
+/*公共的顶部结束*/
+
+/*公共的底部开始*/
+.d-footer{
+	background: #f0f0f0;
+	width: 100%;
+	height: auto;
+	padding: 60px 0 0;
+}
+.d-footer-main{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	font-size: 0;
+}
+/*底部的logo部分*/
+.d-footer-main .d-vereesa-part{
+	float: initial !important;
+	display: inline-block;
+	font-size: 16px;
+	color: #888888;
+}
+.d-black-circle-box{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+.d-black-circle{
+	background: #000000;
+	color: #FFFFFF;
+	width: 45px;
+	height: 45px;
+	border-radius: 22px;
+	font-weight: 600;
+	display:flex;
+	margin: 4px 10px 0 0;
+	flex-direction: row;
+	cursor: pointer;
+	position: relative;
+}
+.d-bottom-icon{
+	margin: auto;
+	position: relative;
+	z-index: 100;
+}
+
+/*//三个小黑色圆圈扩散变成绿色*/
+.d-hide-circle{
+	content: '';
+	background:#85b839;	
+    border-radius: 50%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    transition: all 0.4s linear 0s; 
+    transform:scale(0.3);
+   	transform-origin: center center 0;   
+}
+.d-black-circle:hover .d-hide-circle{
+	visibility: visible;
+	transform:scale(1);
+	transition:all 0.4s cubic-bezier(.55,.06,.68,.19) linear 0s;
+}
+/*底部的links和information部分*/
+.d-bottom-list-title{
+	border-left: 3px solid #85B839;
+	font-size: 18px;
+	padding-left: 14px;
+	font-weight: 600;
+	height: 22px;
+	vertical-align: middle;
+	line-height: -6px;
+	margin: 20px 0 20px 0;
+}
+.d-bottom-list-content li{
+	height: 36px;
+	line-height:36px;
+}
+
+.d-bottom-list-content .d-menu-href{
+	color: #999999;
+}
+/*底部的Newsletter*/
+.d-news-text{
+	color: #888888;
+	margin: 0 0 16px 0;
+}
+.d-news-input-box{
+	display: flex;
+	flex-direction: row;
+	height: 42px;
+	justify-content: space-around;
+}
+.d-news-input-box .d-news-input{
+	width: 64%;
+	height: 100%;
+	border-radius: 20px;
+	border: none;
+	font-size: 14px;
+	color: #888888;
+	padding: 7px 20px;
+}
+.d-news-input-box .d-news-btn{
+	width: 30%;
+	height: 100%;
+	background: #333333;
+	font-size:12px;
+	font-weight: 600;
+	color: #FFFFFF;
+	border-radius: 20px;
+	text-align: center;
+	line-height: 40px;
+	cursor: pointer;
+}
+/*最底部部分*/
+.d-footer-bottom{
+	border-top: 1px solid #DDDDDD;
+	padding: 20px 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.d-footer-bottom .d-copy-right{
+	color: #888888;
+	width: 430px;
+	text-align: center;
+	padding: 10px 0;
+}
+
+@media only screen and (max-width:992px ) {
+	.d-footer-bottom .d-copy-right{
+		color: #888888;
+		width: 100%;
+	}
+	.d-footer-bottom{
+	border-top: 1px solid #DDDDDD;
+	padding: 20px 0;
+	display: flex;
+	justify-content: center;
+}
+}
+/*关于回到顶部*/
+.d-return-top-box{
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+	background: #333333;
+	text-align: center;
+	line-height: 50px;
+	position: fixed;
+	color: #FFFFFF;
+	bottom: 30px;
+	right: 30px;
+	display: none;
+}
+
+
+
+/*关于按钮组件的封装*/
+/*换页*/
+.d-change-box{
+	font-size: 0;
+}
+.d-change-box .d-change-btn{
+	width: 42px;
+	height: 42px;
+	display: inline-block;
+	border: 1px solid #aaaaaa;
+	border-radius: 20px;
+	color: #888888;
+	text-align: center;
+	line-height:40px;
+	font-size: 16px;
+	cursor: pointer;
+	margin: 10px 2px;
+}
+.d-change-box .d-change-btn:hover{
+	background: #85B839;
+	color: #FFFFFF;
+}
+.d-change-box .d-change-paper.active{
+	background: #85B839;
+	color: #FFFFFF;
+	
+}
