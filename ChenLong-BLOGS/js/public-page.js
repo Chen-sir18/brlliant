@@ -409,7 +409,7 @@ $('.d-language-drop').click(function(){
 
 //按钮换页切换部分
 $.fn.changePaper = function(options){
-	let api = 'http://192.168.97.218:3002/'
+	let api = 'http://192.168.97.218:3001/'
 	$(options.changePaper).remove()
 	for (let i = 0; i < options.n; i++) {
 		let changePaper = `<div class="d-change-btn d-change-paper">
@@ -513,7 +513,7 @@ let changePaperObj = {
 	ajax:function(activeindex){
 		$.ajax({
 			type:"get",
-			url:'htpp://192.168.97.218:3002/test',
+			url:'htpp://192.168.97.218:3001/test',
 			//请根据要求传回参数
 			data:{
 				id:activeindex
@@ -527,7 +527,7 @@ let changePaperObj = {
 }
 
 //将最外面的那个盒子选中，调用changePaper方法，将定义好的对象传入即可
-$('.d-change-box').changePaper(changePaperObj)
+//$('.d-change-box').changePaper(changePaperObj)
 
 
 

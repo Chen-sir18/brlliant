@@ -40,4 +40,90 @@ $('.an-right').click(function(){
 	
 })
 	
+	
+	
+/**
+ *以下评论提交    评论区换页  为第二次修改添加内容
+ */	
+//点击评论提交
+var send = $(".discuss")
+send.click(function(){
+	let value = $(".input-form").val();
+	
+	if(value){ //判断value值  有没有值
+		
+		if (confirm('是否确定提交')) {
+			var html =`<li class="active">
+				<div class="comment-item">
+					<div class="item-view">
+						<div class="view fl-l">
+							<div class="avt fl-l">
+								<img src="img/avt-blog1.png"/>
+							</div>
+							<h3 class="name">Adam Smith</h3>
+						</div>
+						<div class="date-reply-comment">
+							<span class="date-comment">  Todays </span>
+						</div>
+					</div>
+					<!--文字内容-->
+					<div class="comment-body">
+						<div class="main-item-text">
+							<p>
+								${value}  
+							</p>
+						</div>
+						<div class="comment-link">
+							<span class="ment">
+								<i class="iconfont icon-fa-commenting-o"></i>
+								Comment
+							</span>
+							<span class="ment">
+								<i class="iconfont icon-fa-thumbs-o-up"></i>
+								
+							</span>
+							<span class="ment">
+								<i class="iconfont icon-fa-thumbs-o-down"></i>
+								
+							</span>
+						</div>
+					</div>
+				</div>
+			</li>`
+			
+
+			$(html).prependTo($(".comment-list"))  //追加到html页面中这个ul下
+			
+			$(".input-form").val('')   //追加完清空文本域内容
+			
+			
+		}
+		
+	}
+	
+})
+
+//评论区换页按钮      点击    换页评论
+let comment = $(".comment-list > li")
+let changeComment = {
+	changePapername:'.d-change-box',
+	changePaper:'.d-change-paper',
+	left:'.d-change-btn-left',
+	right:'.d-change-btn-right',
+	n:3,
+	ajax:function(activeindex){
+		if(activeindex == 1){
+			comment.siblings().removeClass('active')
+			comment.eq(0).addClass('active')
+		}else if(activeindex == 2){
+			comment.siblings().removeClass('active')
+			comment.eq(1).addClass('active')
+		}else if(activeindex == 3){
+			comment.siblings().removeClass('active')
+			comment.eq(2).addClass('active')
+		}
+	}
+}
+//将最外面的那个盒子选中，调用changePaper方法，将定义好的对象传入即可
+$('.d-change-box').changePaper(changeComment)
 
