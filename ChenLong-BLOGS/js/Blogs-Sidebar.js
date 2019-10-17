@@ -125,5 +125,5 @@ let changeComment = {
 	}
 }
 //将最外面的那个盒子选中，调用changePaper方法，将定义好的对象传入即可
-$('.d-change-box').changePaper(changeComment)
+changePaper(changeComment)
 

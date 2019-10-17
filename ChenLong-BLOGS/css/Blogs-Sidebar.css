@@ -102,6 +102,12 @@ blockquote .author .desc {
     min-height: 277px;
 }
 /*显示的内容item*/ 
+.blog-lists > div{
+	display: none;
+}
+.blog-lists .active{
+	display: block;
+}
 .slick-item{
     min-height: 1px;
     margin: 0 15px;
