@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Checkout</title>
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/d-public.css" />
+		<link rel="stylesheet" type="text/css" href="css/public-btn.css" />
+		<link rel="stylesheet" href="css/Checkout.css" />
+		<link rel="stylesheet" href="js/bootstrap-3.3.7-dist/css/bootstrap.css" />
+		<link rel="stylesheet" href="css/public-page.css" />
+	</head>
+
+	<body>
+				<!--项目顶部-->
+		<div class="d-header ">
+			<!--最顶端-->
+			<div class="d-header-top b-color-g">
+				<div class="d-content content-box f-14">
+					<div class="d-welcome  fl-l">
+						Welcome to our online store
+					</div>
+					<div class="login-or-register fl-r mar-l-10">
+						Login or Register 
+					</div>
+					<div  class="d-language fl-r ">
+						<div v-on:click="languagetype">
+							<span  class="mar-r-6">{{activeLanguage}}</span><span class="glyphicon glyphicon-menu-down f-12"></span> <span>丨</span>
+						</div>
+						<div class="languageType-box">
+							<div v-on:click="languageselect" class="languageType"v-for="item in languageType">{{item}}</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--小框时的主菜单-->
+			<div v-on:click.stop=" " class="d-left-main-menu">
+				<div class="d-main-menu-title d-mian-menu-content">
+					  <span v-on:click="closemenu" class="d-main-menu-close">x</span> <span v-for="title in menudata.title">{{title}}</span> <span v-on:click="returnmenu" v-show="menudata.title != 'MAIN MENU' " class="d-main-menu-return glyphicon glyphicon-menu-left"></span>
+				</div>
+				<div v-for="content in menudata.content" class="d-mian-menu-content" v-bind:title="content">
+					<span class="">{{content}} </span> 
+					<span v-show="['ACCESSORIES','HOME','SHOP','PAGES','BLOGS','BLOG STYLE','POST LAYOUT'].indexOf(content) >= 0 "  
+						class="d-right-trangle glyphicon glyphicon-menu-right"
+						v-on:click="clicktrangle"></span>
+				</div>
+			</div>
+			<!--标志和搜索框和购物车和登录注册-->
+			<div class="d-header-center">
+				<div class="d-content">
+					<div class="d-header-center-main">
+						<!--logo-->
+						<img class="d-vereesa-logo" src="image/logo.png"/>
+						<!--搜索框-->
+						<div class="d-search-box ">
+							<div class="d-goods-dropdown">
+								<div class="d-activegoodstype"v-on:click.stop="controldrop">
+									{{activegoodstype}} <span class="glyphicon glyphicon-menu-down f-12 mar-l-10"></span>
+								</div>
+								<ul class="d-goodstypes">
+									<li v-on:click="selectedgoodstype" class="d-goodstype" v-for="goodstype in goodstype">{{goodstype}}</li>
+								</ul>
+							</div>
+							<div class="d-input-box">
+								<input class="" type="text" name="" id="" placeholder="Search here" />
+							</div>
+							<div class="d-search-logo">
+								<img src="image/search-header-2.png"></img>
+							</div>
+						</div>
+						<!--右侧的购物车和登录注册-->
+						<div class="d-shopcar-logon-register">
+							<!--购物车-->
+							<span v-on:click.stop="controlshopcar" class="d-shopcar glyphicon glyphicon-shopping-cart f-28">
+								<div class="d-shopcar-box">
+									<div class="reminder">
+										You have <span class="d-shopcar-count">0 ITEM(S)</span> in your bag
+									</div>
+								</div>
+							</span>
+							<span class="d-shopcargoods">0</span>
+							<!--登录和注册-->
+							<span v-on:click.stop="controllogin" class="d-logon-register glyphicon glyphicon-user f-28">
+							</span>
+							<!--登录注册弹出框-->
+							<div v-on:click.stop="" class="d-login-and-register">
+								<div class="d-form-title"> 
+									<span v-on:click="login" class="login active">Login</span> <span v-on:click="register" class="register">Register</span>
+								</div>
+								<div class="d-form-body">
+									<div class="d-email d-input-box">
+										<input class="d-input" type="email" placeholder="Email"/>
+									</div>
+									<div class="d-password d-input-box">
+										<input class="d-input" type="password" placeholder="Password"/>
+									</div>
+									<input class="d-readme" type="checkbox"/><span class="readme">Read me</span>
+									<div class="d-public-btn d-login-btn">
+										<span>LOGIN</span>
+									</div>
+									<span class="d-lostpassword">Lost your password?</span>
+								</div>
+							</div>
+							<!--最小屏的时候展现的内容-->
+							<div class="d-768-hide-btn">
+								<!--搜索部分-->
+								<span v-on:click="controlsearchdrop" class="d-little-search glyphicon glyphicon-search"></span>
+								<!--语言选择部分-->
+								<span v-on:click="controllanguagedrop" class="d-little-language glyphicon glyphicon-cog"></span>
+								
+							</div>
+							<div v-on:click.stop="controlMainMenu" class="d-1200-hide-navbtn">
+								<span class="glyphicon glyphicon-menu-hamburger f-18"></span>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="d-search-drop d-little-drop">
+				<span class="d-little-drop-close">x</span>
+				<div class="d-little-search-box">
+					<input class="d-search-input" type="text" name="" id="" placeholder="Enter Key Words to search..."/>
+					<a href="">
+						<div class="d-submit">
+							SEARCH
+						</div>	
+					</a>
+				</div>
+			</div>
+			<div class="d-language-drop d-little-drop">
+				<span class="d-little-drop-close">x</span>
+				<h5 class="mar-l-10 d-language-title">Currency</h5>
+				<p class="d-language-lists">
+					<span class="d-language-list">English(USD)</span> <span class="d-language-list">French(EUR)</span> <span class="d-language-list">Japanese(JPY)</span>
+				</p>
+			</div>
+			<!--导航条-->
+			<div class="d-nav">
+				<div v-on:mouseleave="leavenav" class="d-content">
+					<div class="d-block-title">
+						<div v-on:click="controlGoodsClassDrop" class="d-block-click">
+							<span class="d-block-title-logo glyphicon glyphicon-align-left"></span>
+							<span class="d-block-title-text">ALL DEPARTMENTS</span>	
+						</div>
+						<div class="d-goods-class">
+							<a class="d-goods-classify" v-for="item in goodsclass" href="" v-bind:title="item">
+								{{item}} <span v-if="item == 'Accessories'" class="d-right-trangle glyphicon glyphicon-menu-right"></span>
+							</a>
+						</div>
+					</div>
+					
+					<div class="d-nav-title-lists">
+						<div v-on:mouseenter="controldrop" v-for="navtitle in navdata.title" class="d-nav-title-list">
+						 <span v-bind:title="navtitle">{{navtitle}}</span> <span v-if="navtitle != 'ABOUT'" class="d-drop-logo f-12">﹀</span>
+						</div>
+					</div>
+					<!--home部分下拉框-->
+					<div class="d-drop-menu d-home-part">
+						<ul class="d-nav-ul">
+							<li class="d-nav-li navhome" v-for="homelist in navdata.home">{{homelist}}</li>
+						</ul>
+					</div>
+					<!--商城部分下拉框-->
+					<div class="d-drop-menu d-shop-part">
+						<ul class="d-nav-ul">
+							<li class="d-nav-li navshop" v-for="shoplist in navdata.shop" >{{shoplist}}</li>
+						</ul>
+					</div>
+					<!--pages部分下拉框-->
+					<div class="d-drop-menu d-pages-part">
+						<div class="d-nav-ul">
+							<div class="d-pages-content">
+								<div class="d-left-box">
+									<div class="d-title">Shop Pages</div>
+									<div class="d-green-line">
+										
+									</div>
+									<ul class="d-pages-ul">
+										<li class="d-pages-li" v-for="pages in navdata.pages.shoppages">{{pages}}</li>
+									</ul>
+								</div>
+								<div class="d-center-box">
+									<div class="d-title">Product</div>
+									<div class="d-green-line">
+										
+									</div>
+									<ul class="d-pages-ul">
+										<li class="d-pages-li" v-for="products in navdata.pages.product">{{products}}</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--blogs下拉框控制-->
+					<div class="d-drop-menu d-blogs-part">
+						<div class="d-nav-ul">
+							<div class="d-nav-li d-blogs-li">Blog Style  <span class="fl-r f-14"> ＞</span>
+								<div class="d-nav-ul-ul">
+									<div class=" d-nav-li-li "v-for="blogstyle in navdata.blogs.blogstyle">
+										{{blogstyle}}
+									</div> 	
+								</div>
+							</div>
+							<div class="d-nav-li d-blogs-li">Post Layout <span class="fl-r f-14"> ＞</span>
+								<div class="d-nav-ul-ul">
+									<div class="d-nav-li-li "v-for="postlayout in navdata.blogs.postlayout">
+										{{postlayout}}
+									</div> 	
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--页面body内容-->
+		<div class=" ch-checkout-page">
+			<!--home shoppingcar 标题-->
+			<div class="mafan-15 ch-title">
+				<div class="ch-nav">
+					<ul class="ch-trail-items ch-breadcrumb">
+						<li><span><a href="#" class="mouse">Home</a></span></li>
+						<li><img src="image/双箭头-右.png" /></li>
+						<li class="font-14-2">Checkout</li>
+					</ul>
+				</div>
+			</div>
+
+			<!--shoppingcar 大标题-->
+			<div class="ch-shopp-car font-28 padding-20 mar-t-30">
+				<div>
+					<span>Checkout</span>
+				</div>
+
+				<!--Checkout内容一-->
+				<div class="ch-ck-con ">
+					<!--内容一左边-->
+					<div class="float-fl ch-ck-con-left">
+						<h3 class="ch-ck-title  mar-t-26">Shipping Address</h3>
+						<div class="ch-title-name">
+							<p class="float-fl">
+								<label class="font-14">First Name</label>
+								<input type="text" name="" id="" value="" class="ch-input" />
+							</p>
+							<p class="float-rt">
+								<label class="font-14">Last Name</label>
+								<input type="text" name="" id="" value="" class="ch-input" />
+							</p>
+						</div>
+						<!--Country-->
+						<!--<div class="country-box mar-t-20">
+
+							<p>
+								<label class="font-14">Country</label>
+								<div class="select_box">
+
+									<div class="select_title">
+										<input type="text" value="United States" readonly="readonly" />
+										<img src="image/下  拉.png"/>
+									</div>
+									<ul class="select_lists">
+										<li class="lists">United States</li>
+										<li class="lists">United Kingdom</li>
+										<li class="lists">Afghanistan</li>
+										<li class="lists">Aland Islands</li>
+										<li class="lists">Albania</li>
+										<li class="lists">Algeria</li>
+										<li class="lists">American Samoa</li>
+										<li class="lists">Andorra</li>
+										<li class="lists">Angola</li>
+										<li class="lists">Anguilla</li>
+										<li class="lists">Antarctica</li>
+										<li class="lists">Antigua and Barbuda</li>
+										<li class="lists">Argentina</li>
+										<li class="lists">Armenia</li>
+										<li class="lists">Aruba</li>
+										<li class="lists">Australia</li>
+										<li class="lists">Austria</li>
+										<li class="lists">Azerbaijan</li>
+										<li class="lists">Bahamas</li>
+										<li class="lists">Bahrain</li>
+										<li class="lists">Bangladesh</li>
+										<li class="lists">Barbados</li>
+										<li class="lists">Belarus</li>
+										<li class="lists">Belgium</li>
+										<li class="lists">Belize</li>
+										<li class="lists">Benin</li>
+										<li class="lists">Bermuda</li>
+										<li class="lists">Bhutan</li>
+										
+									</ul>
+
+								</div>
+							</p>
+
+						</div>-->
+						<!--Country城市选择-->
+						<div class="ch-country">
+							<form class="form-inline ">
+							<div data-toggle="distpicker" class="clearfix address">
+								<div class="form-group float-fl">
+									
+									<label class=" font-14" for="province1 ">Province</label><br />
+									<select class="form-control font-14" id="province1">
+										
+										<option value="United States" data-code="110000" selected="">United States</option>
+										<option value="United Kingdom" data-code="120000">United Kingdom</option>
+										<option value="Afghanistan" data-code="130000">Afghanistan</option>
+										<option value="Aland Islands" data-code="140000">Aland Islands</option>
+										<option value="Albania" data-code="150000">Albania</option>
+										<option value="Algeria" data-code="210000">Algeria</option>
+										<option value="American Samoa" data-code="220000">American Samoa</option>
+										<option value="Andorra" data-code="230000">Andorra</option>
+										<option value="Angola" data-code="310000">Angola</option>
+										<option value="Anguilla" data-code="320000">Anguilla</option>
+										<option value="Antarctica" data-code="330000">Antarctica</option>
+										<option value="Antigua and Barbuda" data-code="340000">Antigua and Barbuda</option>
+										<option value="Argentina" data-code="350000">Argentina</option>
+										<option value="Armenia" data-code="360000">Armenia</option>
+										<option value="Aruba" data-code="370000">Aruba</option>
+										<option value="Australia" data-code="410000">Australia</option>
+										<option value="Austria" data-code="420000">Austria</option>
+										<option value="Azerbaijan" data-code="430000">Azerbaijan</option>
+										<option value="Bahamas" data-code="440000">Bahamas</option>
+										<option value="Bahrain" data-code="450000">Bahrain</option>
+										<option value="Bangladesh" data-code="460000">Bangladesh</option>
+										<option value="Barbados" data-code="500000">Barbados</option>
+										<option value="Belarus" data-code="510000">Belarus</option>
+										<option value="Belgium" data-code="520000">Belgium</option>
+										<option value="Belize" data-code="530000">Belize</option>
+										<option value="Benin" data-code="540000">Benin</option>
+										<option value="Bhutan" data-code="610000">Bhutan</option>
+										<option value="Bermuda" data-code="620000">Bermuda</option>
+										
+									</select>
+								</div>
+								
+								
+								<div class="form-group ch-ck-city">
+									<label class=" font-14" for="city1">City</label><br />
+									<select class="form-control font-14" id="city1">
+										
+										<option value="London" data-code="110100" selected="">London</option>
+										<option value="Seoul" data-code="110100" >Seoul</option>
+										<option value="Mexico city" data-code="110100" >Mexico city</option>
+										<option value="Mumbai" data-code="110100" >Mumbai</option>
+										<option value="Delhi" data-code="110100" >Delhi</option>
+										<option value="New York" data-code="110100">New York</option>
+										<option value="Jakarta" data-code="110100">Jakarta</option>
+										<option value="Sao Paulo" data-code="110100" >Sao Paulo</option>
+										<option value="Osaka" data-code="110100">Osaka</option>
+										<option value="Karachi" data-code="110100" >Karachi</option>
+										<option value="Matx-cơ-va" data-code="110100" >Matx-cơ-va</option>
+										
+									</select>
+								</div>
+								
+								<div class="form-group float-rt ch-city">
+									<label class=" font-14" for="district1">District</label><br />
+									<select class="form-control font-14" id="district1">
+										<option value="London" data-code="110100" selected="">London</option>
+										<option value="Seoul" data-code="110100">Seoul</option>
+										<option value="Mexico city" data-code="110100">Mexico city</option>
+										<option value="Mumbai" data-code="110100">Mumbai</option>
+										<option value="Delhi" data-code="110100">Delhi</option>
+										<option value="New York" data-code="110100">New York</option>
+										<option value="Jakarta" data-code="110100">Jakarta</option>
+										<option value="Sao Paulo" data-code="110100">Sao Paulo</option>
+										<option value="Osaka" data-code="110100">Osaka</option>
+										<option value="Karachi" data-code="110100">Karachi</option>
+										<option value="Matx-cơ-va" data-code="110100">Matx-cơ-va</option>
+									</select>
+								</div>
+							</div>
+						</form>
+						</div>
+						
+						
+						<div class="ch-title-name">
+							<p class="float-fl">
+								<label class="font-14">Zip Code</label>
+								<input type="text" name="" id="" value="" class="ch-input" />
+							</p>
+							<p class="float-rt ch-address">
+								<label class="font-14">Address</label>
+								<input type="text" name="" id="" value="" class="ch-input" />
+							</p>
+						</div>
+					</div>
+					
+					<!--内容一右边-->
+					<div class="float-rt ch-ck-con-right">
+						<h3 class="ch-ck-title  mar-t-26">Your Order</h3>
+						<div class="ch-ck-right-con">
+							<ul>
+								<li class="ch-ck-right-lione mar-b-30 pad-b-30">
+									<div class="float-fl">
+										<img src="image/product-item-2.jpg"/>
+									</div>
+									<div class="float-rt ">
+										<p class="font-16">3D Dining Chair</p>
+										<p class="font-14 mar-b-0 mar-t-8">
+											<span>Black,</span>
+											<span>XXL</span>
+										</p>
+										<p class="">
+											<span class="font-16">€45</span>
+											<span class="font-16-2">X1</span>
+										</p>
+									</div>
+								</li>
+								<li class="ch-ck-right-lione litwo mar-b-30 pad-b-30">
+									<div class="float-fl">
+										<img src="image/product-item-2.jpg"/>
+									</div>
+									<div class="float-rt ">
+										<p class="font-16">3D Dining Chair</p>
+										<p class="font-14 mar-b-0 mar-t-8">
+											<span>Black,</span>
+											<span>XXL</span>
+										</p>
+										<p class="">
+											<span class="font-16">€45</span>
+											<span class="font-16-2">X1</span>
+										</p>
+									</div>
+								</li>
+							</ul>
+							
+							<div class="footr-text  ">
+								<span class="font-16">Total Price: </span>
+								<span class="font-20">€95</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+					
+				<!--Checkout中间内容-->
+				<div class=" ch-ck-center ">
+					<div class="payment float-rt">
+						<div class="payment-text font-12-2">PAYMENT
+							<img src="image/下一个.png" />
+						</div>
+					</div>
+					
+					<div class="ch-ck-center-list">
+					<!--内容一左边-->
+					<div class="float-fl ch-ck-con-left">
+						<h3 class="ch-ck-title  mar-t-26">Payment Method</h3>
+						<div class="ch-title-name ">
+							
+								<a class="ch-title-name-a font-12" href="#">CREDIT CARD</a>
+								<a class="ch-title-name-aone font-12-2" href="#">PAYPAL</a>
+						</div>
+						<div class="write-text">
+							<input type="" name="" id="" value="" placeholder="XXX-XXX-XXX-XXX"/>
+						</div>
+						<!--Country城市选择-->
+						<div class="ch-country">
+							<form class="form-inline ">
+							<div data-toggle="distpicker" class="clearfix address">
+								<div class="form-group float-fl">
+									
+									<label class="sr-only font-14" for="province1 ">Month</label><br />
+									<select class="form-control font-14" id="province1">
+										
+										<option value="United States" data-code="110000" selected="">01</option>
+										<option value="United Kingdom" data-code="120000">02</option>
+										<option value="Afghanistan" data-code="130000">03</option>
+										<option value="Aland Islands" data-code="140000">04</option>
+										<option value="Albania" data-code="150000">05</option>
+										<option value="Algeria" data-code="210000">06</option>
+										<option value="American Samoa" data-code="220000">07</option>
+										<option value="Andorra" data-code="230000">08</option>
+										<option value="Angola" data-code="310000">09</option>
+										<option value="Anguilla" data-code="320000">10</option>
+										<option value="Antarctica" data-code="330000">11</option>
+										<option value="Antigua and Barbuda" data-code="340000">12</option>
+										
+										
+									</select>
+								</div>
+								
+								
+								<div class="form-group">
+									<label class="sr-only font-14" for="city1">Year</label><br />
+									<select class="form-control font-14" id="city1">
+										
+										<option value="London" data-code="110100" selected="">2010</option>
+										<option value="Seoul" data-code="110100" >2011</option>
+										<option value="Mexico city" data-code="110100" >2012</option>
+										<option value="Mumbai" data-code="110100" >2013</option>
+										<option value="Delhi" data-code="110100" >2014</option>
+										<option value="New York" data-code="110100">2015</option>
+										<option value="Jakarta" data-code="110100">2016</option>
+										<option value="Sao Paulo" data-code="110100" >2017</option>
+										<option value="Osaka" data-code="110100">2018</option>
+										<option value="Karachi" data-code="110100" >2019</option>
+										
+										
+									</select>
+								</div>
+								
+								<div class="form-group float-rt ch-city">
+									<label class="sr-only font-14" for="district1">CVV</label><br />
+									
+									<select class="form-control font-14" id="district1">
+										
+											<option value="London" data-code="110100" selected="">238</option>
+											<option value="Seoul" data-code="110100" >618</option>
+											<option value="Mexico city" data-code="110100" >554</option>
+											<option value="Mumbai" data-code="110100" >121</option>
+											<option value="Delhi" data-code="110100" >342</option>
+											<option value="New York" data-code="110100">520</option>
+											<option value="Jakarta" data-code="110100">1314</option>
+											<option value="Sao Paulo" data-code="110100" >999</option>
+											<option value="Osaka" data-code="110100">111</option>
+											<option value="Karachi" data-code="110100" >666</option>
+										
+									</select>
+									
+								</div>
+							</div>
+						</form>
+						</div>
+					</div>
+					
+					<!--内容一右边-->
+					<div class="float-rt ch-ck-con-right">
+						<h3 class="ch-ck-title  mar-t-26">Your Order</h3>
+						<div class="ch-ck-right-con">
+							<ul>
+								<li class="ch-ck-right-lione mar-b-30 pad-b-30">
+									<div class="float-fl">
+										<img src="image/product-item-2.jpg"/>
+									</div>
+									<div class="float-rt ">
+										<p class="font-16">3D Dining Chair</p>
+										<p class="font-14 mar-b-0 mar-t-8">
+											<span>Black,</span>
+											<span>XXL</span>
+										</p>
+										<p class="">
+											<span class="font-16">€45</span>
+											<span class="font-16-2">X1</span>
+										</p>
+									</div>
+								</li>
+								<li class="ch-ck-right-lione litwo mar-b-30 pad-b-30">
+									<div class="float-fl">
+										<img src="image/product-item-2.jpg"/>
+									</div>
+									<div class="float-rt ">
+										<p class="font-16">3D Dining Chair</p>
+										<p class="font-14 mar-b-0 mar-t-8">
+											<span>Black,</span>
+											<span>XXL</span>
+										</p>
+										<p class="">
+											<span class="font-16">€45</span>
+											<span class="font-16-2">X1</span>
+										</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="footr-text  ">
+							<span class="font-16">Total Price: </span>
+							<span class="font-20">€95</span>
+						</div>
+					</div>
+					</div >
+				</div>
+				<!--Checkout底部标题-->
+				<div class="float-rt ch-footer-titles">
+					
+						<a class="font-12-2 aone float-fl">
+							<img src="image/上一个.png"/>
+							BACK TO SHIPPING
+						</a>
+						<a class="font-12 atwo float-rt">PAY NOW</a>
+					
+				</div>
+				
+				<!--Checkout底部-->
+				<div class="ch-ck-footer ">
+					<div class="ch-ck-footer-con">
+						<div class="ch-ck-footer-div">
+							<img src="image/对.png"/>
+						</div>
+						<div class="ch-ck-footer-text">
+							<h3 class="font-18">Congratulation! Your order has been processed.</h3>
+							<p class="font-14-2 mar-t-15">Aenean dui mi, tempus non volutpat eget, molestie a orci. Nullam eget sem et eros 
+								</p>
+								<p class="font-14-2">laoreet rutrum. Quisque sem ante, feugiat quis lorem in.</p>
+						</div>
+						<a class="Return-to-Store ">
+							Return to Store
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		</div>
+		<!--回到顶部-->	
+		<div class="d-return-top-box">
+			<span class="glyphicon glyphicon-menu-up f-12"></span>
+		</div>
+		
+		
+		<!--项目底部-->
+		<div class="d-footer">
+			<div class="d-content">
+				<div class="d-footer-main mar-b-30">
+					<div class="d-vereesa-part col-xs-12 col-sm-6 col-md-6 col-lg-4">
+						<div class="d-img-logo mar-b-20">
+							<img src="image/logo.png"/>
+						</div>
+						<p class="f-14">
+							Shop the latest products right from
+							your home .
+						</p>
+						<p class="f-14">
+							We have furniture supplies & accessories from top brands.
+						</p>
+						<div class="d-black-circle-box">
+							<div class="d-black-circle">
+								<span class="d-bottom-icon glyphicon glyphicon-usd"></span>
+								<div  class="d-hide-circle">
+									
+								</div>
+							</div>
+							<div class="d-black-circle">
+								<span class="d-bottom-icon glyphicon glyphicon-record "></span>
+								<div class="d-hide-circle">
+									
+								</div>
+							</div>
+							<div class="d-black-circle">
+								<span class="d-bottom-icon glyphicon  glyphicon-link"></span>
+								<div class="d-hide-circle">
+									
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					<div v-for="item in hreflink" class="d-bottom-links d-bottom-list-part col-xs-12 col-sm-6 col-md-6 col-lg-2">
+						<div class="d-bottom-list-title">
+							{{item.title}}
+						</div>
+						<ul class="d-bottom-list-content f-14">
+							<li v-for="list in item.list" ><a class="d-menu-href"  href="" target="_blank">{{list}}</a></li>
+						</ul>
+					</div>
+					<div class="d-bottom-list-part col-xs-12 col-sm-6 col-md-6 col-lg-4">
+						<div class="d-bottom-list-title">
+							Newsletter
+						</div>
+						<p class="f-14 d-news-text">
+							Get notified of new products, limited releases, and more.
+						</p>
+						<div class="d-news-input-box">
+							<input class="d-news-input" type="text" placeholder="your email letter"/>
+							<div class="d-news-btn">
+								SUBSCRIBE
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="d-footer-bottom">
+					<span class="d-copy-right f-16">
+						Copyright © 2019 Vereesa . All rights reserved
+					</span>
+					<div class="d-img-box">
+						<img  src="image/payments.png"/>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+</html>
+<script src="js/vue.js"></script>
+<script src="js/jquery-2.1.0.js"></script>
+<script src="js/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script src="js/public-page.js"></script>
+<script type="text/javascript" src="js/selectOption.js"></script>
+不怕麻烦  就怕没有没有麻烦  不怕有错 就怕没有错

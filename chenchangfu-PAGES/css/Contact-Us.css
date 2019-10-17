@@ -1,0 +1,208 @@
+/*地图*/
+.ch-location{
+	position: relative;
+    top: -22px;
+    z-index: 400;
+    left: 20px;
+}
+.ch-location-img{
+	margin-left: -47px;
+	
+}
+
+.ch-maps {
+	width: 176px;
+	height: 40px;
+	border: 2px solid #E2E2E2;
+	position: relative;
+	top: 50px;
+	z-index: 401;
+	left: 20px;
+	line-height: 40px;
+}
+.ch-maps ul li{
+	width: 50%;
+	height: 37px;
+	/*border: 1px solid aquamarine;*/
+	float: left;
+	position: relative;
+	text-align: center;
+	background: white;
+	cursor: pointer;
+}
+
+
+.ch-hide .ch-hide-con{
+	border: 1px solid #E2E2E2;
+	width: 35%;
+	height: 40px;
+	display: inline-block;
+	/*background: #FFFFFF;*/
+	
+	
+}
+
+.ch-hide {
+	display: none;
+}
+.ch-show-map:hover.ch-add-name{
+		display: block;
+	}
+	
+	/*ContactUs内容body*/
+.ch-contact-us{
+	/*width: 1170px;*/
+	height: 100%;
+	/*border: 1px solid cyan;*/
+	margin: 0 auto;
+	margin-top: -25%;
+	position: relative;
+    z-index: 1111;
+}
+/*Contact内容左边*/
+.ch-contact-us .float-fl{
+	width: 62%;
+	height: 665px;
+	border: 1px solid #E2E2E2;
+	padding: 55px 70px 40px;
+	background: rgb(129, 199, 208);
+	margin: 0 3%;
+}
+.ch-send-cont{
+	/*border: 1px solid brown;*/
+}
+.ch-contact-us .ch-send-cont h2{
+	height: 28px ;
+	width: 640px;
+}.form-label{
+	font-size: 14px;
+    line-height: 30px;
+    color: #888;
+    display: block;
+    margin-bottom: 5px;
+}
+.form-control-wrap input{
+	width: 305px;
+	height: 42px;
+	padding-left: 20px;
+	border-radius:42px ;
+}
+.form-control-wrap input:hover{
+	border: 1px solid #85B839;
+}
+
+.ch-textarea textarea{
+	widows: 640px;
+	height: 190px;
+	padding: 6px 12px;
+}
+.form-control-submit{
+	width: 157px;
+	height: 42px;
+	border-radius:42px ;
+	background: #85B839;
+	color: #FFFFFF;
+}
+
+/*Contact内容右边*/
+.ch-contact-us .float-rt{
+	width: 390px;
+	height: 665px;
+	/*border: 1px solid blue;*/
+}
+.ch-contact-us .ch-contact-right{
+	padding: 45px;
+	background: black;
+	position: relative;
+	margin-right: 4%;
+	margin-top: -52.555%;
+}
+.ch-contact-us .ch-contact-right .ch-contact-right-cont{
+	/*border: 1px solid white;*/
+	width: 300px;
+	height: 577px;
+}
+.ch-contact-us .ch-contact-right .ch-contact-right-cont form  h2{
+	font-size:20px;
+	color: white;
+	margin-bottom: 50px;
+}
+.ch-contact-info{
+margin-bottom: 30px;}
+.ch-contact-info .ch-contact-add{
+	width: 300px;
+	height: 48px;
+}
+.ch-contact-info .ch-contact-add .ch-icon{
+	width: 42px;
+	height: 42px;
+	display: inline-block;
+	/*border: 1px solid red;*/
+	position: relative;
+	top: -20px;
+	border: 2px solid #1afa29;
+	border-radius: 50%;
+	text-align: center;
+/*	vertical-align: middle;*/
+	line-height: 36px;
+}
+.ch-contact-info .ch-contact-add .ch-icon img{
+	width: 30px;
+	height: 30px;
+}
+.ch-contact-info .ch-contact-add .ch-text{
+    display: block;
+    color: #dddddd;
+    text-transform: capitalize;
+    font-size: 14px;
+    overflow: hidden;
+    width: 238px;
+    height: 48px;
+    display: inline-block;
+    margin-left: 15px;
+}
+.ch-contact-right-footer{
+	width: 300px;
+	height: 266px;
+
+}
+.ch-contact-right-footer a img{
+	width: 33px;
+	height: 23px;
+	vertical-align: bottom;
+	margin-top: 238px;
+}
+.ch-contact-right-footer .ch-icon{
+	width: 24px;
+    height: 23px;
+    border: 2px solid white;
+    display: inline-block;
+    text-align: center;
+    line-height: 23px;
+    margin-left: 10px;
+}
+.ch-contact-right-footer .ch-icon span{
+	width: 15px;
+    height: 15px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: inline-block;
+}
+@media only screen and (max-width: 1039px) {
+	/*#map{
+		height: 400px;
+		width: 100%;
+	}*/
+	.ch-contact-us .float-fl {
+		width: 92%;
+		height: 100%;
+		padding: 45px;
+		margin: 0 3%;
+	}
+	.ch-contact-us .float-rt {
+		width: 92%;
+		height: 71%;
+		margin: 0 4.8%;
+		padding: 45px;
+	}
+}

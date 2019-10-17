@@ -1,0 +1,109 @@
+.ch-find-page{
+	/*border: 1px solid red;*/	
+	text-align: center;
+	padding: 0 0 50px;
+	height: 565px;
+}
+.ch-find-page-con{
+	width: 92.5%;
+	/*border: 1px solid blue;*/
+	margin: 0 auto;
+	height: 100%;
+	padding: 60px 0 0 0;
+}
+
+
+/*404左边*/
+.ch-find-page-left {
+	width: 48%;
+	height: 100%;
+	/*border: 1px solid cyan;*/
+	text-align: right;
+}
+
+
+
+
+/*404右边*/
+.ch-find-page-right{
+	width: 49.56%;
+	height: 100%;
+	padding: 0 0 0 15px;
+	text-align: left;
+	vertical-align: middle;
+
+	
+}
+.ch-find-page-right h2{
+	margin: 100px 0 25px 0;
+	
+}
+.ch-find-page-right p{
+	font-size: 15px;
+	color: #888888;
+}
+.ch-find-page-right form input{
+	width: 200px;
+	height: 42px;
+	padding: 7px 15px;	
+	border-radius: 42px;
+}
+.ch-find-page-right form a{
+	background: #85B839;
+	border-radius: 40px;
+	color: white;
+	width: 86px;
+	height: 42px;
+	text-align: center;
+	padding: 10px 0;
+}
+
+@media only screen and (max-width:991px ) {
+	.ch-find-page{
+		width: 100%;
+	}
+	.ch-find-page-con {
+		width: 750px;
+		height: 445px;
+	}
+	/*991屏左边*/
+	.ch-find-page-left{
+		width: 365px;
+		height: 395px;
+		padding: 10px 0;
+	}
+	.ch-find-page-left img{
+		width: 365px;
+		height: 358px;
+	}
+	/*991屏右边*/
+	.ch-find-page-right{
+		width: 355px;
+		height: 395px;
+		
+	}
+	
+}
+
+@media only screen and (max-width:767px ) {
+	.ch-find-page{
+		width: 915px;
+	}
+	.ch-find-page-con {
+		width: 749px;
+		height: 915px;
+	}
+	.ch-find-page-left{
+		width: 719px;
+		height: 440px;
+		text-align: center;
+	}
+	.ch-find-page-right{
+		width: 719px;
+		height: 201px;
+		text-align: center;
+	}
+	.ch-find-page-right h2{
+		margin: 0;
+	}
+}

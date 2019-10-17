@@ -1,0 +1,117 @@
+
+
+.font-28{
+	font-size: 28px;
+	color: #222;
+}
+.font-14{
+	font-size: 14px;
+	color: #888;
+}
+.font-14-2{
+	font-size: 14px;
+	color: #222222;
+}
+.font-14-3{
+	font-size: 14px;
+	color: #DDDDDD;
+}
+.font-18{
+	font-size: 18px;
+	color: #222222;
+}
+.font-20{
+	font-size: 20px;
+	color: #111;
+}
+.font-20-2{
+	font-size: 20px;
+	color: #222;
+}
+
+.font-16{
+	font-size: 16px;
+	color: #333;
+}.font-16-2{
+	font-size: 16px;
+	color: #888888;
+}
+.font-36{
+	font-size: 36px;
+	color: #111111;
+}
+.font-12{
+	font-size: 12px;
+	color: #fff;
+}
+.font-12-2{
+	font-size: 12px;
+	color: #333333;
+}
+
+.padding-10{
+	padding: 10px;
+}
+.padding-15{
+	padding: 15px;
+}
+.padding-20{
+	padding: 20px;
+}
+.padding-p{
+	padding: 30px 30px 30px 0;
+}
+.float-fl{
+	float: left;
+	
+	
+}
+.float-rt{
+	float: right;
+}
+.mouse:hover{
+	color: #85B839;
+}
+
+.ch-title{
+	height: 88px;
+	line-height: 88px;
+	
+	
+}
+.mar-t-8{
+	margin-top: 8px;
+	}
+.mar-b-8{
+	margin-bottom: 8px;
+	}
+	
+.mar-t-0{
+	margin-top: 0px;
+}
+.mar-b-0{
+	margin-bottom: 0px;
+}
+/*头部公共样式*/
+.ch-breadcrumb{
+		padding: 34px 0 30px;
+	    background: #ffffff;
+	    margin: 0;
+	}
+
+	.ch-breadcrumb li{
+		display: inline-block;
+	    list-style: none;
+	    font-weight: 600;
+	    font-size: 14px;
+	    margin-left: 10px;
+	}
+	.ch-breadcrumb li span a{
+		color: #888888;
+		
+	}
+	.ch-breadcrumb li img{
+		width: 8px;
+		height: 8px;
+	}
+	
