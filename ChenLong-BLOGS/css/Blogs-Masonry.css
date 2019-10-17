@@ -11,6 +11,33 @@
     clear: both;
     position: absolute;
 }
+.masonry .blog-list .slick-item:nth-child(1){
+	height: 497px !important;
+}
+.masonry .blog-list .slick-item:nth-child(2){
+	height: 402px !important;
+}
+.masonry .blog-list .slick-item:nth-child(3){
+	height: 472px !important;
+}
+.masonry .blog-list .slick-item:nth-child(4){
+	height: 573px !important;
+}
+.masonry .blog-list .slick-item:nth-child(5){
+	height: 522px !important;
+}
+.masonry .blog-list .slick-item:nth-child(6){
+	height: 497px !important;
+}
+.masonry .blog-list .slick-item:nth-child(7){
+	height: 573px !important;
+}
+.masonry .blog-list .slick-item:nth-child(8){
+	height: 573px !important;
+}
+.masonry .blog-list .slick-item:nth-child(9){
+	height: 426px !important;
+}
 .masonry .slick-item .photo img{
 	width: 100%;
 }
