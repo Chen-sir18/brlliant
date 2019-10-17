@@ -8,6 +8,7 @@ let goods =require('./router/goods.js')
 let news = require('./router/news.js')
 let blogs = require('./router/blogs.js')
 let shopcar = require('./router/shopcar.js')
+let addgoods = require('./router/addgoods.js')
 let lendcodeParser = bodyParser.urlencoded({extended:false})
 
 app.all('*',function(req,res,next){
@@ -22,4 +23,5 @@ app.get('/goods',goods.goodsinfo)
 app.get('/news',news.getnews)
 app.get('/blogs',blogs.getblogs)
 app.get('/shopcar',shopcar.getshopcar)
+app.get('/addgoods',addgoods.addgoods)
 app.listen(3001)

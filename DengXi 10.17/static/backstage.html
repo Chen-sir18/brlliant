@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/d-public.css" />
+		<link rel="stylesheet" href="css/backstage.css" />
+	</head>
+	<body>
+		<div class="header">
+			<div class="header-top">
+				<div class="logo">
+					<img src="img/logohdaidao.png"/>
+				</div>
+				<div class="nav-menu">
+					<div class="nav-box">
+						<ul>
+							<!--在vue中类名尽量不能出现-的形式-->
+							<li v-on:click="btnactive" v-bind:class="{navlist:isactive,active:item == '商品'}" v-for="item in navList">{{item}}</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="system-box">
+				<div class="user-name">
+					欢迎您：{{username}}
+				</div>
+				<div class="system-part" v-for="item in systemlist">
+					<span class="divide">丨</span>
+					<span>{{item}}</span>
+				</div>
+			</div>
+		</div>
+		<div class="main-content">
+			<!--左侧边部分-->
+			<div class="left-box">
+				<div class="user-img">
+					<img src="img/head.jpg"/>
+				</div>
+				<div class="black-top">
+					角色：{{role}}
+				</div>
+				<div class="goods-manage">
+					<div v-for="item in lists" v-bind:class="{goodsmanagelist:true,active:item == '商品列表'}" @click="listactive">
+						<span  class="list-arrow"></span>
+						<span>{{item}}</span>
+					</div>
+				</div>
+				<div class="remind">
+					<p>Powered by Haidao</p>
+					<p>Copyright 2013-2015 Dmibox</p>
+				</div>
+				<div class="hide-btn">
+					<img src="img/ico_8.png"/>
+				</div>
+			</div>
+			<iframe class="ifram" src="goods1.html"  height=""></iframe>
+		</div>
+		
+	</body>
+</html>
+<script src="js/vue.js"></script>
+<script src="js/jquery-2.1.0.js"></script>
+<script type="text/javascript">
+//	导航的数据
+var navList = ['首页','全局','商品','订单','会员','运营','站点','统计','云平台'] 
+var username = '邓曦'
+var systemlist = ['修改密码','网站前台','安全退出']
+	var header = new Vue({
+		el:'.header',
+		data:{
+			navList:navList,
+			isactive:true,
+			username:username,
+			systemlist:systemlist,
+		},
+		methods:{
+			btnactive:function(e){
+				//默认选中
+				e.target.classList.add('active')
+				$(e.target).siblings().removeClass('active')
+//				每点击一次都会做ajax的请求
+//				$.ajax({
+//					type:"get",
+//					url:"",
+//					async:true
+//				});
+			}
+		}
+	})
+	
+	
+//左边固定部分的vue
+var role = '老板'
+var lists = ['商品列表','商品分类','商品品牌','商品规格','商品类型']
+var leftbox = new Vue({
+	el:'.left-box',
+	data:{
+		role:role,
+		lists:lists
+	},
+	methods:{
+		listactive:function(e){
+			if(e.target.classList.contains('goodsmanagelist')){
+				e.target.classList.add('active')
+				$(e.target).siblings().removeClass('active')
+			}
+			else{
+				e.target.parentNode.classList.add('active')
+				$(e.target.parentNode).siblings().removeClass('active')
+			}
+		}
+	},
+})
+//点击左边固定部分的隐藏按钮，让其收缩
+$('.hide-btn').click(function(){
+	if($('.hide-btn img').attr('src') == 'img/ico_8.png'){
+		$('.left-box').animate({
+			margin:'0 0 0 -200px', 
+		})
+		$('.ifram').animate({
+			width:'100%', 
+		})
+		$('.hide-btn img').attr('src','img/ico_8a.png')
+	}
+	else{
+		$('.left-box').animate({
+			margin:'0 0 0 0px', 
+		})
+		$('.ifram').animate({
+			width:'85%', 
+		})
+		$('.hide-btn img').attr('src','img/ico_8.png')
+	}
+	
+	
+	
+})
+
+//$('.hide-btn').click(function(){
+//	$('.left-box').animate({
+//		margin:'0 0 0 -200px', 
+//	})
+//	$('.ifram').animate({
+//		width:'100%', 
+//	})
+//})
+
+
+
+</script>

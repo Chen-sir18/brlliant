@@ -3,6 +3,7 @@ module.exports = {
     goodsinfo: async function(req,res){
     	console.log(req.query.key)
         	let sql = 'select * from goods where g_part = ?'
+        	console.log(req)
 	        let data = [req.query.key]
 	        let result = await query.query(sql,data)
 	        if(result.length){

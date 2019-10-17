@@ -197,7 +197,7 @@ var shopcarlogonregister = new Vue({
 				if(isemail && ispassword && ischecked){
 					$.ajax({
 						type:"post",
-						url:"http://127.0.0.1:3001/login",
+						url:"http://192.168.97.218:3001/login",
 						data:{
 							email:email,
 							password:password
@@ -225,7 +225,7 @@ var shopcarlogonregister = new Vue({
 			if(isemail && ispassword){
 				$.ajax({
 					type:"post",
-					url:"http://127.0.0.1:3001/register",
+					url:"http://192.168.97.218:3001/register",
 					data:{
 						email:email,
 						password:password,
