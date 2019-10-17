@@ -1,0 +1,192 @@
+.ch-l-r{
+
+	width: 100%;
+	/*border: 1px solid red;*/
+	height: 100%;
+}
+
+.ch-l-r-page{
+	width: 100%;
+	height: 640px;
+	/*border: 1px solid cyan;*/
+}
+/*登录注册页面/登录*/
+.ch-login-page{
+	width: 47%;
+	height: 503px;
+	border: 1px solid #E2E2E2;
+	text-align: left;
+}
+.ch-login-title{
+	padding: 25px 40px;
+	/*border: 1px solid green;*/
+	width: 100%;
+	height: 76px;
+}
+.ch-form-lable{
+	width: 100%;
+	padding: 25px 40px;
+}
+.ch-form-lable .ch-L-h6{
+	margin-bottom: 20px;
+}
+.ch-form-lable .ch-L-h6 h6{
+	font-size: 16px;
+	color: #AAAAAA;
+	margin-bottom: 20px;
+}
+.ch-form-lable .ch-L-h6 a {
+	text-decoration: none;
+}
+.ch-form-lable .ch-L-h6 a .ch-img{
+	display: inline-block;
+	height: 23px;
+	width: 19px;
+	background: #000000;
+	text-align: right;
+}
+.ch-form-lable .ch-L-h6 a  .ch-text{
+	padding: 0 0 0 5px;
+}
+.ch-form-lable .ch-L-h6 a:last-child{
+	margin-left: 50px;
+}
+.ch-form-lable p{
+	margin-bottom: 20px;
+}
+.ch-form-lable .ch-input input{
+	width: 100%;
+	height: 42px;
+	padding: 7px 20px;
+	border-radius: 42px;
+}
+.ch-form-lable  .ch-p-con{
+	width: 100%;
+	height: 24px;
+	/*line-height: 5px;*/
+}
+.ch-form-lable  .ch-p-con .float-fl label{
+	position: relative;
+   /* margin-top: -23px;*/
+    top: -6px;	
+}
+.ch-form-lable .ch-submit input{
+	width: 78.75px;
+	height: 42px;
+	padding: 9px 20px;
+	background: #85B839;
+	color: white;
+	border-radius: 40px;
+}
+
+
+
+/*登录注册页面/注册*/
+.ch-register-page{
+	width: 47%;
+	height: 507px;
+	border: 1px solid #E2E2E2;
+	text-align: left;
+}
+.ch-form-lable .ch-submit-btn input{
+	width: 147.52px;
+	height: 42px;
+	padding: 9px 20px;
+	background: #85B839;
+	color: white;
+	border-radius: 40px;
+}
+.ch-form-lable  .ch-p-con .ch-s-text{
+	position: relative;
+	top: -5px;
+}
+
+
+
+
+/*小于992的屏*/
+/*@media only screen and (max-width: 991px) {
+	.ch-l-r-page{
+		height: 1281px;
+		width: 100%;
+		
+}
+	.ch-login-page{
+		width: 720px;
+		height: 537px;
+		margin-left: 13.5%;
+	}
+	.ch-register-page{
+		width: 720px;
+		height: 537px;
+		margin-right: 10.25%;
+		
+	}
+}*/
+@media only screen and (max-width:767px ) {
+	.ch-login-page{
+		width: 720px;
+		height: 537px;
+		margin-left: 13.5%;
+	}
+	.ch-register-page{
+		width: 100%;
+		height: 537px;
+		margin-right: 10.25%;
+		
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	
+	.ch-l-r-page{
+		height: 1281px;
+		width: 100%;
+		
+}
+	.ch-l-r-page .ch-login-page,
+	.ch-l-r-page .ch-register-page{
+		width: 100%;
+		height: 100%;
+		margin: 0 auto;
+		float: none;
+	}
+	.ch-l-r-page  .ch-register-page{		
+		margin-top: 30px;
+	}
+}
+
+@media only screen and (max-width: 753px) and (min-width: 639px) {
+		.ch-l-r-page{
+		height: 1281px;
+		width: 100%;
+		
+}
+	.ch-l-r-page .ch-login-page,
+	.ch-l-r-page .ch-register-page{
+		width: 100%;
+		height: 537px;
+		margin: 0 auto;
+		float: none;
+	}
+	.ch-l-r-page  .ch-register-page{		
+		margin-top: 30px;
+	}
+	}
+@media only screen and (max-width: 639px) {
+			.ch-l-r-page{
+		height: 1281px;
+		width: 100%;
+		
+}
+	.ch-l-r-page .ch-login-page,
+	.ch-l-r-page .ch-register-page{
+		width: 100%;
+		height: 537px;
+		margin: 0 auto;
+		float: none;
+	}
+	.ch-l-r-page  .ch-register-page{		
+		margin-top: 30px;
+	}
+	}
+}

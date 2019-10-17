@@ -1,0 +1,109 @@
+/* <!--Grid Fullwidth 内容 --> */
+.shop-box {
+    padding: 34px 0 30px;
+}
+.shop-list{
+    background: #ffffff;
+    margin: 0;
+}
+.shop-list li{
+    float: left;
+}
+.shop-hint-box .shop-h3{
+    font-size: 28px;
+    font-family: inherit;
+    letter-spacing: 0;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+}
+.shop-erheng{
+    height: 8px;
+}
+.shop-shop-erheng-two{
+    display: none;
+}
+/*改变轮播图的样式 */
+.shop-bulik-lunbo{
+    height: 348px;
+}
+.shop-bulik-lunboItem1{
+    background: url(../img/banner-shop1.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.shop-bulik-lunboItem2{
+    background: url(../img/banner-shop2.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.shop-bulik-lunboItem3{
+    background: url(../img/banner-shop1.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.shop-bulik-info{
+    padding-top: 47px;
+    padding-left: 35px;
+}
+/* 修改各个端的样式 module */
+@media (max-width: 990px){
+    .shoprow-left{
+        display: none !important;
+    }
+    .shoprow-right{
+        width: 100% !important;
+        float: inherit !important;
+    }
+}
+/* list */
+@media (max-width:839px){
+    .shop-clrsthumb{
+        width: 188px !important;
+    }
+    .shop-product-info-left{
+        padding: 0 5px !important;
+    }
+}
+@media (max-width: 767px){
+    .shop-product-erbox{
+        display: flex !important;
+        justify-content: center !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    .shop-left{
+        top: 13% !important;
+        left: 50% !important;
+        width: 30px !important;
+        height: 30px !important;
+    }
+    .shop-left a{
+        margin-top: -9px !important;
+        display: block !important;
+    }
+}
+@media (max-width: 620px){
+    .shop-top-select-item{
+        display: block !important;
+        text-align: center !important;
+        clear: both !important;
+    }
+    .shop-topblik{
+        float:  left !important;
+    }
+    .shop-topblik-btn{
+        clear: both !important;
+        text-align: center !important;
+        display: flex !important;
+        justify-content: center !important;
+    }
+}
+@media (max-width:548px){
+    .shop-top-select-item{
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+    }
+}
