@@ -112,7 +112,7 @@ function carouselMove(target){
 		$('.d-person-carousel-inner').animate({
 			marginLeft:left,
 		},500,function(){
-			if(parseInt(left)> parseInt(-itemWidth)){
+			if(parseInt(left)> parseInt(-itemWidth)+10){
 				let hideLeft = -itemLength * itemWidth / 3 +'px'
 				$('.d-person-carousel-inner').css({	
 					marginLeft:hideLeft,
@@ -125,7 +125,7 @@ function carouselMove(target){
 		$('.d-person-carousel-inner').animate({
 			marginLeft:left,
 		},500,function(){
-			if(parseInt(left) < parseInt(-itemWidth * itemLength * 2/3 + itemWidth)){
+			if(parseInt(left) < parseInt(-itemWidth * itemLength * 2/3 + itemWidth - 10)){
 				let hideLeft = -itemLength * itemWidth / 3 +'px'
 				$('.d-person-carousel-inner').css({	
 					marginLeft:hideLeft,

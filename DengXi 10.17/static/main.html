@@ -17,10 +17,8 @@
 					<div class="d-welcome  fl-l">
 						Welcome to our online store
 					</div>
-					<div class="login-or-register fl-r mar-l-10">
-						Login or Register 
-					</div>
-					<div  class="d-language fl-r ">
+					<div class="login-or-register fl-r mar-l-10">Login or Register</div>
+					<div  class="d-language fl-r">
 						<div v-on:click.stop="languagetype">
 							<span  class="mar-r-6">{{activeLanguage}}</span><span class="glyphicon glyphicon-menu-down f-12"></span> <span>丨</span>
 						</div>
@@ -36,8 +34,8 @@
 					  <span v-on:click="closemenu" class="d-main-menu-close">x</span> <span v-for="title in menudata.title">{{title}}</span> <span v-on:click="returnmenu" v-show="menudata.title != 'MAIN MENU' " class="d-main-menu-return glyphicon glyphicon-menu-left"></span>
 				</div>
 				<div v-for="content in menudata.content" class="d-mian-menu-content" v-bind:title="content">
-					<span class="">{{content}} </span> 
-					<span v-show="['ACCESSORIES','HOME','SHOP','PAGES','BLOGS','BLOG STYLE','POST LAYOUT'].indexOf(content) >= 0 "  
+					<span @click="reload" class="">{{content}} </span> 
+					<span v-if="['ACCESSORIES','HOME','SHOP','PAGES','BLOGS','BLOG STYLE','POST LAYOUT'].indexOf(content) >= 0 "  
 						class="d-right-trangle glyphicon glyphicon-menu-right"
 						v-on:click="clicktrangle"></span>
 				</div>
@@ -142,27 +140,27 @@
 							<span class="d-block-title-text">ALL DEPARTMENTS</span>	
 						</div>
 						<div class="d-goods-class">
-							<a class="d-goods-classify" v-for="item in goodsclass" href="" v-bind:title="item">
-								{{item}} <span v-if="item == 'Accessories'" class="d-right-trangle glyphicon glyphicon-menu-right"></span>
+							<a class="d-goods-classify" v-for="item in goodsclass" v-bind:title="item">
+								{{item}}<span v-if="item == 'Accessories'" class="d-right-trangle glyphicon glyphicon-menu-right"></span>
 							</a>
 						</div>
 					</div>
 					
 					<div class="d-nav-title-lists">
 						<div v-on:mouseenter="controldrop" v-for="navtitle in navdata.title" class="d-nav-title-list">
-						 <span v-bind:title="navtitle">{{navtitle}}</span> <span v-if="navtitle != 'ABOUT'" class="d-drop-logo f-12">﹀</span>
+						 <span @click="reload" v-bind:title="navtitle">{{navtitle}}</span> <span v-if="navtitle != 'ABOUT'" class="d-drop-logo f-12">﹀</span>
 						</div>
 					</div>
 					<!--home部分下拉框-->
 					<div class="d-drop-menu d-home-part">
 						<ul class="d-nav-ul">
-							<li class="d-nav-li navhome" v-for="homelist in navdata.home">{{homelist}}</li>
+							<li @click="reload" class="d-nav-li navhome" v-for="homelist in navdata.home">{{homelist}}</li>
 						</ul>
 					</div>
 					<!--商城部分下拉框-->
 					<div class="d-drop-menu d-shop-part">
 						<ul class="d-nav-ul">
-							<li class="d-nav-li navshop" v-for="shoplist in navdata.shop" >{{shoplist}}</li>
+							<li @click="reload" class="d-nav-li navshop" v-for="shoplist in navdata.shop" >{{shoplist}}</li>
 						</ul>
 					</div>
 					<!--pages部分下拉框-->
@@ -175,7 +173,7 @@
 										
 									</div>
 									<ul class="d-pages-ul">
-										<li class="d-pages-li" v-for="pages in navdata.pages.shoppages">{{pages}}</li>
+										<li @click="reload" class="d-pages-li" v-for="pages in navdata.pages.shoppages">{{pages}}</li>
 									</ul>
 								</div>
 								<div class="d-center-box">
@@ -184,7 +182,7 @@
 										
 									</div>
 									<ul class="d-pages-ul">
-										<li class="d-pages-li" v-for="products in navdata.pages.product">{{products}}</li>
+										<li @click="reload" class="d-pages-li" v-for="products in navdata.pages.product">{{products}}</li>
 									</ul>
 								</div>
 							</div>
@@ -195,16 +193,12 @@
 						<div class="d-nav-ul">
 							<div class="d-nav-li d-blogs-li">Blog Style  <span class="fl-r f-14"> ＞</span>
 								<div class="d-nav-ul-ul">
-									<div class=" d-nav-li-li "v-for="blogstyle in navdata.blogs.blogstyle">
-										{{blogstyle}}
-									</div> 	
+									<div @click="reload" class=" d-nav-li-li "v-for="blogstyle in navdata.blogs.blogstyle">{{blogstyle}}</div> 	
 								</div>
 							</div>
 							<div class="d-nav-li d-blogs-li">Post Layout <span class="fl-r f-14"> ＞</span>
 								<div class="d-nav-ul-ul">
-									<div class="d-nav-li-li "v-for="postlayout in navdata.blogs.postlayout">
-										{{postlayout}}
-									</div> 	
+									<div @click="reload" class="d-nav-li-li "v-for="postlayout in navdata.blogs.postlayout">{{postlayout}}</div> 	
 								</div>
 							</div>
 						</div>
@@ -297,7 +291,7 @@
 	    <!--最小屏时，出现在底部的-->
 	    <div class="d-footer-device-mobile">
 	    	<div v-for="item in partdata" class="d-footer-device-item">
-	    		<a class="d-footer-device-content" href="">
+	    		<a @click="links" class="d-footer-device-content">
 	    			<span v-bind:class="item.class"></span>
 	    			<span class="d-footer-device-text">{{item.text}}</span>
 	    		</a>
@@ -309,7 +303,8 @@
 <script src="js/jquery-2.1.0.js"></script>
 <script src="js/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 <script src="js/public-page.js"></script>
+<script src="js/main.js"></script>
 <script type="text/javascript">
-	$('#d-body').load('about.html')
+	$('#d-body').load('home01.html')
 </script>
 

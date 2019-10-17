@@ -1,5 +1,3 @@
-
-
 // 登录的验证
 function validatetoken(){
 	let token = window.localStorage.getItem('token')
@@ -7,6 +5,7 @@ function validatetoken(){
 	if(token){
 		$('.d-form-title').hide()
 		$('.d-form-body').hide()
+		$('.login-or-register').text('欢迎'+ userinfo.username + '到来')
 		let html = `<div class="d-welcome-login">欢迎${userinfo.username}登录</div>
 		             <div v-on:click="endLogin" class="d-end-login"> 退出登录 </div>  
 		`
@@ -14,6 +13,25 @@ function validatetoken(){
 	}
 }  
 validatetoken()
+
+//login or register
+$('.login-or-register').click(function(){
+	let text = $(this).text()
+	if(text == 'Login or Register'){
+		$('#d-body').load('LoginRegister.html')
+	}
+	else{
+		if(confirm('是否退出登录')){
+			window.localStorage.removeItem('token')
+			window.localStorage.removeItem('info')
+			window.location.href = window.location.href 
+		}
+		else{
+			return false
+		}
+	}
+})
+
 
 //语言选择部分
 var selectedLanguage =new Vue({
@@ -33,7 +51,7 @@ var selectedLanguage =new Vue({
 				showtime:'200',
 				hidetime:'300'
 			}
-			$('.d-language').showdrop(languageObj)
+			showdrop(languageObj)
 		},
 		//选择语言的方法
 		languageselect:function(e){
@@ -48,7 +66,7 @@ var selectedLanguage =new Vue({
 				},400,function(){
 						$('.languageType-box').css('display','none')
 				})
-		}
+		},
 	},
 })
 //搜索框部分
@@ -68,7 +86,7 @@ var search = new Vue({
 				showtime:200,
 				hidetime:100,
 			}
-			$('.d-goods-dropdown').showdrop(goodsTypesObj)
+			showdrop(goodsTypesObj)
 
 		},
 		selectedgoodstype:function(e){
@@ -81,7 +99,8 @@ var search = new Vue({
 			$('.d-goodstype').eq(index).css({
 				background:'#f6f6f6'
 			})
-		}
+		},
+		
 	},
 	mounted:function(){
 		let activegoods = this.activegoodstype;
@@ -107,7 +126,7 @@ var shopcarlogonregister = new Vue({
 				showtime:200,
 				hidetime:200,
 			}
-			$('.d-shopcar').showdrop(shopCarObj)
+			showdrop(shopCarObj)
 		},
 		controllogin:function(){
 			partshow()
@@ -118,7 +137,7 @@ var shopcarlogonregister = new Vue({
 				showtime:200,
 				hidetime:200,
 			}
-			$('.d-login-and-register').showdrop(shopCarObj)
+		    showdrop(shopCarObj)
 		},
 		login:function(e){
 			e.target.nextElementSibling.classList.remove('active')
@@ -285,10 +304,26 @@ var dnav = new Vue({
 				marginshow:'0px',
 				marginhide:'40px',
 			}
-			$('.d-block-title').showdrop(goodsClassObj)
+			showdrop(goodsClassObj)
+		},
+		reload:function(e){
+			let text =$(e.target).text()
+			let arr = ['HOME','SHOP','PAGES','BLOGS']
+			if(arr.indexOf(text) == -1){
+//				去掉空格
+				text = text.replace(/\s/g, "")
+				//去掉斜杠
+				text = text.replace(/[//]/g,'')
+				let pagename = text + '.html'
+				$('#d-body').load(pagename)
+			}
 		}
 	}
 })
+
+//function newload(){
+//	$('#d-body').load('about.html')
+//}
 
 //点击窗口界面，就让已经展开的下拉列表收缩回去
 window.onclick = function(){
@@ -306,7 +341,7 @@ window.onclick = function(){
 }
 
 //封装的上浮下沉式的页面弹框
-$.fn.showdrop = function(options){
+ function showdrop(options){
 	if ($(options.objname).css('display') == 'none' ){
 		$(options.objname).css({
 			display:'block'
@@ -328,7 +363,7 @@ $.fn.showdrop = function(options){
 
 
 //封装，如果出现，需要消失的功能
-$.fn.hidedrop = function(options){
+function hidedrop(options){
 	if($(options.objname).css('display') != 'none' ){
 		$(options.objname).animate({
 			marginTop:options.marginhide,	
@@ -346,14 +381,14 @@ function partshow(){
 		marginhide : '20px',
 		hidetime : 300
 	}
-	$('.languageType-box').hidedrop(hideLanguageObj)
+	hidedrop(hideLanguageObj)
 	//控制商品类别的下拉框
 	let goodsClassObj = {
 		objname : '.d-goodstypes',
 		marginhide : '20px',
 		hidetime : 200
 	}
-	$('.d-goodstypes').hidedrop(goodsClassObj)
+	hidedrop(goodsClassObj)
 	
 	//控制购物框
 	let shopCarObj = {
@@ -361,14 +396,14 @@ function partshow(){
 		marginhide : '32px',
 		hidetime : 200
 	}
-	$('.d-shopcar .d-shopcar-box').hidedrop(shopCarObj)
+	hidedrop(shopCarObj)
 	//控制登录注册
 	let loginRegisterObj = {
 		objname : '.d-login-and-register',
 		marginhide : '32px',
 		hidetime : 200
 	}
-	$('.d-login-and-register').hidedrop(loginRegisterObj)
+	hidedrop(loginRegisterObj)
 }
 
 
@@ -440,6 +475,24 @@ var mainMenu = new Vue({
 				{
 					this.$set(this.$data,'menudata',this.maindata)   
 				}
+		},
+		reload:function(e){
+			let righttrangle = $(e.target).siblings('.d-right-trangle')
+			if(righttrangle.length == 0){
+				let text =$(e.target).text()
+				let arr = ['HOME','SHOP','PAGES','BLOGS']
+				if(arr.indexOf(text) == -1){
+	//				去掉空格
+					text = text.replace(/\s/g, "")
+					//去掉斜杠
+					text = text.replace(/[//]/g,'')
+					let pagename = text + '.html'
+					$('#d-body').load(pagename)
+				}
+			}
+			else{
+				return false
+			}
 		}
 	},
 	
@@ -478,131 +531,6 @@ $('.d-language-drop').click(function(){
 
 //顶部部分结束
 
-
-//按钮换页切换部分
-$.fn.changePaper = function(options){
-	let api = 'http://192.168.97.218:3002/'
-	$(options.changePaper).remove()
-	for (let i = 0; i < options.n; i++) {
-		let changePaper = `<div class="d-change-btn d-change-paper">
-							${i+1}
-						</div>`
-		$(options.right).before(changePaper)
-	}
-	//默认情况下当前显示第一页的内容
-	$(options.changePaper).eq(0).addClass('active')
-	
-	//左右箭头页面切换
-	
-	//左边箭头
-	let activeindex = $(options.changePapername).children('.active').index()
-	changecursor(activeindex)
-	$(options.left).click(function(){
-		if(activeindex == 1){
-			return false
-		}
-		else if(activeindex != 1){
-			$(options.changePaper).removeClass('active')
-			$(options.changePaper).eq(activeindex - 2).addClass('active')
-			activeindex = $(options.changePapername).children('.active').index()
-			changecursor(activeindex)
-			options.ajax(activeindex)
-		}
-		
-	})
-	
-	//右边箭头
-	$(options.right).click(function(){
-		if(activeindex == options.n){
-			return false
-		}
-		else if(activeindex != options.n){
-			$(options.changePaper).removeClass('active')
-			$(options.changePaper).eq(activeindex).addClass('active')
-			activeindex = $(options.changePapername).children('.active').index()
-			changecursor(activeindex)
-			options.ajax(activeindex)
-		}
-	})
-	//点击当前的每一个页面
-	$(options.changePaper).click(function(){
-		if($(this).hasClass('active')){
-			return false
-		}
-		else{
-			$(this).siblings().removeClass('active')
-			$(this).addClass('active')
-			activeindex = $(options.changePapername).children('.active').index()
-			changecursor(activeindex)
-			options.ajax(activeindex)
-		}
-	})
-	
-	//改变两个按钮的状态
-	function changecursor(activeindex){
-		if(activeindex == 1){
-			$(options.left).css({
-				cursor:'not-allowed'
-			})
-			$(options.right).css({
-				cursor:'pointer'
-			})
-		}
-		else if(activeindex == options.n){
-			$(options.left).css({
-				cursor:'pointer'
-			})
-			$(options.right).css({
-				cursor:'not-allowed'
-			})
-		}
-		else if(activeindex != 1 && activeindex != options.n){
-			$(options.left).css({
-				cursor:'pointer'
-			})
-			$(options.right).css({
-				cursor:'pointer'
-			})
-		}
-	}
-}
-
-
-//使用的方法
-//定义一个对象
-//changePapername是换页部分最外面的大盒子的class名字
-//changepaper是换页部分每一个具体的页面的class名字
-//left 是换页部分左边按钮 上一页的class名字
-//right 是换页部分右边按钮 下一页的class名字
-//n就是一共存在的页面数量,是几个页面就写数字几
-//url就是ajax的路由
-let changePaperObj = {
-	changePapername:'.d-change-box',
-	changePaper:'.d-change-paper',
-	left:'.d-change-btn-left',
-	right:'.d-change-btn-right',
-	n:3,
-	ajax:function(activeindex){
-		$.ajax({
-			type:"get",
-			url:'htpp://192.168.97.218:3002/test',
-			//请根据要求传回参数
-			data:{
-				id:activeindex
-			},
-			datatype:'json',
-			success:function(res){
-				//请在这里进行回收数据的操作	
-			}
-		});
-	},
-}
-
-//将最外面的那个盒子选中，调用changePaper方法，将定义好的对象传入即可
-$('.d-change-box').changePaper(changePaperObj)
-
-
-
 //关于回到页面最顶部的部分
 let scrollTop = $(document).scrollTop()
 let screenWidth = $(window).innerWidth()
@@ -631,14 +559,11 @@ window.onresize = function(){
 		})
 	}
  }
-
-
 $('.d-return-top-box').click(function(){
 	$('html,body').animate({
 		scrollTop:0,
 	},500)
 })
-
 //底部最小屏时出现的部分
 let footermenu = new Vue({
 	el:'.d-footer-device-mobile',
@@ -660,8 +585,18 @@ let footermenu = new Vue({
 				text:'Account'
 			}]
 		},
+	methods:{
+		links:function(e){
+			let text = $(e.target).text() || $(e.target).siblings().text()
+			if(text=='Home'){
+				$('#d-body').load('home01.html')
+			}
+			if(text=='Cart'){
+				$('#d-body').load('ShoppingCart.html')
+			}
+		}
+	}
 })
-
 
 //底部部分
 let linksInformation = new Vue({

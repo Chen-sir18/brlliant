@@ -840,6 +840,7 @@ cursor: pointer;
 }
 
 /*关于按钮组件的封装*/
+
 /*换页*/
 .d-change-box{
 	font-size: 0;
