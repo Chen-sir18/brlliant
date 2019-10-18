@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="js/bootstrap-3.3.7-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/d-public.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/public-btn.css">
     <link rel="stylesheet" href="css/shop-icon/font_1329850_y11qvky114/iconfont.css">
     <link rel="stylesheet" href="css/shoppublic.css">
+    <link rel="stylesheet" href="css/changePaper.css">
     <link rel="stylesheet" href="css/shop.css">
     <link rel="stylesheet" href="css/xia.css">
     <link rel="stylesheet" href="css/mengcen.css">
 </head>
-
 <body>
     <div class="shopheadr-list">
         <ul>
@@ -229,6 +229,24 @@
                     </div>
                 </li>
             </ul>
+            <!--换页按钮的封装-->
+            <div class="d-change-box text-no-blue shop-tabbox-fen shop-text-content">
+                <div class="d-change-btn d-change-btn-left ">
+                    <span class="glyphicon glyphicon-menu-left f-12"></span>
+                </div>
+                <div class="d-change-btn d-change-paper">
+                    1
+                </div>
+                <div class="d-change-btn d-change-paper">
+                    2
+                </div>
+                <div class="d-change-btn d-change-paper">
+                    3
+                </div>
+                <div class="d-change-btn d-change-btn-right">
+                    <span class="glyphicon glyphicon-menu-right f-12"></span>
+                </div>
+            </div>
             <!-- 点击出现蒙层 -->
             <div class="shop-proDiv-box shop-clearfix">
                 <div class="shop-clearfix shop-mengcen-box">
@@ -393,8 +411,10 @@
     </div>
 </body>
 <script src="js/jquery-2.1.0.js"></script>
+<script src="js/changePaper.js"></script>
 <script src="js/public-js.js"></script>
 <script src="js/carousez.js"></script>
+<script src="js/shopxia.js"></script>
 <script src="js/mengcen.js"></script>
-
+<script src="js/apishop.js"></script>
 </html>

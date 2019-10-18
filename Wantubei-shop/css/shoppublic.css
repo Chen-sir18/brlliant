@@ -11,6 +11,9 @@
 .line-height-28{
     line-height: 28px;
 }
+.shop-text-content{
+    text-align: center;
+}
 .flex-1{
     flex: 1
 }
@@ -25,6 +28,7 @@ a .icon-color-burlywood{
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    max-width: 1200px;
 }
 .clirf:after{
     display: block;
@@ -151,6 +155,9 @@ a .icon-color-burlywood{
     color: #fff;
 }
 /*  <!-- 二商品列表 --> */
+.shop-product-item li{
+    padding: 10px 0px;
+}
 .shop-product-item li .shop-product-innerboxs{
     background-color: #f8f8f8;
     border: 1px solid #F1F1F1;

@@ -40,6 +40,7 @@
 
 .icon-xingxing:before {
   content: "\e602";
+  color: #85B839;
 }
 
 .icon-aixin:before {
@@ -76,6 +77,7 @@
 
 .icon-huoche-copy:before {
   content: "\e6f1";
+  color: #85B839;
 }
 
 .icon-search-copy:before {

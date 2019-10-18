@@ -14,7 +14,7 @@
       'opacity': 0.5,
       'width': maskWidth,
       'height': maskHeight,
-      'z-index': 2
+      'z-index': 7
     });
     $('body').css({ 'overflow-y': 'hidden' });
     var data = [];//保存数据的数组
