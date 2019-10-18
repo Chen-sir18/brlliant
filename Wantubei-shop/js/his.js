@@ -7,13 +7,26 @@ $(function(){
         right_btn: ".shop-right-btn"
     })
     // 左边轮播
-    // var boxWidth= $('.shop-carousel-box ul')
+    // 设置box宽 
     var jsh =$('.shop-carousel-box').width()
     $('.shop-carousel-box ul li').css('width',jsh+'px')
+    var wis =$('.hscarousel').width()
+    $('.hscarousel ul li').css('width',wis+'px')
     // 获取点击切换按钮
     $('.banshops').bnailImg({
+        boxWidth: '.shop-carousel-box',
         banleft:'.shop-shopleft',
         banright:'.shop-shopright'
+    })
+    $('.banhscarouse').bnailImg({
+        boxWidth: '.hscarousel',
+        banleft:'.hsleft',
+        banright:'.hsright'
+    })
+    $('.shop-likeBlik').bnailImg({
+        boxWidth: '.shop-likeBlik',
+        banleft:'.shop-likeBlik-headrLeft',
+        banright:'.shop-likeBlik-headrRight'
     })
     // tab切换
     $(".tab-title").click(function () {

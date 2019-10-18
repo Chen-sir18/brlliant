@@ -54,15 +54,70 @@
     color: #aaaaaa;
     cursor: pointer;
 }
-.shop-carousel-box{
+.shop-carousel-box,.hscarousel{
     position: relative;
     overflow: hidden;
-    height: 340px;
+    height: 206px;
 }
-.shop-carousel-box ul{
+.shop-carousel-box ul,.hscarousel ul,.shop-likeBlik ul{
     position: absolute;
 }
 .shop-carousel-box ul li{
     /* width: 226px; */
     height: 340px;
+}
+.shop-border-rads{
+    border: 1px solid #F1F1F1;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.shop-likeBlik-bottom li{
+    width: 281px;
+}
+/*  */
+.hscarousel ul li{
+    border: 1px solid #F1F1F1;
+    padding: 10px 15px;
+}
+.shop-comment{
+    font-size: 14px;
+    color: #555555;
+    margin-bottom: 33px;
+    position: relative;
+    padding-top: 30px;
+}
+.shop-left-buttonbox:hover .shop-wiew-buttonbox{
+    bottom: 42px;
+}
+.shop-avt{
+    vertical-align: middle;
+    width: 41px;
+    display: inline-block;
+}
+.shop-avt img{
+    width: 100%;
+}
+.shop-name{
+    vertical-align: middle;
+    font-size: 14px;
+    display: inline-block;
+}
+/* Tab切换 <!-- You may also like --> */
+.shop-likeBlik{
+    position: relative;
+    overflow: hidden;
+    height: 404px;
+}
+.shop-likeBlik-headr span{
+    display: inline-block;
+    position: absolute;
+    z-index: 7;
+    background: rgba(0.5, 0.5, 0.5, 0.5);
+    top: 50%;
+    cursor: pointer;width: 20px;
+    color: #F1F1F1;
+    text-align: center;
+}
+.shop-likeBlik-headrRight{
+    right: 0px;
 }
