@@ -28,6 +28,9 @@
 .shop-bulik-lunbo{
     height: 348px;
 }
+.shop-bulik-lunboItem1 .h-info-price{
+    margin-bottom:0px;
+}
 .shop-bulik-lunboItem1{
     background: url(../img/banner-shop1.jpg);
     background-repeat:no-repeat;
@@ -46,6 +49,12 @@
 .shop-bulik-info{
     padding-top: 47px;
     padding-left: 35px;
+}
+.shop-product-item{
+    display: none;
+}
+.shop-product-item.actvs{
+    display: block;
 }
 /* 修改各个端的样式 module */
 @media (max-width: 990px){
