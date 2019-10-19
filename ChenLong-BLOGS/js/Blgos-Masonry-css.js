@@ -61,10 +61,11 @@ function waterFall() {
         waterFall();
     };
     //初始化
-    window.onload = function(){
+    $(window).load( function(){
         //实现瀑布流
         waterFall();
-    }
+    } )
+    
     
 
 //换页按钮      点击    换页
@@ -92,31 +93,6 @@ let changeMasonry = {
 //将最外面的那个盒子选中，调用changePaper方法，将定义好的对象传入即可
 changePaper(changeMasonry)
 
-
-//换页按钮      点击    换页
-let blist = $(".cl-list > div")
-let changeBlist = {
-	changePapername:'.d-change-box',
-	changePaper:'.d-change-paper',
-	left:'.d-change-btn-left',
-	right:'.d-change-btn-right',
-	n:3,
-	ajax:function(activeindex){
-		if(activeindex == 1){
-			blist.siblings().removeClass('active')
-			blist.eq(0).addClass('active')
-		}else if(activeindex == 2){
-			blist.siblings().removeClass('active')
-			blist.eq(1).addClass('active')
-		}else if(activeindex == 3){
-			blist.siblings().removeClass('active')
-			blist.eq(2).addClass('active')
-		}
-	}
-	
-}
-//将最外面的那个盒子选中，调用changePaper方法，将定义好的对象传入即可
-changePaper(changeBlist)
 
 
 ///第二种渲染方法
@@ -170,7 +146,8 @@ $.ajax({
 				`
 				     $('.lists-mason').append(html)
 				     
-				     
+				     //实现瀑布流
+        			waterFall();   //ajax请求时重新调用布局  解决刷新时挤在一起的问题
 				     
 				}
 			

@@ -1,9 +1,7 @@
 
 /*gird部分*/
-.pad-0{
-	padding: 0;
-}
 .gird .site-main .row .slick-item{
+	margin: 0;
 	margin-bottom: 30px;
 }
 .gird-btn{
