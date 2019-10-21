@@ -2,13 +2,13 @@
 
 function waterFall() {
         // 1 确定图片的宽度 - 滚动条宽度
-        var pageWidth =  $(".blog-lists").width();
+        var pageWidth =  $(".masonry .blog-lists").width();
         console.log(pageWidth)
         var columns = 3; //3列
         var itemWidth = parseInt(pageWidth/columns); //设置item的宽度
-        $(".slick-item").width(itemWidth); //设置到item的宽度
+        $(".masonry .slick-item").width(itemWidth); //设置到item的宽度
         var arr = [];
-        $(".blog-lists .slick-item").each(function(i){
+        $(".masonry .blog-lists .slick-item").each(function(i){
 	    		var height = $(this).height();
 	        	if (i < columns) {
 	            // 2 第一行按序布局
@@ -34,7 +34,7 @@ function waterFall() {
 	                // top值就是最小列的高度
 	                $(this).css({
 	                    top:arr[index]+30,//设置30的距离
-	                    left:$(".blog-lists .slick-item").eq(index).css("left")
+	                    left:$(".masonry .blog-lists .slick-item").eq(index).css("left")
 	                });
 	
 	                // 5 修改最小列的高度
