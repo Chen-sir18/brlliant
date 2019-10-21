@@ -1,0 +1,45 @@
+.shop-select {
+    position: relative;
+    border: 1px solid #d2ccc4;
+    height: 28px;
+    border-radius: 10px;
+}
+.shop-select dt {
+    height: 28px;
+    display: inline-block;
+    border-radius: 8px;
+    line-height: 28px;
+    padding-left: 10px;
+    cursor: pointer;
+    padding-right: 12px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: relative;
+    z-index: 99;
+}
+.shop-select dd {
+    position: absolute;
+    left: 0;
+    top: 29px;
+    background: #fff;
+    display: none;
+    z-index: 9;
+}
+
+.shop-select dd ul {
+    width: 200px;
+    max-height: 250px;
+    overflow: auto;
+}
+
+.shop-select dd ul li a {
+    line-height: 28px;
+    display: block;
+    padding: 0 8px;
+    color: #888888;
+}
+
+.shop-select dd ul li a:hover {
+    background: #000;
+}
