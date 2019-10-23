@@ -1,44 +1,47 @@
 ; $(function () {
   //查看操作
-  $('.shop-view-mengcen').click(function () {
-    //获取文档的宽和高
-    var maskWidth = '100%';
-    var maskHeight = $(document).height();
-    //遮罩层初始化
-    $('<div class="shop-mask-cen"></div>').appendTo($('body'));
-    $('.shop-mask-cen').css({
-      'position': 'absolute',
-      'top': 0,
-      'left': 0,
-      'background': 'black',
-      'opacity': 0.5,
-      'width': maskWidth,
-      'height': maskHeight,
-      'z-index': 2
+function tabmeng(){
+    $('.shop-view-mengcen').click(function () {
+      //获取文档的宽和高
+      var maskWidth = '100%';
+      var maskHeight = $(document).height();
+      //遮罩层初始化
+      $('<div class="shop-mask-cen"></div>').appendTo($('body'));
+      $('.shop-mask-cen').css({
+        'position': 'absolute',
+        'top': 0,
+        'left': 0,
+        'background': 'black',
+        'opacity': 0.5,
+        'width': maskWidth,
+        'height': maskHeight,
+        'z-index': 7
+      });
+      $('body').css({ 'overflow-y': 'hidden' });
+      var data = [];//保存数据的数组
+      //将一行的数据添加到数据中
+      $(this).parent().siblings().each(function () {
+        data.push($(this).text())
+      });
+      //将内容显示到弹出层中
+      $('.shop-proDiv-box').children().each(function (i) {
+        $(this).children('span').text(data[i]);
+      });
+      $('.shop-proDiv-box').show();//显示弹出层
+      //关闭操作
+      $('.shop-close-btn').click(function () {
+        $(this).parent().hide();
+        $('.shop-mask-cen').remove();
+        $('body').css({ 'overflow-y': 'inherit' });
+      });
+      $('.shop-mask-cen').click(function () {
+        $('.shop-close-btn').parent().hide();
+        $(this).remove();
+        $('body').css({ 'overflow-y': 'inherit' });
+      });
     });
-    $('body').css({ 'overflow-y': 'hidden' });
-    var data = [];//保存数据的数组
-    //将一行的数据添加到数据中
-    $(this).parent().siblings().each(function () {
-      data.push($(this).text())
-    });
-    //将内容显示到弹出层中
-    $('.shop-proDiv-box').children().each(function (i) {
-      $(this).children('span').text(data[i]);
-    });
-    $('.shop-proDiv-box').show();//显示弹出层
-    //关闭操作
-    $('.shop-close-btn').click(function () {
-      $(this).parent().hide();
-      $('.shop-mask-cen').remove();
-      $('body').css({ 'overflow-y': 'inherit' });
-    });
-    $('.shop-mask-cen').click(function () {
-      $('.shop-close-btn').parent().hide();
-      $(this).remove();
-      $('body').css({ 'overflow-y': 'inherit' });
-    });
-  });
+  }
+  tabmeng()
   /* 商品轮播图（带缩略图的轮播效果） */
   $(".shop-banner").thumbnailImg({
     large_elem: ".large_box",
