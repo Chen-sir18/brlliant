@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Contact Us</title>
+		<link rel="stylesheet" href="css/ch-public.css" />
+		<link rel="stylesheet" type="text/css" href="css/d-public.css" />
+		<link rel="stylesheet" type="text/css" href="css/public-btn.css" />			
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<!--本页样式-->
+		<link rel="stylesheet" type="text/css" href="css/Contact-Us.css" />
+		<!--地图css-->
+		<link rel="stylesheet" type="text/css" href="css/leaflet.css"/>
+	</head>
+
+	<body>
+
+		
+
+		<!--页面body内容-->
+		<div class="continer">
+			<!--home shoppingcar 标题-->
+			<div class="continer padding-15 ch-title">
+				<div class="ch-nav">
+					<ul class="ch-trail-items ch-breadcrumb">
+						<li><span><a href="#" class="mouse">Home</a></span></li>
+						<li><img src="image/双箭头-右.png" /></li>
+						<li class="font-14-2">Contact Us</li>
+					</ul>
+				</div>
+			</div>
+			<!--shoppingcar 大标题-->
+			<div class="ch-shopp-car font-28 padding-20 mar-t-30">
+				<div>
+					<span>Checkout</span>
+				</div>
+			</div>
+			<div class="ch-Us">
+				<!--地图-->
+				<div class="ch-maps">
+					<ul>
+						<li class="ch-show-map">地图</li>
+<li>卫星图像</li>
+
+						
+					</ul>
+					<div class="ch-hide">
+						<div class="ch-hide-con ch-hide-con-left"><input type="checkbox"  name="" id="" value="" class="ch-add-name  on" />地名</div>
+						<div class=" ch-hide-con ch-hide-con-right float-rt"><input type="checkbox" name="" id="" value=""  class="ch-add-equr on"/>地形</div>
+					</div>
+						
+					
+				</div>
+				<div id="map" style="height: 400px;width:100%;z-index: 97;"></div>
+				
+				<a class="ch-location" href="http://www.google.cn/">google</a>
+				<img src="image/定位.png"  class="ch-location-img"/>
+				<div class="ch-contact-us clearfix">
+					<!--Contact内容左边-->
+					<div class="float-fl">
+						<div class="ch-send-cont">
+							<h2 class="font-20">Send us a Message!</h2>
+							<form>
+								<div class="row">
+									<div class="col-sm-6">
+										<p>
+											<span class="form-label">Your Name*</span>
+											<span class="form-control-wrap your-name">
+												<input type="" name="" id="" value="" />
+											</span>
+										</p>
+									</div>
+									<div class="col-sm-6">
+										<p>
+											<span class="form-label">Your Email*</span>
+											<span class="form-control-wrap your-name">
+												<input type="" name="" id="" value="" />
+											</span>
+										</p>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-sm-6">
+										<p>
+											<span class="form-label">Phone</span>
+											<span class="form-control-wrap your-name">
+												<input type="" name="" id="" value="" />
+											</span>
+										</p>
+									</div>
+									<div class="col-sm-6">
+										<p>
+											<span class="form-label">Company</span>
+											<span class="form-control-wrap your-name">
+												<input type="" name="" id="" value="" />
+											</span>
+										</p>
+									</div>
+								</div>
+								<p>
+									<span class="form-label">Your Message</span>
+									<span class="ch-textarea">
+										<textarea cols="40" rows="9" ></textarea>
+									</span>
+								</p>
+								<p>
+									<input type="submit" name="" id="" value="SEND MESSAGE" class="form-control-submit" />
+								</p>
+							</form>
+						</div>
+						
+					</div>
+					<!--Contact内容右边-->
+					<div class="float-rt ch-contact-right">
+						<div class="ch-contact-right-cont">
+							<form action="#">
+							<h2 class="title">Contact information</h2>
+							<div class="ch-contact-info">
+								<div class="ch-contact-add">
+								<span class="ch-icon "> <img src="image/定位.png" /> </span>
+								<span class="ch-text font-14-3 ">Restfield White City London G12 Ariel Way - United Kingdom</span>
+								
+								</div>
+							</div>
+							<div class="ch-contact-info">
+								<div class="ch-contact-add">
+								<span class="ch-icon "> <img src="image/电  话.png" /> </span>
+								<span class="ch-text font-14-3 ">Restfield White City London G12 Ariel Way - United Kingdom</span>
+								
+								</div>
+							</div>
+							<div class="ch-contact-info">
+								<div class="ch-contact-add">
+								<span class="ch-icon "> <img src="image/邮箱.png" /> </span>
+								<span class="ch-text font-14-3  ">Restfield White City London G12 Ariel Way - United Kingdom</span>
+								
+								</div>
+							</div>
+							
+							<div class="ch-contact-right-footer">
+								<a href="#"><img src="image/f (1).png"/></a>
+								<a href="#"><img src="image/小鸟 (1).png"/></a>
+								<a href="#" class="ch-icon"><span></span></a>
+							</div>
+							</form>
+						
+						</div>
+					
+					
+					</div>
+					
+				</div>
+			</div>
+			
+			
+			
+		</div>
+
+		
+
+	</body>
+
+</html>
+<script src="js/jquery-2.1.0.js"></script>
+<script src="js/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<!--地图-->
+<script src="js/leaflet.js"></script>
+<!--地图-->
+<script src="js/basemap.js"></script>
+<!--地图-->
+<script src="js/init_map.js"></script>
+
+<script>
+	$(".ch-show-map").click(function(){
+		$(".ch-add-name").show();
+		});
+		$(".ch-show-map").click(function(){
+			$(".ch-add-name").hide();
+		});
+	
+	
+</script>

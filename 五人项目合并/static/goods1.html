@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/d-public.css" />
+		<link rel="stylesheet" href="js/bootstrap-3.3.7-dist/css/bootstrap.css" />
+		<link rel="stylesheet" href="css/goods.css" />
+	</head>
+	<body>
+		<div class="commodity-operation">
+			<span v-on:click="addgoods" class="com-btn">添加</span> <span class="com-btn">删除</span> <span class="com-btn">导入</span> <span class="com-btn">导出</span>
+		</div>
+		<div class="modal addgoodsmodal">
+			<div class="modal-dialog modal-md">
+				<div class="modal-content">
+					<div class="modal-header">
+						<span data-dismiss="modal">X</span>
+					</div>
+					<div class="modal-body">
+						<form action="" method="get" class="form-horizontal">
+							<div class="form-group">
+								<label  class="col-sm-2 control-label">商品名称</label> 
+								<input name="goodsname" class="form-control goods-name" type="text" placeholder="请输入商品名称"/>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-2 control-label">商品类别</label> 
+								<select name="goodsclass" class="form-control goodsclass">
+									<option value="01">电子产品</option>
+									<option value="02">生活家居</option>
+									<option value="03">生活用品</option>
+									<option value="04">家用食品</option>
+								</select>
+								<select name="goodsclass" class="form-control goodsclass">
+									<option value="0101">数码产品</option>
+									<option value="0102">小家电</option>
+									<option value="0103">家用电器</option>
+								</select>
+								<select name="goodsclass" class="form-control goodsclass">
+									<option value="010101">手机</option>
+									<option value="010102">电脑</option>
+									<option value="010103">平板</option>
+								</select>
+								<select name="goodsclass" class="form-control goodsclass">
+									<option value="3">椅子</option>
+									<option value="1">灯</option>
+									<option value="沙发">沙发</option>
+									<option value="01010103">小米</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-2 control-label">商品价格</label>
+								<input name="goodsprice" class="form-control goodsprice" type="number"/>
+								<label class="col-sm-2 control-label label-store">商品库存</label>
+								<input name="goodsstore" class="form-control goodsstore" type="number"/>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-2 control-label">商品描述</label>
+								<textarea name="goodsdescribe" class="form-control goods-describe"></textarea>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-2 control-label">商品图片</label>
+								<input name="goodsimg" type="file" accept="image/*"/>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-2 control-label">商品货号</label>
+								<input class="goodscode form-control" name="goodscode" type="number"/>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-danger" data-dismiss="modal">取消</button>
+						<button v-on:click="addgoodsclick" class="btn btn-info" data-dismiss="modal">确认</button>
+					</div>
+				</div>
+					
+			</div>
+				
+		</div>
+		<!--商品部分-->
+		<div class="goods-info-part">
+			<div class="goods-info-title">
+				<div class="cheked title">
+					<input v-on:change="allinput" v-model="allchecked" type="checkbox" />
+				</div>
+				<div class="goods-id title">
+					商品货号
+				</div>
+				<div class="goods-name title">
+					商品名称
+				</div>
+				<div class="goods-brand title">
+					品牌&分类
+				</div>
+				<div class="goods-price title">
+					价格
+				</div>
+				<div class="goods-store title">
+					库存
+				</div>
+				<div class="goods-order title">
+					排序
+				</div>
+				<div class="goods-sale title">
+					上架
+				</div>
+				<div class="goods-operation title">
+					操作
+				</div>
+			</div>
+			<div v-if="lists.length>0" class="goods-info-content " v-for="item in lists">
+				<div class="goods-content goods-cheked">
+					<input v-on:change="input" v-model="item.checked" type="checkbox"/>
+				</div>
+				<div class="goods-content goods-id">
+					{{item.g_id}}
+				</div>
+				<div class="goods-content goods-name">
+					<div class="img-box">
+						
+						<img  v-bind:src ="'img/' + item.g_img"/>
+					</div>
+					<div class="others">
+						<p class="name">{{item.g_title}}</p>
+					</div>
+				</div>
+				<div class="goods-content goods-brand">
+					<p>品牌名称</p>
+					<p class="brand">{{item.class}}</p>
+				</div>
+				<div class="goods-content goods-price">
+					<span>￥</span><span	class="price">{{item.g_price}}</span>
+				</div>
+				<div class="goods-content goods-store">
+					<p class="store">{{item.goodsstore}}</p>
+				</div>
+				<div class="goods-content goods-order">
+					<p class="order">{{item.goodsorder}}</p>
+				</div>
+				<div class="goods-content goods-sale">
+					<span class="sale"></span>
+				</div>
+				<div class="goods-content goods-operation">
+					<p class="read">查看</p>
+					<span class="edit">编辑</span> <span v-on:click="deletegoods" class="detele">删除</span>
+				</div>
+			</div>
+			<!--每一个商品的信息-->
+			<!--<goodscontent v-bind:checked='checked' ></goodscontent>-->
+			<!--一个商品模板结束-->
+		</div>
+		
+	</body>
+</html>
+<script src="js/vue.js"></script>
+<script src="js/jquery-2.1.0.js"></script>
+<script src="js/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script type="text/javascript">
+	let vm = new Vue({
+		el: '.goods-info-part',
+		data:{
+			lists: [],
+			allchecked: false
+		},
+		methods:{
+			allinput:function(){
+				console.log(this.allchecked)
+				let lists = this.lists
+				if(this.allchecked){
+					let _this = this;
+					lists.forEach(function(item, i){
+//						直接改变对象的数据是不能渲染到页面上的,需要使用特殊的方法对数据中的对象的值进行改变
+						_this.$set(_this.lists[i], 'checked', true)
+					})
+				}
+				else{
+					this.lists.forEach(function(item){
+						item.checked = false
+					})
+				}
+			},
+			input:function(){
+				
+				var Boolean = this.lists.every(function(values){
+					return values.checked == true
+				})
+				if(Boolean){
+					this.allchecked = true
+				}
+				else{
+					this.allchecked = false
+				}
+			},
+			deletegoods:function(e){
+				if(confirm('是否删除该商品')){
+					let id = Number($(e.target).parent().siblings('.goods-id').text())
+					$.ajax({
+						type:"get",
+						url:"http://192.168.97.218:3001/deletegoods",
+						data:{
+							id:id
+						},
+						datatype:'json',
+						success:function(res){
+							if(res.success == 'ok'){
+								axios.get('http://127.0.0.1:3001/goods',{
+									params:{
+										key:'Arrivals'
+									}
+									}).then(function (response) {
+										vm.lists = response.data.data
+									})
+							}
+							else{
+								console.log(res)
+							}
+						}
+					});
+				}
+
+				
+			}
+		},
+//		这本身就是一个回调函数
+		mounted:function(){
+//			$.ajax({
+//				url:'http://127.0.0.1:3001/goods',
+//				data:{
+//					key:'Arrivals'
+//				},
+//				datatype:'json',
+//				success:function(res){
+//					console.log(res)
+//					vm.lists = res.data
+//				}
+//			})
+//使用axios代替$.ajax
+			axios.get('http://127.0.0.1:3001/goods',{
+				params:{
+					key:'Arrivals'
+				}
+			}).then(function (response) {
+   					vm.lists = response.data.data
+				})
+	},
+	})
+	
+	let operation = new Vue({
+		el:'.commodity-operation',
+		data:{
+			
+		},
+		methods:{
+			addgoods:function(){
+				$('.addgoodsmodal').modal('show')
+			}
+		},
+	})
+	let addgoods = new Vue({
+		el:'.addgoodsmodal',
+		methods:{
+			addgoodsclick:function(){
+				let api = 'http://127.0.0.1:3001/'
+				let form = document.querySelector('form')
+				let formda = new FormData(form)
+				$.ajax({
+					type:'post',
+					url: api + 'addgoods',
+					data:formda,
+					dataType:'json',
+					contentType:false,
+					processData:false,
+					success:function(res){
+						console.log(res.success)
+						if(res.success == 'ok'){
+							axios.get('http://127.0.0.1:3001/goods',{
+							params:{
+								key:'Arrivals'
+							}
+							}).then(function (response) {
+   							vm.lists = response.data.data
+							})
+						}
+					},
+				})
+			}
+		}
+	})
+	
+
+	
+	
+	
+	
+	
+	
+</script>

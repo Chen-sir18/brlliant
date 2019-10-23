@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>shopping Cart</title>
+
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/ch-public.css" />
+	<link rel="stylesheet" type="text/css" href="css/shoppingCar.css" />
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/d-public.css" />
+	<link rel="stylesheet" type="text/css" href="css/add-btn.css"/>
+	<link rel="stylesheet" type="text/css" href="js/bootstrap-3.3.7-dist/css/bootstrap.css"/>
+	<body>
+		
+		
+		
+		<div class="continer">
+			<!--home shoppingcar 标题-->
+			<div class="continer padding-15 ch-car-title">
+				<div class="ch-nav">
+					<ul class="ch-trail-items ch-breadcrumb">
+						<li><span><a href="#" class="mouse">Home</a></span></li>
+						<li><img src="image/双箭头-右.png" /></li>
+						<li class="font-14-2">ShoppingCar</li>
+					</ul>
+				</div>
+			</div>
+
+			<!--shoppingcar 大标题-->
+			<div class="ch-shopp-car font-28 padding-20">
+				<div>
+					<span>Shopping  Car</span>
+				</div>
+
+			<!--添加商品-->
+		<!--<div class="ch-add-goods">
+			<a class="btn btn-primary add" 
+			data-toggle="modal" 
+			data-target=".modal-add">新增</a>
+		</div>-->
+		<div class="modal modal-add">
+			<div class="modal-dialog">
+				
+				<div class="modal-content">
+					
+					<div class="modal-header">
+						<a class="close" data-dismiss="modal">
+							<span>x</span>
+						</a>
+						<div class="modal-title">新增</div>
+						
+					</div>
+					<div class="modal-body">
+						
+						<form class="form-horizontal form-user">
+							<div class="form-group">
+								<label class="col-xs-3 control-label text-right">商品：</label>
+								
+								<div class="col-xs-9">
+									<input class="form-control" name="file" type="file" />
+								</div>
+								
+							</div>
+							<div class="form-group">
+								<label class="col-xs-3 control-label text-right">详情：</label>
+								
+								<div class="col-xs-9">
+									<input class="form-control" name="text" type="text" />
+								</div>
+								
+							</div>
+							<div class="form-group">
+								<label class="col-xs-3 control-label text-right">数量：</label>
+								
+								<div class="col-xs-9">
+									<input class="form-control" name="number" type="number" />
+								</div>
+								
+							</div>
+							<div class="form-group">
+								<label class="col-xs-3 control-label text-right">价格：</label>
+								
+								<div class="col-xs-9">
+									<input class="form-control" name="index" type="number" />
+								</div>
+								
+							</div>
+							
+						</form>
+						
+						
+						
+					</div>
+					<div class="modal-footer">
+						<a class="btn btn-default" data-dismiss="modal">取消</a>
+						<a class="btn btn-primary add-user">新增</a>
+					</div>
+					
+				</div>
+				
+			</div>
+			
+			
+		</div>
+				<!--内容-->
+				<div class="ch-con">
+					<!--第一个商品-->
+					<div class="ch-cont">
+						<ul class="ch-list">
+							<!--商品图片-->
+							<li>
+								<div class="ch-img "><img src="image/item-minicart-2.jpg" /></div>
+							</li>
+							<!--文字介绍-->
+							<li class="ch-lists ">
+								<div class="ch-text padding-p ">
+									<div>
+										<p>
+											<a href="#" class="font-16 mouse">Lounge Chair High</a>
+										</p>
+										<p class="ch-text-two">
+											<span><a href="#" class="font-14 mouse">Black,</a></span>
+											<span><a href="#" class="font-14 mouse">XXL</a></span>
+										</p>
+									</div>
+								</div>
+							</li>
+							<!--数量按钮-->
+							<li class="btn-add padding-p">
+								<div class="add-subtract-btn">
+									<a class="subract-btn on  btn">-</a>
+									<input type="text" data-step="1" data-min="0" value="1" title="Qty" class="input-value" size="4">
+									<a class="add-btn on btn">+</a>
+								</div>
+
+							</li>
+							<!--商品价格-->
+							<li class="ch-dollars  mar-t-30 font-20 padding-p">
+								<div class="">
+									<span>€45</span>
+								</div>
+							</li>
+							<!--删除键-->
+							<li class="mar-t-30 font-20 padding-p ch-delet ">
+								<div>
+									<a href="#" class="mouse"><img src="image/删 除 (1).png" /></a>
+								</div>
+							</li>
+
+						</ul>
+					</div>
+					<!--第二个商品-->
+					<div class="ch-cont">
+						<ul class="ch-list">
+							<!--商品图片-->
+							<li>
+								<div class="ch-img "><img src="image/item-minicart-3.jpg" /></div>
+							</li>
+							<!--文字介绍-->
+							<li class="ch-lists ">
+								<div class="ch-text padding-p ">
+									<div>
+										<p>
+											<a href="#" class="font-16 mouse">Lounge Chair High</a>
+										</p>
+										<p class="ch-text-two">
+											<span><a href="#" class="font-14 mouse">Black,</a></span>
+											<span><a href="#" class="font-14 mouse">XXL</a></span>
+										</p>
+									</div>
+								</div>
+							</li>
+							<!--数量按钮-->
+							<li class="btn-add padding-p">
+								<div class="add-subtract-btn">
+									<a class="subract-btn on  btn">-</a>
+									<input type="text" data-step="1" data-min="0" value="1" title="Qty" class="input-value" size="4">
+									<a class="add-btn on btn">+</a>
+								</div>
+
+							</li>
+							<!--商品价格-->
+							<li class="ch-dollars  mar-t-30 font-20 padding-p">
+								<div class="">
+									<span>€45</span>
+								</div>
+							</li>
+							<!--删除键-->
+							<li class="mar-t-30 font-20 padding-p ch-delet ">
+								<div>
+									<a href="#" class="mouse"><img src="image/删 除 (1).png" /></a>
+								</div>
+							</li>
+
+						</ul>
+					</div>
+					<!--第三个商品-->
+					<div class="ch-cont">
+						<ul class="ch-list">
+							<!--商品图片-->
+							<li>
+								<div class="ch-img "><img src="image/item-minicart-1.jpg" /></div>
+							</li>
+							<!--文字介绍-->
+							<li class="ch-lists ">
+								<div class="ch-text padding-p ">
+									<div>
+										<p>
+											<a href="#" class="font-16 mouse">Lounge Chair High</a>
+										</p>
+										<p class="ch-text-two">
+											<span><a href="#" class="font-14 mouse">Black,</a></span>
+											<span><a href="#" class="font-14 mouse">XXL</a></span>
+										</p>
+									</div>
+								</div>
+							</li>
+							<!--数量按钮-->
+							<li class="btn-add padding-p">
+								<div class="add-subtract-btn">
+									<a class="subract-btn on  btn">-</a>
+									<input type="text" data-step="1" data-min="0" value="1" title="Qty" class="input-value" size="4">
+									<a class="add-btn on btn">+</a>
+								</div>
+
+							</li>
+							<!--商品价格-->
+							<li class="ch-dollars  mar-t-30 font-20 padding-p">
+								<div class="">
+									<span>€45</span>
+								</div>
+							</li>
+							<!--删除键-->
+							<li class="mar-t-30 font-20 padding-p ch-delet ">
+								<div>
+									<a href="#" class="mouse"><img src="image/删 除 (1).png" /></a>
+								</div>
+							</li>
+
+						</ul>
+					</div>
+					<!--总价-->
+					<div class="ch-total-price">
+						<ul class="ch-total-price-ul">
+							<li class="float-fl">
+								<span class="ch-total-left font-16 mouse">Coupon Code:</span>
+								<input class="ch-total-right" type="text" placeholder="Promotion code here" />
+								<a href="#" class="ch-next">
+									<img src="image/下一个 (1).png" />
+
+								</a>
+							</li>
+							<li class="float-rt">
+								<div>
+									<span class="font-16">Total Price:</span>
+									<span class="font-20 fl-r ">€95</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!--底部标题-->
+					<div class="ch-footer-title">
+						<div class="float-rt mar-t-30">
+							<span class="float-fl font-12-2">CONTINUE SHOPPING</span>
+							<span class="float-rt font-12-2">CHECK OUT</span>
+						</div>
+					</div>
+				</div>
+				<!--内容-->
+				<div class="ch-con-one">
+					<!--第一个商品-->
+					<div class="ch-cont">
+						<ul class="ch-list">
+							
+							<!--删除键-->
+							<li class="mar-t-30 font-20  ch-delet ">
+								<div>
+									<a href="#" class="mouse"><img src="image/删 除 (1).png" /></a>
+								</div>
+							</li>
+							<!--商品图片-->
+							<li>
+								<div class="ch-img  "><img src="image/item-minicart-2.jpg" /></div>
+							</li>
+							<!--文字介绍-->
+							<li class="ch-lists ">
+								
+									
+										<p>
+											<a href="#" class="font-16 mouse">Lounge Chair High</a>
+										</p>
+										<p class="ch-text-two">
+											<span><a href="#" class="font-14 mouse">Black,</a></span>
+											<span><a href="#" class="font-14 mouse">XXL</a></span>
+										</p>
+									
+								
+							</li>
+							<!--数量按钮-->
+							<li class="btn-add ">
+								<div class="add-subtract-btn">
+									<a class="subract-btn on  btn">-</a>
+									<input type="text" data-step="1" data-min="0" value="1" title="Qty" class="input-value" size="4">
+									<a class="add-btn on btn">+</a>
+								</div>
+
+							</li>
+							<!--商品价格-->
+							<li class="ch-dollars   font-20 ">
+								<div class="">
+									<span>€45</span>
+								</div>
+							</li>
+							
+
+						</ul>
+					</div>
+					<!--第二个商品-->
+					<div class="ch-cont">
+						<ul class="ch-list">
+							<!--删除键-->
+							<li class="mar-t-30 font-20  ch-delet ">
+								<div>
+									<a href="#" class="mouse"><img src="image/删 除 (1).png" /></a>
+								</div>
+							</li>
+							
+							<!--商品图片-->
+							<li>
+								<div class="ch-img "><img src="image/item-minicart-3.jpg" /></div>
+							</li>
+							<!--文字介绍-->
+							<li class="ch-lists ">
+								<div class="ch-text ">
+									<div>
+										<p>
+											<a href="#" class="font-16 mouse">Lounge Chair High</a>
+										</p>
+										<p class="ch-text-two">
+											<span><a href="#" class="font-14 mouse">Black,</a></span>
+											<span><a href="#" class="font-14 mouse">XXL</a></span>
+										</p>
+									</div>
+								</div>
+							</li>
+							<!--数量按钮-->
+							<li class="btn-add ">
+								<div class="add-subtract-btn">
+									<a class="subract-btn on  btn">-</a>
+									<input type="text" data-step="1" data-min="0" value="1" title="Qty" class="input-value" size="4">
+									<a class="add-btn on btn">+</a>
+								</div>
+
+							</li>
+							<!--商品价格-->
+							<li class="ch-dollars   font-20 ">
+								<div class="">
+									<span>€45</span>
+								</div>
+							</li>
+							
+
+						</ul>
+					</div>
+					<!--第三个商品-->
+					<div class="ch-cont">
+						<ul class="ch-list">
+							<!--删除键-->
+							<li class="mar-t-30 font-20  ch-delet ">
+								<div>
+									<a href="#" class="mouse"><img src="image/删 除 (1).png" /></a>
+								</div>
+							</li>
+							
+							<!--商品图片-->
+							<li>
+								<div class="ch-img "><img src="image/item-minicart-1.jpg" /></div>
+							</li>
+							<!--文字介绍-->
+							<li class="ch-lists ">
+								<div class="ch-text  ">
+									<div>
+										<p>
+											<a href="#" class="font-16 mouse">Lounge Chair High</a>
+										</p>
+										<p class="ch-text-two">
+											<span><a href="#" class="font-14 mouse">Black,</a></span>
+											<span><a href="#" class="font-14 mouse">XXL</a></span>
+										</p>
+									</div>
+								</div>
+							</li>
+							<!--数量按钮-->
+							<li class="btn-add ">
+								<div class="add-subtract-btn">
+									<a class="subract-btn on  btn">-</a>
+									<input type="text" data-step="1" data-min="0" value="1" title="Qty" class="input-value" size="4">
+									<a class="add-btn on btn">+</a>
+								</div>
+
+							</li>
+							<!--商品价格-->
+							<li class="ch-dollars   font-20 ">
+								<div class="">
+									<span>€45</span>
+								</div>
+							</li>
+							
+
+						</ul>
+					</div>
+					<!--总价-->
+					<div class="ch-total-price">
+						<ul class="ch-total-price-ul">
+							<li class="float-fl">
+								<span class="ch-total-left font-16 mouse">Coupon Code:</span>
+								<input class="ch-total-right" type="text" placeholder="Promotion code here" />
+								<a href="#" class="ch-next">
+									<img src="image/下一个 (1).png" />
+
+								</a>
+							</li>
+							<li class="float-rt">
+								<div>
+									<span class="font-16">Total Price:</span>
+									<span class="font-20 fl-r ">€95</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!--底部标题-->
+					<div class="ch-footer-title">
+						<div class="float-rt mar-t-30">
+							<span class="float-fl font-12-2">CONTINUE SHOPPING</span>
+							<span class="float-rt font-12-2">CHECK OUT</span>
+						</div>
+					</div>
+					
+
+				</div>
+				
+			</div>
+
+		</div>
+		
+
+		
+
+	</body>
+
+</html>
+<script src="js/jquery-2.1.0.js"></script>
+<script src="js/public-js.js"></script>
+<script src="js/shoppingCart.js"></script>
+<script src="js/jquery.validate.js"></script>
+<script src="js/shopdelet.js"></script>
+<script src="js/shoppingCart.js"></script>
+<script>
+//	$(".form-user").validate({
+//		
+//		rules: {
+//			user: {
+//				required: true
+//			},
+//			text: {
+//				required: true,
+//				rangelength:[15,50]
+//			},
+//			
+//		},
+//		messages: {
+//			text: {
+//				required: '请填入商品详情'
+//			},
+//			
+//			index: {
+//				number: '请选择数量'
+//			},
+//			index: {
+//				number: '请输入价格'
+//			}
+//			
+//		}
+//		
+//	})
+//	
+//	$(".add-user").click(function(){
+//		//判断是否验证通过
+//		if(!$(".form-user").valid()) return;
+//		
+//		//通过就获取数据  往表单中添加数据
+//		var user = $("[name=file]").val()
+//		var psd = $("[name=text]").val()
+//		var index = $("[name=index]").val()
+//		
+//		var html = `<div class="ch-cont">
+//						<ul class="ch-list">
+//							<!--商品图片-->
+//							<li>
+//								<div class="ch-img "><img src="image/Koala.jpg" /></div>
+//							</li>
+//							<!--文字介绍-->
+//							<li class="ch-lists ">
+//								<div class="ch-text padding-p ">
+//									<div>
+//										<p>
+//											<a href="#" class="font-16 mouse">Lounge Chair High</a>
+//										</p>
+//										<p class="ch-text-two">
+//											<span><a href="#" class="font-14 mouse">Black,</a></span>
+//											<span><a href="#" class="font-14 mouse">XXL</a></span>
+//										</p>
+//									</div>
+//								</div>
+//							</li>
+//							<!--数量按钮-->
+//							<li class="btn-add padding-p">
+//								<div class="add-subtract-btn">
+//									<a class="subract-btn on  btn">-</a>
+//									<input type="text" data-step="1" data-min="0" value="1" title="Qty" class="input-value" size="4">
+//									<a class="add-btn on btn">+</a>
+//								</div>
+//
+//							</li>
+//							<!--商品价格-->
+//							<li class="ch-dollars  mar-t-30 font-20 padding-p">
+//								<div class="">
+//									<span>€45</span>
+//								</div>
+//							</li>
+//							<!--删除键-->
+//							<li class="mar-t-30 font-20 padding-p ch-delet ">
+//								<div>
+//									<a href="#" class="mouse"><img src="image/删 除 (1).png" /></a>
+//								</div>
+//							</li>
+//
+//						</ul>
+//					</div>`
+//		
+//		$(".ch-con").prepend(html)
+//		
+//		
+//		//隐藏模态框
+//		$(".modal-add").modal('hide')
+//		
+//	})
+//	
+//	
+//	//只要隐藏模态框  就重置表单
+//	$(".modal-add").on('hide.bs.modal', function(){
+//		
+//		$(".form-user")[0].reset()
+//	})
+
+	
+	
+
+</script>
+

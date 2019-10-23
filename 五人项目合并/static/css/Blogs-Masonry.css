@@ -1,0 +1,50 @@
+
+.masonry .blog-lists{
+	position: relative;
+	height: 1609.38px;
+}
+.masonry .slick-item{
+	width: 33.33% !important;
+    padding: 0 15px;
+    border: 0;
+    margin: 0;
+    clear: both;
+    position: absolute;
+}
+.masonry .blog-list .slick-item:nth-child(1){
+	height: 497px ;
+}
+.masonry .blog-list .slick-item:nth-child(2){
+	height: 402px ;
+}
+.masonry .blog-list .slick-item:nth-child(3){
+	height: 472px ;
+}
+.masonry .blog-list .slick-item:nth-child(4){
+	height: 573px ;
+}
+.masonry .blog-list .slick-item:nth-child(5){
+	height: 522px ;
+}
+.masonry .blog-list .slick-item:nth-child(6){
+	height: 497px ;
+}
+.masonry .blog-list .slick-item:nth-child(7){
+	height: 573px ;
+}
+.masonry .blog-list .slick-item:nth-child(8){
+	height: 573px ;
+}
+.masonry .blog-list .slick-item:nth-child(9){
+	height: 426px ;
+}
+.masonry .slick-item .photo img{
+	width: 100%;
+}
+.masonry .slick-item .item-info{
+	padding: 0;
+    overflow: visible;
+}
+.masonry .item-info .category-blog{
+	margin: 13px 0 3px;
+}

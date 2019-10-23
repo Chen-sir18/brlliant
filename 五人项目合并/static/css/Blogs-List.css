@@ -1,0 +1,20 @@
+.list .site-main .row .slick-item {
+    width: auto; 
+}
+.cl-list > div{
+	display: none;
+}
+.cl-list .active{
+	display: block;
+}
+@media only screen and (max-width:768px) {
+	.list .site-main .row .slick-item {
+	    padding: 20px;
+	}
+	.list .site-main .photo{
+		float: none;
+	}
+	.list .site-main .photo img{
+		width: 100%;
+	}
+}

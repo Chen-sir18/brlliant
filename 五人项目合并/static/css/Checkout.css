@@ -1,0 +1,468 @@
+
+/*Checkout内容一*/
+.ch-ck-con{
+	height: 477px;
+	padding: 40px 30px;
+	border: 1px solid #E2E2E2;
+	margin-top: 25px;
+}
+/*内容一左边*/
+.ch-ck-con .ch-ck-con-left{
+	height: 336px;
+	width: 619.48px;
+	/*border: 1px solid cyan;*/
+	
+}
+
+.ch-ck-title{
+	font-size: 20px;
+    font-weight: 600;
+    color: #222222;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.ch-ck-title:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-bottom: 1px solid #85B839;
+    width: 30px;
+}
+
+.ch-title-name{
+	height: 85px;
+	width: 619.48px;
+	/*border: 1px solid red;*/
+}
+.ch-title-name .float-fl,
+.ch-title-name .float-rt{
+	width: 299.73px;
+	height: 85px;
+	/*border: 1px solid blue;*/
+}
+.ch-title-name .float-fl .ch-input,
+.ch-title-name .float-rt .ch-input{
+	height: 42px;
+	width: 100%;
+	border-radius:42px ;
+	transition: 0.4;
+	padding-left:20px ;
+}
+/*.country-box{
+	width: 33%;
+	height: 85px;
+	border: 1px solid #85B839;
+}
+
+.country-box .select_title {
+	height: 42px;
+	
+}
+.country-box .select_title input{
+	border: none;
+	cursor: pointer;
+	height: 42px;
+	border-radius: 42px;
+	width: 100%;
+	border: 1px solid #E2E2E2;
+	padding: 15px;
+}
+.country-box .select_title img{
+	position: relative;
+    left: 80%;
+    top: -40px;
+    width: 20px;
+    height: 35px;
+
+}
+.country-box .select_lists li{
+	font-size: 15px;
+	color: #888888;
+	padding-left:20px ;
+}
+
+.country-box .select_title input:focus{
+	outline: none;
+}
+.country-box .select_lists li{
+	list-style: none;
+	
+}
+
+.select_lists{
+	display: none;
+	border-top: 1px solid #E2E2E2;
+	
+}
+.select_lists.show{
+	display: block;
+}
+.select_lists li:hover{
+background: #f2f2f2;
+}*/
+/*Country城市选择*/
+/*三级联动*/
+.ch-country{
+	width: 100%;
+	
+}
+.ch-country .form-inline .address
+.form-group{
+	width: 33%;
+	height: 71px;
+	line-height: 20px;
+}
+
+.ch-country .form-inline .address
+.form-group .form-control{
+	width: 100%;
+	height: 42px;
+	border-radius: 14px;
+}
+.ch-country .form-inline .address
+.form-group .form-control:hover{
+	border-radius: 14px 14px 0 0 ;
+	border: 1px solid #85B839;
+}
+	
+.ch-ck-city{
+	margin-left: 3px;
+}
+
+/*内容一右边*/
+.ch-ck-con .ch-ck-con-right{
+	width:395px ;
+	/*border: 1px solid red;*/
+	
+}
+.ch-ck-con-right .ch-ck-right-con li .float-fl img{
+	width: 100px;
+	height: 100px;
+	
+}
+.ch-ck-con-right .ch-ck-right-con .ch-ck-right-lione {
+	border-bottom: 1px solid #E2E2E2;
+	height: 131px;		
+}
+
+.ch-ck-con-right .ch-ck-right-con  .ch-ck-right-lione .float-rt{
+	width: 208.5px;
+	margin-right: 50px;
+	margin-top: 5px;
+}
+.ch-ck-con-right .ch-ck-right-con  .litwo {
+	border-bottom: none;
+	
+}
+
+.ch-ck-con-right .footr-text{
+	margin-top: -30px;
+}
+/*Checkout中间内容*/
+.ch-ck-center{
+	height: 603px;
+	border: 1px solid #E2E2E2;
+	margin-top: 11.25%;
+	padding: 0 30px;
+}
+.ch-ck-center .payment{
+	width: 135px;
+	height: 44px;
+	border: 1px solid #E2E2E2;
+	border-radius: 42px;
+	position: relative;
+	top: -14%;
+}
+.ch-ck-center .payment .payment-text{
+	width: 135px;
+	height: 44px;
+	line-height: 44px;
+	text-align: center;
+}
+.ch-ck-center .payment img{
+	width: 11.3px;
+	height: 13px;
+	
+}
+
+.ch-ck-center .ch-ck-con-right{
+	margin-left: 20px;
+}
+.ch-ck-center .ch-ck-con-right .ch-ck-right-con li .float-fl img{
+	width: 100px;
+	height: 100px;
+	
+}
+.ch-ck-center .ch-ck-con-right .ch-ck-right-con .ch-ck-right-lione {
+	border-bottom: 1px solid #E2E2E2;
+	height: 131px;		
+}
+
+.ch-ck-center .ch-ck-con-right .ch-ck-right-con  .ch-ck-right-lione .float-rt{
+	width: 208.5px;
+	/*margin-right: -95px;*/
+	margin-top: 5px;
+	margin-left: 38px;
+}
+.ch-ck-center .ch-ck-con-right .ch-ck-right-con  .litwo {
+	border-bottom: none;
+	
+}
+
+.ch-ck-center .ch-ck-con-right .footr-text{
+	margin-top: -30px;
+}
+
+
+
+
+
+
+.ch-ck-center .ch-ck-center-list{
+	height: 477px;
+	/*border: 1px solid #E2E2E2;*/
+	margin-top: 40px;
+	
+}
+
+.ch-ck-center .ch-ck-center-list .ch-title-name a{
+	padding: 9px 20px;
+	border: 1px solid #E2E2E2;
+	height: 44px;
+	display: inline-block;
+	line-height: 22px;
+	margin: 0 15px 20px 0;
+}
+.ch-ck-center .ch-ck-center-list .ch-title-name .ch-title-name-a{
+	border-radius: 42px;
+	background: #85B839;
+
+}
+.ch-ck-center .ch-ck-center-list .ch-title-name .ch-title-name-aone{
+	border-radius: 42px;
+	
+}
+.ch-ck-center .ch-ck-center-list .ch-title-name .ch-title-name-a:hover{
+	background: #FFFFFF;
+	color: #000000;
+	border: 1px solid #85B839;
+}
+.ch-ck-center .ch-ck-center-list .ch-title-name .ch-title-name-aone:hover{
+	background: #85B839;
+	color: #FFFFFF;
+}
+.write-text input{
+	width: 360px;
+	height: 42px;
+	padding: 7px 20px;
+	text-align: center;
+	border-radius:42px ;
+}
+/*Checkout底部标题*/
+.ch-footer-titles{
+	width: 318.74px;
+	height: 94px;
+	/*border: 1px solid red;*/
+	margin-top: 3%;
+}
+.ch-footer-titles a{
+	padding: 9px 20px;
+	margin: 0 0 50px 15px;
+	display: inline-block;
+	border-radius: 40px;
+}
+.ch-footer-titles .aone{
+	width: 175.11px;
+	height: 44px;
+	border: 1px solid #E2E2E2;
+}
+.ch-footer-titles .aone img{
+	position: relative;
+	top: -1px;
+}
+.ch-footer-titles .atwo{
+	width: 110px;
+	height: 44px;
+	border: 1px solid #85B839;
+	background: #85B839;
+	line-height: 22px;
+}
+.ch-footer-titles .aone:hover{
+	background: #85B839;
+	color: #FFFFFF;
+}
+.ch-footer-titles .atwo:hover{
+	background: #FFFFFF;
+	color: #000000;
+	
+}
+/*Checkout底部*/
+.ch-ck-footer{
+	border: 1px solid #E2E2E2;
+	height: 392px;
+	margin-top: 11.25%;
+	vertical-align: middle;
+	padding: 50px 0;
+}
+
+.ch-ck-footer .ch-ck-footer-div{
+	width: 98px;
+	height: 98px;
+	border: 3px solid black;
+	text-align: center;
+	line-height: 85px;
+	border-radius: 50%;
+	margin-left: 45%;
+}
+.ch-ck-footer .ch-ck-footer-div img{
+	width: 33px;
+	height: 40px;
+}
+.ch-ck-footer-text{
+	text-align: center;
+	margin-top: 20px;
+}
+.Return-to-Store{
+	display: inline-block;
+	width:200px;
+	height: 44px;
+	padding: 9px 20px;
+	background: #85B839;
+	border-radius: 42px;
+	color: #FFFFFF;
+	font-size: 14px;
+	text-align: center;
+	margin-left: 41%;
+	margin-top: 4.2%;
+	
+}
+.Return-to-Store:hover{
+	background: #FFFFFF;
+	color: #222222;
+	border: 1px solid #85B839;
+}
+/*1039屏*/
+@media only screen and (max-width: 1039px) {
+	.continer{
+		width: 940px;
+	}
+	.ch-ck-con .ch-ck-con-left{
+		width: 487px;
+	}
+	.ch-ck-con .ch-ck-con-right{
+		width: 340px;
+	}
+	.ch-title-name{
+		width: 487px;
+	}
+	.ch-title-name .float-fl,
+	.ch-title-name .float-rt{
+		width: 233.87px;
+	}
+	.ch-title-name .float-fl .ch-input,
+	.ch-title-name .float-rt .ch-input{
+		width: 233.87px;
+    }
+    .ch-country .form-control{
+    	width: 152px;
+    }
+    .ch-country .ch-city{
+    	margin-left: -20px;
+    }
+    
+.ch-ck-con-right .ch-ck-right-con .ch-ck-right-lione .float-rt{
+	margin-right: 0;
+	}
+}
+/*992屏*/
+@media only screen and (max-width:991px ) {
+		
+	body{
+		margin: 0 auto;
+		padding: 0;
+	}
+	.ch-ck-con {
+		height: 995px;
+		width: 100%;
+	}
+	.ch-ck-con .ch-ck-con-left{
+		width: 100%;
+	}
+	.ch-ck-con .ch-ck-con-right{
+		width: 100%;
+		margin-bottom: 25px;
+		/*padding: 30px 20px 10px ;*/
+		/*float: none;*/
+		margin-top: 95px;
+	}
+	.ch-title-name{
+		width: 100%;
+		/*border: 1px solid red;*/
+	}
+	.ch-title-name .float-fl,
+	.ch-title-name .float-rt{
+		width: 50%;
+	}
+	.ch-title-name .float-fl .ch-input,
+	.ch-title-name .float-rt .ch-input{
+		width: 95%;
+    }
+    .ch-country .form-control{
+    	width: 152px;
+    }
+    .ch-country .ch-city{
+    	margin-left: -20px;
+    }
+    
+.ch-ck-con-right .ch-ck-right-con .ch-ck-right-lione .float-rt{
+	margin-right: 43%;
+	}
+	.ch-ck-center .payment{
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	.ch-ck-center{
+		margin-top: 100px;
+		width: 100%;
+		height: 95;
+	}
+	
+	
+	.ch-ck-center .ch-ck-con-right{
+		width: 100%;
+		height: 385px;
+	}
+	/*.ch-footer-titles{
+		margin-right: 190px;
+	}
+	*/
+	.ch-ck-footer{
+		width: 100%;
+		height: 100%;
+	}
+}
+@media only screen and (max-width:767px ) {
+	.ch-country .form-inline .address .form-group{
+		width: 45%;
+	}
+	.ch-country .form-inline .address .ch-city{
+		margin-top: 20px;
+	}
+	.ch-ck-center{
+		height: 1058px;
+		/*border: 1px solid red;*/
+	}
+	 .ch-footer-titles{
+	 	margin-top: 30px;
+	 }
+	
+	.ch-ck-footer {
+		height: 450px;
+		/*border: 1px solid blue;*/
+		margin-top: 91px;
+	}
+	
+}

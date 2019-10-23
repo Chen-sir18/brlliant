@@ -1,0 +1,1452 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name='viewport' content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>home3 项目整合</title>
+	</head>
+	<link href="js/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/animatecss.css" />
+	<link href="css/reset.css" rel="stylesheet" />
+	<link href="css/d-public.css" rel="stylesheet" />
+	<link href="css/h-hujing.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/public-btn.css">
+    <link rel="stylesheet" href="css/shop-icon/font_1329850_y11qvky114/iconfont.css">
+    <link rel="stylesheet" href="css/shoppublic.css">
+    <link rel="stylesheet" href="css/mengcen.css">
+	<body>
+		
+		<!--home3 顶部轮播-->
+		<div class="h-pub-container">
+			
+			<div class=" h-up-box mar-b-30 carousel slide " data-ride="carousel">
+			<!--home2轮播内容-->
+				<div class="carousel-inner h-car3-centent clearfix" role="listbox">
+					
+					<div class="item active ">
+						<div class="h-car3-item1">
+							<div class="h-car3-info">
+								<h5 class="h-info-title bounceInDown animated">new arrivals</h5>
+								<h3 class="h3-info-big bounceInRight animated">
+									Living Room
+									<br>
+									Limitied Items
+								</h3>
+								<div class="h-info-price bounceInLeft animated">
+									Price From:
+									<span class="h-info-span">€75.00</span>
+								</div>
+								<a class="h-info-botton bounceInUp animated">browse</a>
+								<a class="h-info-botton bounceInUp animated">show now</a>
+							</div>
+						</div>
+					</div>
+					<div class="item ">
+							<div class="h-car3-item2">
+								<div class="h-car3-info">
+								<h5 class="h-info-title bounceInDown animated">table supplies sale!</h5>
+								<h3 class="h3-info-big bounceInRight animated">
+									Up To 75% On All
+									<br>
+									Store Items
+								</h3>
+								<!--<div class="h-info-price bounceInLeft animated">
+									WEHN USE CODE:
+									<span class="h-info-span">VERSEEA</span>
+								</div>-->
+								<!--<a class="h-info-botton bounceInUp animated">browse</a>-->
+								<a class="h-info-botton bounceInUp animated">shop now</a>
+							</div>
+							</div>
+					</div>
+					<div class="item ">
+						<div class="h-car3-item3">
+							<div class="h-car3-info">
+								<h5 class="h-info-title bounceInDown animated">new arrivals</h5>
+								<h3 class="h-info-big bounceInRight animated">
+									Living Room
+									<br>
+									Limitied Items
+								</h3>
+								<div class="h-info-price bounceInLeft animated">
+									Price From:
+									<span class="h-info-span">€75.00</span>
+								</div>
+								<a class="h-info-botton bounceInUp animated">browse</a>
+								<a class="h-info-botton bounceInUp animated">Let's create</a>
+							</div>
+						</div>
+					</div>
+				
+					<!--轮播按钮-->
+					<a class="carousel-control h-conctrol-pub left" href=".h-up-box" data-slide="prev">
+						<span><</span>
+					</a>
+					<a class="carousel-control h-conctrol-pub right" href=".h-up-box" data-slide="next">
+						<span>></span>
+					</a>
+				
+				</div>
+			
+				<!--轮播底部内容 三个小块-->
+				<div class="h-best-box mar-t-30">
+				<div class="h-best-outer">
+					<div class="h-best-inner">
+						<div class="h-best-content h-best-bg1">
+							<h3 class="h-best-seller">Best Seller</h3>
+							<div class="h-best-check">
+								Check out our new furniture collection!
+							</div>    
+							<a class="btn-shop-now">shop now</a>
+						</div>
+					</div>
+					<div class="h-best-inner">
+						<div class="h-best-contents h-best-bg2">
+							<h4 class="h-extra-first">START WEEKEND OFF!</h4>
+							<h3 class="h-extra-number">
+								Big Sale
+								<br>
+								75% off
+							</h3>
+							<div class="h-extra-code">
+								USE PROMO CODE:
+								<span class=""> VEREESA</span>
+							</div>
+							
+						</div>
+					</div>
+					<div class="h-best-inner">
+						<div class="h-best-content h-best-bg3">
+							<h3 class="h-best-seller">Lookbook</h3>
+							<div class="h-best-check">
+								Bedroom Collections 
+								<br>
+								Summer Lookbook
+							</div>    
+							<a class="btn-shop-now">view all</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	
+		<!--home bestseller new arrays-->
+		<div class="h-big-box">
+			<ul class="h-new-title">
+				<li class="h-new-text" data-on="h-bestseller">
+					<a class="h-new-font action">Bestseller</a>
+					<div class="h-new-hover active"></div>
+				</li>
+				<li class="h-new-text" data-on="h-arrays">
+					<a class="h-new-font">New arrivals</a>
+					<div class="h-new-hover"></div>
+				</li>
+				<li class="h-new-text" data-on="h-toprated">
+					<a class="h-new-font">Top Rated</a>
+					<div class="h-new-hover"></div>
+					
+				</li>
+			</ul>
+			
+			<div class="h-new-outerbox h-bestseller show">
+				<div class="h-newarray-outer h-bestseller-outer">
+					<div class="h-new-box">
+						<div class="h-new-inner">
+							<div class="h-new-imgbox mar-b-15">
+								<img class="h-new-img" src="img/product-item-black-3.jpg" />
+								<a class="h-new">new</a>
+								<a class="glyphicon glyphicon-heart-empty"></a>
+								<a class="glyphicon glyphicon-heart hover"></a>
+								<a class="glyphicon glyphicon-search h-search"></a>
+							</div>
+						
+							<div class="h-new-info">
+								<h5 class="f-16 h-plastic">Plastic Dining Chair</h5>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star-empty"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star-empty"></span>
+								<span>(3)</span>
+								<div>
+									<span class="h-new-abandon">€375</span>
+									<span class="h-new-now">€175</span>
+								</div>
+							</div>
+							
+							<div class="h-add-cart">add to cart</div>
+							
+						</div>
+					</div>
+				
+					<div class="h-new-box">
+						<div class="h-new-inner">
+							<div class="h-new-imgbox mar-b-15">
+								<img class="h-new-img" src="img/product-item-black-3.jpg" />
+								<a class="h-new">new</a>
+								<a class="glyphicon glyphicon-heart-empty"></a>
+								<a class="glyphicon glyphicon-heart hover"></a>
+								<a class="glyphicon glyphicon-search h-search"></a>
+							</div>
+						
+							<div class="h-new-info">
+								<h5 class="f-16 h-plastic">Plastic Dining Chair</h5>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star-empty"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star-empty"></span>
+								<span>(3)</span>
+								<div>
+									<span class="h-new-abandon">€375</span>
+									<span class="h-new-now">€175</span>
+								</div>
+							</div>
+							
+							<div class="h-add-cart">add to cart</div>
+							
+						</div>
+					</div>
+					
+					<div class="h-new-box">
+						<div class="h-new-inner">
+							<div class="h-new-imgbox mar-b-15">
+								<img class="h-new-img" src="img/product-item-black-3.jpg" />
+								<a class="h-new">new</a>
+								<a class="glyphicon glyphicon-heart-empty"></a>
+								<a class="glyphicon glyphicon-heart hover"></a>
+								<a class="glyphicon glyphicon-search h-search"></a>
+							</div>
+						
+							<div class="h-new-info">
+								<h5 class="f-16 h-plastic">Plastic Dining Chair</h5>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star-empty"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star-empty"></span>
+								<span>(3)</span>
+								<div>
+									<span class="h-new-abandon">€375</span>
+									<span class="h-new-now">€175</span>
+								</div>
+							</div>
+							
+							<div class="h-add-cart">add to cart</div>
+							
+						</div>
+					</div>
+					
+					<div class="h-new-box">
+						<div class="h-new-inner">
+							<div class="h-new-imgbox mar-b-15">
+								<img class="h-new-img" src="img/product-item-black-3.jpg" />
+								<a class="h-new">new</a>
+								<a class="glyphicon glyphicon-heart-empty"></a>
+								<a class="glyphicon glyphicon-heart hover"></a>
+								<a class="glyphicon glyphicon-search h-search"></a>
+							</div>
+						
+							<div class="h-new-info">
+								<h5 class="f-16 h-plastic">Plastic Dining Chair</h5>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star-empty"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star-empty"></span>
+								<span>(3)</span>
+								<div>
+									<span class="h-new-abandon">€375</span>
+									<span class="h-new-now">€175</span>
+								</div>
+							</div>
+							
+							<div class="h-add-cart">add to cart</div>
+							
+						</div>
+					</div>
+					
+					<div class="h-new-box">
+						<div class="h-new-inner">
+							<div class="h-new-imgbox mar-b-15">
+								<img class="h-new-img" src="img/product-item-black-3.jpg" />
+								<a class="h-new">new</a>
+								<a class="glyphicon glyphicon-heart-empty"></a>
+								<a class="glyphicon glyphicon-heart hover"></a>
+								<a class="glyphicon glyphicon-search h-search"></a>
+							</div>
+						
+							<div class="h-new-info">
+								<h5 class="f-16 h-plastic">Plastic Dining Chair</h5>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star-empty"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star-empty"></span>
+								<span>(3)</span>
+								<div>
+									<span class="h-new-abandon">€375</span>
+									<span class="h-new-now">€175</span>
+								</div>
+							</div>
+							
+							<div class="h-add-cart">add to cart</div>
+							
+						</div>
+					</div>
+					
+					<div class="h-new-box">
+						<div class="h-new-inner">
+							<div class="h-new-imgbox mar-b-15">
+								<img class="h-new-img" src="img/product-item-black-3.jpg" />
+								<a class="h-new">new</a>
+								<a class="glyphicon glyphicon-heart-empty"></a>
+								<a class="glyphicon glyphicon-heart hover"></a>
+								<a class="glyphicon glyphicon-search h-search"></a>
+							</div>
+						
+							<div class="h-new-info">
+								<h5 class="f-16 h-plastic">Plastic Dining Chair</h5>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star-empty"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star-empty"></span>
+								<span>(3)</span>
+								<div>
+									<span class="h-new-abandon">€375</span>
+									<span class="h-new-now">€175</span>
+								</div>
+							</div>
+							
+							<div class="h-add-cart">add to cart</div>
+							
+						</div>
+					</div>
+					
+					<div class="h-new-box">
+						<div class="h-new-inner">
+							<div class="h-new-imgbox mar-b-15">
+								<img class="h-new-img" src="img/product-item-black-3.jpg" />
+								<a class="h-new">new</a>
+								<a class="glyphicon glyphicon-heart-empty"></a>
+								<a class="glyphicon glyphicon-heart hover"></a>
+								<a class="glyphicon glyphicon-search h-search"></a>
+							</div>
+						
+							<div class="h-new-info">
+								<h5 class="f-16 h-plastic">Plastic Dining Chair</h5>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star-empty"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star-empty"></span>
+								<span>(3)</span>
+								<div>
+									<span class="h-new-abandon">€375</span>
+									<span class="h-new-now">€175</span>
+								</div>
+							</div>
+							
+							<div class="h-add-cart">add to cart</div>
+							
+						</div>
+					</div>
+					
+					<div class="h-new-box">
+						<div class="h-new-inner">
+							<div class="h-new-imgbox mar-b-15">
+								<img class="h-new-img" src="img/product-item-black-3.jpg" />
+								<a class="h-new">new</a>
+								<a class="glyphicon glyphicon-heart-empty"></a>
+								<a class="glyphicon glyphicon-heart hover"></a>
+								<a class="glyphicon glyphicon-search h-search"></a>
+							</div>
+						
+							<div class="h-new-info">
+								<h5 class="f-16 h-plastic">Plastic Dining Chair</h5>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star-empty"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star-empty"></span>
+								<span>(3)</span>
+								<div>
+									<span class="h-new-abandon">€375</span>
+									<span class="h-new-now">€175</span>
+								</div>
+							</div>
+							
+							<div class="h-add-cart">add to cart</div>
+							
+						</div>
+					</div>
+				
+				</div>
+			</div>
+		
+			<div class="h-new-outerbox h-arrays">
+				<div class="h-newarray-outer h-arrays-outer">
+					<div class="h-new-box">
+						<div class="h-new-inner">
+							<div class="h-new-imgbox mar-b-15">
+								<img class="h-new-img" src="img/product-item-black-4.jpg" />
+								<a class="h-new">new</a>
+								<a class="glyphicon glyphicon-heart-empty"></a>
+								<a class="glyphicon glyphicon-heart hover"></a>
+								<a class="glyphicon glyphicon-search h-search"></a>
+							</div>
+						
+							<div class="h-new-info">
+								<h5 class="f-16 h-plastic">Plastic Dining Chair</h5>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star-empty"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star-empty"></span>
+								<span>(3)</span>
+								<div>
+									<span class="h-new-abandon">€375</span>
+									<span class="h-new-now">€175</span>
+								</div>
+							</div>
+							
+							<div class="h-add-cart">add to cart</div>
+							
+						</div>
+					</div>
+				
+					<div class="h-new-box">
+						<div class="h-new-inner">
+							<div class="h-new-imgbox mar-b-15">
+								<img class="h-new-img" src="img/product-item-black-4.jpg" />
+								<a class="h-new">new</a>
+								<a class="glyphicon glyphicon-heart-empty"></a>
+								<a class="glyphicon glyphicon-heart hover"></a>
+								<a class="glyphicon glyphicon-search h-search"></a>
+							</div>
+						
+							<div class="h-new-info">
+								<h5 class="f-16 h-plastic">Plastic Dining Chair</h5>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star-empty"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star-empty"></span>
+								<span>(3)</span>
+								<div>
+									<span class="h-new-abandon">€375</span>
+									<span class="h-new-now">€175</span>
+								</div>
+							</div>
+							
+							<div class="h-add-cart">add to cart</div>
+							
+						</div>
+					</div>
+					
+					<div class="h-new-box">
+						<div class="h-new-inner">
+							<div class="h-new-imgbox mar-b-15">
+								<img class="h-new-img" src="img/product-item-black-4.jpg" />
+								<a class="h-new">new</a>
+								<a class="glyphicon glyphicon-heart-empty"></a>
+								<a class="glyphicon glyphicon-heart hover"></a>
+								<a class="glyphicon glyphicon-search h-search"></a>
+							</div>
+						
+							<div class="h-new-info">
+								<h5 class="f-16 h-plastic">Plastic Dining Chair</h5>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star-empty"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star-empty"></span>
+								<span>(3)</span>
+								<div>
+									<span class="h-new-abandon">€375</span>
+									<span class="h-new-now">€175</span>
+								</div>
+							</div>
+							
+							<div class="h-add-cart">add to cart</div>
+							
+						</div>
+					</div>
+					
+					<div class="h-new-box">
+						<div class="h-new-inner">
+							<div class="h-new-imgbox mar-b-15">
+								<img class="h-new-img" src="img/product-item-black-4.jpg" />
+								<a class="h-new">new</a>
+								<a class="glyphicon glyphicon-heart-empty"></a>
+								<a class="glyphicon glyphicon-heart hover"></a>
+								<a class="glyphicon glyphicon-search h-search"></a>
+							</div>
+						
+							<div class="h-new-info">
+								<h5 class="f-16 h-plastic">Plastic Dining Chair</h5>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star-empty"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star-empty"></span>
+								<span>(3)</span>
+								<div>
+									<span class="h-new-abandon">€375</span>
+									<span class="h-new-now">€175</span>
+								</div>
+							</div>
+							
+							<div class="h-add-cart">add to cart</div>
+							
+						</div>
+					</div>
+					
+					<div class="h-new-box">
+						<div class="h-new-inner">
+							<div class="h-new-imgbox mar-b-15">
+								<img class="h-new-img" src="img/product-item-black-4.jpg" />
+								<a class="h-new">new</a>
+								<a class="glyphicon glyphicon-heart-empty"></a>
+								<a class="glyphicon glyphicon-heart hover"></a>
+								<a class="glyphicon glyphicon-search h-search"></a>
+							</div>
+						
+							<div class="h-new-info">
+								<h5 class="f-16 h-plastic">Plastic Dining Chair</h5>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star-empty"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star-empty"></span>
+								<span>(3)</span>
+								<div>
+									<span class="h-new-abandon">€375</span>
+									<span class="h-new-now">€175</span>
+								</div>
+							</div>
+							
+							<div class="h-add-cart">add to cart</div>
+							
+						</div>
+					</div>
+					
+					<div class="h-new-box">
+						<div class="h-new-inner">
+							<div class="h-new-imgbox mar-b-15">
+								<img class="h-new-img" src="img/product-item-black-4.jpg" />
+								<a class="h-new">new</a>
+								<a class="glyphicon glyphicon-heart-empty"></a>
+								<a class="glyphicon glyphicon-heart hover"></a>
+								<a class="glyphicon glyphicon-search h-search"></a>
+							</div>
+						
+							<div class="h-new-info">
+								<h5 class="f-16 h-plastic">Plastic Dining Chair</h5>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star-empty"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star-empty"></span>
+								<span>(3)</span>
+								<div>
+									<span class="h-new-abandon">€375</span>
+									<span class="h-new-now">€175</span>
+								</div>
+							</div>
+							
+							<div class="h-add-cart">add to cart</div>
+							
+						</div>
+					</div>
+					
+					<div class="h-new-box">
+						<div class="h-new-inner">
+							<div class="h-new-imgbox mar-b-15">
+								<img class="h-new-img" src="img/product-item-black-4.jpg" />
+								<a class="h-new">new</a>
+								<a class="glyphicon glyphicon-heart-empty"></a>
+								<a class="glyphicon glyphicon-heart hover"></a>
+								<a class="glyphicon glyphicon-search h-search"></a>
+							</div>
+						
+							<div class="h-new-info">
+								<h5 class="f-16 h-plastic">Plastic Dining Chair</h5>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star-empty"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star-empty"></span>
+								<span>(3)</span>
+								<div>
+									<span class="h-new-abandon">€375</span>
+									<span class="h-new-now">€175</span>
+								</div>
+							</div>
+							
+							<div class="h-add-cart">add to cart</div>
+							
+						</div>
+					</div>
+					
+					<div class="h-new-box">
+						<div class="h-new-inner">
+							<div class="h-new-imgbox mar-b-15">
+								<img class="h-new-img" src="img/product-item-black-4.jpg" />
+								<a class="h-new">new</a>
+								<a class="glyphicon glyphicon-heart-empty"></a>
+								<a class="glyphicon glyphicon-heart hover"></a>
+								<a class="glyphicon glyphicon-search h-search"></a>
+							</div>
+						
+							<div class="h-new-info">
+								<h5 class="f-16 h-plastic">Plastic Dining Chair</h5>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star-empty"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star-empty"></span>
+								<span>(3)</span>
+								<div>
+									<span class="h-new-abandon">€375</span>
+									<span class="h-new-now">€175</span>
+								</div>
+							</div>
+							
+							<div class="h-add-cart">add to cart</div>
+							
+						</div>
+					</div>
+				
+				</div>
+			</div>
+			
+			<div class="h-new-outerbox h-toprated">
+				<div class="h-newarray-outer h-rated-outer">
+					<div class="h-new-box">
+						<div class="h-new-inner">
+							<div class="h-new-imgbox mar-b-15">
+								<img class="h-new-img" src="img/product-item-black-6.jpg" />
+								<a class="h-new">new</a>
+								<a class="glyphicon glyphicon-heart-empty"></a>
+								<a class="glyphicon glyphicon-heart hover"></a>
+								<a class="glyphicon glyphicon-search h-search"></a>
+							</div>
+						
+							<div class="h-new-info">
+								<h5 class="f-16 h-plastic">Plastic Dining Chair</h5>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star-empty"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star-empty"></span>
+								<span>(3)</span>
+								<div>
+									<span class="h-new-abandon">€375</span>
+									<span class="h-new-now">€175</span>
+								</div>
+							</div>
+							
+							<div class="h-add-cart">add to cart</div>
+							
+						</div>
+					</div>
+				
+					<div class="h-new-box">
+						<div class="h-new-inner">
+							<div class="h-new-imgbox mar-b-15">
+								<img class="h-new-img" src="img/product-item-black-6.jpg" />
+								<a class="h-new">new</a>
+								<a class="glyphicon glyphicon-heart-empty"></a>
+								<a class="glyphicon glyphicon-heart hover"></a>
+								<a class="glyphicon glyphicon-search h-search"></a>
+							</div>
+						
+							<div class="h-new-info">
+								<h5 class="f-16 h-plastic">Plastic Dining Chair</h5>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star-empty"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star-empty"></span>
+								<span>(3)</span>
+								<div>
+									<span class="h-new-abandon">€375</span>
+									<span class="h-new-now">€175</span>
+								</div>
+							</div>
+							
+							<div class="h-add-cart">add to cart</div>
+							
+						</div>
+					</div>
+					
+					<div class="h-new-box">
+						<div class="h-new-inner">
+							<div class="h-new-imgbox mar-b-15">
+								<img class="h-new-img" src="img/product-item-black-6.jpg" />
+								<a class="h-new">new</a>
+								<a class="glyphicon glyphicon-heart-empty"></a>
+								<a class="glyphicon glyphicon-heart hover"></a>
+								<a class="glyphicon glyphicon-search h-search"></a>
+							</div>
+						
+							<div class="h-new-info">
+								<h5 class="f-16 h-plastic">Plastic Dining Chair</h5>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star-empty"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star-empty"></span>
+								<span>(3)</span>
+								<div>
+									<span class="h-new-abandon">€375</span>
+									<span class="h-new-now">€175</span>
+								</div>
+							</div>
+							
+							<div class="h-add-cart">add to cart</div>
+							
+						</div>
+					</div>
+					
+					<div class="h-new-box">
+						<div class="h-new-inner">
+							<div class="h-new-imgbox mar-b-15">
+								<img class="h-new-img" src="img/product-item-black-6.jpg" />
+								<a class="h-new">new</a>
+								<a class="glyphicon glyphicon-heart-empty"></a>
+								<a class="glyphicon glyphicon-heart hover"></a>
+								<a class="glyphicon glyphicon-search h-search"></a>
+							</div>
+						
+							<div class="h-new-info">
+								<h5 class="f-16 h-plastic">Plastic Dining Chair</h5>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star-empty"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star-empty"></span>
+								<span>(3)</span>
+								<div>
+									<span class="h-new-abandon">€375</span>
+									<span class="h-new-now">€175</span>
+								</div>
+							</div>
+							
+							<div class="h-add-cart">add to cart</div>
+							
+						</div>
+					</div>
+					
+					<div class="h-new-box">
+						<div class="h-new-inner">
+							<div class="h-new-imgbox mar-b-15">
+								<img class="h-new-img" src="img/product-item-black-6.jpg" />
+								<a class="h-new">new</a>
+								<a class="glyphicon glyphicon-heart-empty"></a>
+								<a class="glyphicon glyphicon-heart hover"></a>
+								<a class="glyphicon glyphicon-search h-search"></a>
+							</div>
+						
+							<div class="h-new-info">
+								<h5 class="f-16 h-plastic">Plastic Dining Chair</h5>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star-empty"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star-empty"></span>
+								<span>(3)</span>
+								<div>
+									<span class="h-new-abandon">€375</span>
+									<span class="h-new-now">€175</span>
+								</div>
+							</div>
+							
+							<div class="h-add-cart">add to cart</div>
+							
+						</div>
+					</div>
+					
+					<div class="h-new-box">
+						<div class="h-new-inner">
+							<div class="h-new-imgbox mar-b-15">
+								<img class="h-new-img" src="img/product-item-black-6.jpg" />
+								<a class="h-new">new</a>
+								<a class="glyphicon glyphicon-heart-empty"></a>
+								<a class="glyphicon glyphicon-heart hover"></a>
+								<a class="glyphicon glyphicon-search h-search"></a>
+							</div>
+						
+							<div class="h-new-info">
+								<h5 class="f-16 h-plastic">Plastic Dining Chair</h5>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star-empty"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star-empty"></span>
+								<span>(3)</span>
+								<div>
+									<span class="h-new-abandon">€375</span>
+									<span class="h-new-now">€175</span>
+								</div>
+							</div>
+							
+							<div class="h-add-cart">add to cart</div>
+							
+						</div>
+					</div>
+					
+					<div class="h-new-box">
+						<div class="h-new-inner">
+							<div class="h-new-imgbox mar-b-15">
+								<img class="h-new-img" src="img/product-item-black-6.jpg" />
+								<a class="h-new">new</a>
+								<a class="glyphicon glyphicon-heart-empty"></a>
+								<a class="glyphicon glyphicon-heart hover"></a>
+								<a class="glyphicon glyphicon-search h-search"></a>
+							</div>
+						
+							<div class="h-new-info">
+								<h5 class="f-16 h-plastic">Plastic Dining Chair</h5>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star-empty"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star-empty"></span>
+								<span>(3)</span>
+								<div>
+									<span class="h-new-abandon">€375</span>
+									<span class="h-new-now">€175</span>
+								</div>
+							</div>
+							
+							<div class="h-add-cart">add to cart</div>
+							
+						</div>
+					</div>
+					
+					<div class="h-new-box">
+						<div class="h-new-inner">
+							<div class="h-new-imgbox mar-b-15">
+								<img class="h-new-img" src="img/product-item-black-6.jpg" />
+								<a class="h-new">new</a>
+								<a class="glyphicon glyphicon-heart-empty"></a>
+								<a class="glyphicon glyphicon-heart hover"></a>
+								<a class="glyphicon glyphicon-search h-search"></a>
+							</div>
+						
+							<div class="h-new-info">
+								<h5 class="f-16 h-plastic">Plastic Dining Chair</h5>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star-empty"></span>
+								<span class=".h-list-stars glyphicon glyphicon-star-empty"></span>
+								<span>(3)</span>
+								<div>
+									<span class="h-new-abandon">€375</span>
+									<span class="h-new-now">€175</span>
+								</div>
+							</div>
+							
+							<div class="h-add-cart">add to cart</div>
+							
+						</div>
+					</div>
+				
+				</div>
+			</div>
+		
+			<!-- 点击出现蒙层 -->
+            <div class="shop-proDiv-box shop-clearfix">
+                <div class="shop-clearfix shop-mengcen-box">
+                    <!-- 左边内容 -->
+                    <div class="shop-banner">
+                        <div class="large_box">
+                            <ul>
+                                <li style="display: none;">
+                                    <img src="img/b1.jpg">
+                                </li>
+                                <li>
+                                    <img src="img/b2.jpg">
+                                </li>
+                                <li style="display: none;">
+                                    <img src="img/b3.jpg">
+                                </li>
+                                <li style="display: none;">
+                                    <img src="img/b4.jpg">
+                                </li>
+                                <li style="display: none;">
+                                    <img src="img/b5.jpg">
+                                </li>
+                                <li style="display: none;">
+                                    <img src="img/b1.jpg" width="530" height="350">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="small_box shop-clearfix">
+                            <div class="shop-btn left_btn"><</div> 
+								<div class="small_list">
+                                    <ul class="shop-clearfix">
+                                        <li class="">
+                                            <img src="img/b1.jpg">
+                                        </li>
+                                        <li class="on">
+                                            <img src="img/b2.jpg" 110/>
+                                        </li>
+                                        <li>
+                                            <img src="img/b3.jpg">
+                                        </li>
+                                        <li>
+                                            <img src="img/b4.jpg">
+                                        </li>
+                                        <li>
+                                            <img src="img/b5.jpg">
+                                        </li>
+                                        <li>
+                                            <img src="img/b1.jpg">
+                                        </li>
+                                    </ul>
+								</div>
+                            <div class="shop-btn right_btn">></div>
+                        </div>
+                    </div>
+                    <!-- 右边内容 -->
+                    <div class="shop-right-mengc">
+                        <div class="shop-product-info shop-product-infoclifs">
+                            <h3 class="pad-b-10"><a href="#">Plastic Dining Chair</a></h3>
+                            <div class="pad-b-5">
+                                <span class="iconfont iconfontxing icon-xingxing"></span>
+                                <span class="iconfont iconfontxing icon-xingxing"></span>
+                                <span class="iconfont iconfontxing icon-xingxing"></span>
+                                <span class="iconfont iconfontxing icon-xingxing"></span>
+                                <span class="iconfont iconfontxing icon-xingxing"></span>
+                                <span class="iconfontxing">(3)</span>
+                            </div>
+                            <div class="pad-b-10">
+                                availability:
+                                <a href="javascript:;">
+                                    in Stock
+                                </a>
+                            </div>
+                            <div class="shop-details-description pad-b-15">
+                                <ul class="pad-l-18">
+                                    <li>Vestibulum tortor quam</li>
+                                    <li>Imported</li>
+                                    <li>Art.No. 06-7680</li>
+                                </ul>
+                            </div>
+                            <div class="pad-b-20">
+                                <h2>
+                                    €45
+                                    </h>
+                            </div>
+                            <div>
+                                Color:
+                                <span>White/</span>
+                                <span>Black/</span>
+                                <span>Teal/</span>
+                                <span>Brow/</span>
+                            </div>
+                            <div class="shop-gou-box pad-tb-20">
+                                <a class="shop-input" href="javascript:;">
+                                    <input type="checkbox" style="background-color: none;" name="check1" id="checkbox">
+                                </a>
+                                <a class="shop-bag-bulk shop-input" href="javascript:;">
+                                    <input type="checkbox" style="background-color: none;" name="check2" id="checkbox">
+                                </a>
+                                <a class="shop-bag-hui shop-input" href="javascript:;">
+                                    <input type="checkbox" style="background-color: none;" name="check3" id="checkbox">
+                                </a>
+                                <a class="shop-bag-qhui shop-input" href="javascript:;">
+                                    <input type="checkbox" style="background-color: none;" name="check4" id="checkbox">
+                                </a>
+                            </div>
+                            <div>
+                                <div>Size:</div>
+                                <div class="pad-tb-15 shoptab">
+                                    <a class="shop-btn-box shop-btn-baghove" href="javascript:;">
+                                        XS
+                                    </a>
+                                    <a class="shop-btn-box shop-btn-baghove" href="javascript:;">
+                                        S
+                                    </a>
+                                    <a class="shop-btn-box shop-btn-baghove" href="javascript:;">
+                                        M
+                                    </a>
+                                    <a class="shop-btn-box shop-btn-bag shop-btn-baghove" href="javascript:;">
+                                        L
+                                    </a>
+                                    <a class="shop-btn-box shop-btn-baghove" href="javascript:;">
+                                        XL
+                                    </a>
+                                    <a class="shop-btn-box shop-btn-baghove" href="javascript:;">
+                                        XXL
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="shop-clearfix mar-b-24">
+                                <div class="fl-l">
+                                    <a href="javascript:;">
+                                        <span class="iconfont icon-aixin1"></span>
+                                        <span>Add to Wishlist</span>
+                                    </a>
+                                </div>
+                                <div class="fl-l mar-l-10">
+                                    <a href="javascript:;">
+                                        <span class="iconfont icon-aixin1"></span>
+                                        <span>Add to Wishlist</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="shop-clearfix">
+                                <div class="add-subtract-btn add-subtract-btn-width fl-l mar-r-6">
+                                    <a class="subract-btn on  btn">-</a>
+                                    <input type="text" data-step="1" data-min="0" value="1" title="Qty"
+                                        class="input-value" size="4">
+                                    <a class="add-btn on btn">+</a>
+                                </div>
+                                <div class="shop-btn-box shop-btnwidth shop-btn-bag shop-btn-baghove fl-l">
+                                    Add to cart
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 关闭按钮 -->
+                <a class="shop-close-btn" href="#">X</a>
+            </div>
+		
+		</div>
+
+		<!--home3 save bedroom-->
+		<div class="h-bed-box">
+			<div class="h-bed-outer">
+				<div class="h-bed-inner">
+					<div class="h-bed-content">
+						<h4 class="h-extra-first">celebrate day sale!</h4>
+						<div class="h-extra-number">
+							Save 25% Of On All
+							<br>
+							Bedroom Collection
+						</div>
+						<a class=" h-btn-view mar-t-20">view promotion</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--home3 Featured Products-->
+		<div class="h-featured-box">
+			<!--标题-->
+			<div class="h-featured-title">
+				<h3 class="h-last-title">Featured Products</h3>
+			</div>
+			<!--内容-->
+			<div class="h-last-commondity">
+				<div class="h-last-lists">
+					<div class="h-last-list">
+						<div class="h-list-imgbox">
+							<img src="img/product-item-black-10.jpg" alt="img" />
+							<div class="h-last-cirle">
+								<span class="glyphicon glyphicon-search"></span>
+							</div>
+						</div>
+						<div class="h-list-content">
+							<h5 class="h-list-title">
+								<span>Baniversary Chair</span>
+							</h5>
+							<div class="h-group-ingo">
+								<div class="h-group-icon">
+									<span class=".h-list-star glyphicon glyphicon-star"></span>
+									<span class=".h-list-star glyphicon glyphicon-star"></span>
+									<span class=".h-list-star glyphicon glyphicon-star"></span>
+									<span class=".h-list-star glyphicon glyphicon-star-empty"></span>
+									<span class=".h-list-star glyphicon glyphicon-star-empty"></span>
+									<span>(3)</span>
+								</div>
+							</div>
+							<div class="h-list-price">€375</div>
+							<a class="btn-shop-list">shop now</a>
+						</div>
+					</div>
+				</div>
+				<div class="h-last-lists">
+					<div class="h-last-list">
+						<div class="h-list-imgbox">
+							<img src="img/product-item-black-2.jpg" alt="img" />
+							<div class="h-last-cirle">
+								<span class="glyphicon glyphicon-search"></span>
+							</div>
+						</div>
+						<div class="h-list-content">
+							<h5 class="h-list-title">
+								<span>Baniversary Chair</span>
+							</h5>
+							<div class="h-group-ingo">
+								<div class="h-group-icon">
+									<span class=".h-list-star glyphicon glyphicon-star"></span>
+									<span class=".h-list-star glyphicon glyphicon-star"></span>
+									<span class=".h-list-star glyphicon glyphicon-star"></span>
+									<span class=".h-list-star glyphicon glyphicon-star-empty"></span>
+									<span class=".h-list-star glyphicon glyphicon-star-empty"></span>
+									<span>(3)</span>
+								</div>
+							</div>
+							<div class="h-list-price">€375</div>
+							<a class="btn-shop-list">shop now</a>
+						</div>
+					</div>
+				</div>
+				<div class="h-last-lists">
+					<div class="h-last-list">
+						<div class="h-list-imgbox">
+							<img src="img/product-item-black-3.jpg" alt="img" />
+							<div class="h-last-cirle">
+								<span class="glyphicon glyphicon-search"></span>
+							</div>
+						</div>
+						<div class="h-list-content">
+							<h5 class="h-list-title">
+								<span>Baniversary Chair</span>
+							</h5>
+							<div class="h-group-ingo">
+								<div class="h-group-icon">
+									<span class=".h-list-star glyphicon glyphicon-star"></span>
+									<span class=".h-list-star glyphicon glyphicon-star"></span>
+									<span class=".h-list-star glyphicon glyphicon-star"></span>
+									<span class=".h-list-star glyphicon glyphicon-star-empty"></span>
+									<span class=".h-list-star glyphicon glyphicon-star-empty"></span>
+									<span>(3)</span>
+								</div>
+							</div>
+							<div class="h-list-price">€375</div>
+							<a class="btn-shop-list">shop now</a>
+						</div>
+					</div>
+				</div>
+				<div class="h-last-lists">
+					<div class="h-last-list">
+						<div class="h-list-imgbox">
+							<img src="img/product-item-black-4.jpg" alt="img" />
+							<div class="h-last-cirle">
+								<span class="glyphicon glyphicon-search"></span>
+							</div>
+						</div>
+						<div class="h-list-content">
+							<h5 class="h-list-title">
+								<span>Baniversary Chair</span>
+							</h5>
+							<div class="h-group-ingo">
+								<div class="h-group-icon">
+									<span class=".h-list-star glyphicon glyphicon-star"></span>
+									<span class=".h-list-star glyphicon glyphicon-star"></span>
+									<span class=".h-list-star glyphicon glyphicon-star"></span>
+									<span class=".h-list-star glyphicon glyphicon-star-empty"></span>
+									<span class=".h-list-star glyphicon glyphicon-star-empty"></span>
+									<span>(3)</span>
+								</div>
+							</div>
+							<div class="h-list-price">€375</div>
+							<a class="btn-shop-list">shop now</a>
+						</div>
+					</div>
+				</div>
+				<div class="h-last-lists">
+					<div class="h-last-list">
+						<div class="h-list-imgbox">
+							<img src="img/product-item-black-5 (1).jpg" alt="img" />
+							<div class="h-last-cirle">
+								<span class="glyphicon glyphicon-search"></span>
+							</div>
+						</div>
+						<div class="h-list-content">
+							<h5 class="h-list-title">
+								<span>Baniversary Chair</span>
+							</h5>
+							<div class="h-group-ingo">
+								<div class="h-group-icon">
+									<span class=".h-list-star glyphicon glyphicon-star"></span>
+									<span class=".h-list-star glyphicon glyphicon-star"></span>
+									<span class=".h-list-star glyphicon glyphicon-star"></span>
+									<span class=".h-list-star glyphicon glyphicon-star-empty"></span>
+									<span class=".h-list-star glyphicon glyphicon-star-empty"></span>
+									<span>(3)</span>
+								</div>
+							</div>
+							<div class="h-list-price">€375</div>
+							<a class="btn-shop-list">shop now</a>
+						</div>
+					</div>
+				</div>
+				<div class="h-last-lists">
+					<div class="h-last-list">
+						<div class="h-list-imgbox">
+							<img src="img/product-item-black-6.jpg" alt="img" />
+							<div class="h-last-cirle">
+								<span class="glyphicon glyphicon-search"></span>
+							</div>
+						</div>
+						<div class="h-list-content">
+							<h5 class="h-list-title">
+								<span>Baniversary Chair</span>
+							</h5>
+							<div class="h-group-ingo">
+								<div class="h-group-icon">
+									<span class=".h-list-star glyphicon glyphicon-star"></span>
+									<span class=".h-list-star glyphicon glyphicon-star"></span>
+									<span class=".h-list-star glyphicon glyphicon-star"></span>
+									<span class=".h-list-star glyphicon glyphicon-star-empty"></span>
+									<span class=".h-list-star glyphicon glyphicon-star-empty"></span>
+									<span>(3)</span>
+								</div>
+							</div>
+							<div class="h-list-price">€375</div>
+							<a class="btn-shop-list">shop now</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--home3 Big deal of day-->
+		<div class="h-big-box">
+			<div class="h-big-outer">
+				<div class="h-big-left">
+					<div class="h-deal-content">
+						<h4 class="h-chair-info">best seller!</h4>
+						<h3 class="h-deal-bigtext">Big Deal Of Day</h3>
+						<div class="h-live-description hot">We've been waiting 4 you!</div>
+					</div>
+				</div>
+				<div class="h-big-right">
+					<div class="h-right-content">
+						<h4 class="h-chair-info">LET'S US MAKE YOUR STYLE!</h4>
+						<h3 class="h-deal-title">Convertry Collection</h3>
+						<div class="h-live-description hot">A complete shopping guide on what & how to decor!</div>
+						<a class="btn-shop-now">shop now</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--home1 our last news-->
+		<div class="h1-last-news">
+			<div class="h-last-box clearfix">
+				<h3 class="h-last-title ">Our Latest News</h3>
+				<div class="h-lastbox-outer">
+					<div class="h-last-outbox">
+						<div class="h-last-we">
+							<div class="h-last-outer">
+								<div class="h-img-bock">
+									<img class="h-img" src="img/slider-blog-thumb-1.jpg" />
+									<div class="h-img-cover"></div>
+									<a class="h-how-a">skincare</a>
+								</div>
+								<div class="h-last-content">
+									<div class="h-last-meta clearfix">
+										<a class="fl-l h-time">Agust 17, 09:14 am</a>
+										<a class="fl-r h-last-number">84</a>
+										<a class="fl-r h-last-message"></a>
+									</div>
+									<div class="h-we-bring mar-b-15">We bring you the best by working</div>
+									<div class="h-last-info mar-b-20">
+										<p class="h-last-des">Phasellus condimentum nulla a arcu lacinia, a venenatis ex congue.Mauris nec ante magna.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="h-last-we">
+							<div class="h-last-outer">
+								<div class="h-img-bock">
+									<img class="h-img" src="img/slider-blog-thumb-2.jpg" />
+									<div class="h-img-cover"></div>
+									<a class="h-how-a">how to</a>
+								</div>
+								<div class="h-last-content">
+									<div class="h-last-meta clearfix">
+										<a class="fl-l h-time">Agust 17, 09:14 am</a>
+										<a class="fl-r h-last-number">84</a>
+										<a class="fl-r h-last-message"></a>
+									</div>
+									<div class="h-we-bring mar-b-15">We know that buying furniture</div>
+									<div class="h-last-info mar-b-20">
+										<p class="h-last-des">Using Lorem Ipsum allows designers to put together layoutsand the form content</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="h-last-we">
+							<div class="h-last-outer">
+								<div class="h-img-bock">
+									<img class="h-img" src="img/slider-blog-thumb-3.jpg" />
+									<div class="h-img-cover"></div>
+									<a class="h-how-a">video</a>
+								</div>
+								<div class="h-last-content">
+									<div class="h-last-meta clearfix">
+										<a class="fl-l h-time">Agust 17, 09:14 am</a>
+										<a class="fl-r h-last-number">84</a>
+										<a class="fl-r h-last-message"></a>
+									</div>
+									<div class="h-we-bring mar-b-15">We design functional furniture</div>
+									<div class="h-last-info mar-b-20">
+										<p class="h-last-des">Risus non porta suscipit lobortis habitasse felis, aptentinterdum pretium ut.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="h-last-we">
+							<div class="h-last-outer">
+								<div class="h-img-bock">
+									<img class="h-img" src="img/slider-blog-thumb-4.jpg" />
+									<div class="h-img-cover"></div>
+									<a class="h-how-a">skincare</a>
+								</div>
+								<div class="h-last-content">
+									<div class="h-last-meta clearfix">
+										<a class="fl-l h-time">Agust 17, 09:14 am</a>
+										<a class="fl-r h-last-number">84</a>
+										<a class="fl-r h-last-message"></a>
+									</div>
+									<div class="h-we-bring mar-b-15">We know that buying furniture</div>
+									<div class="h-last-info mar-b-20">
+										<p class="h-last-des">Class integer tellus praesent at torquent cras, potenti erat fames volutpat etiam.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="h-last-we">
+							<div class="h-last-outer">
+								<div class="h-img-bock">
+									<img class="h-img" src="img/slider-blog-thumb-1.jpg" />
+									<div class="h-img-cover"></div>
+									<a class="h-how-a">skincare</a>
+								</div>
+								<div class="h-last-content">
+									<div class="h-last-meta clearfix">
+										<a class="fl-l h-time">Agust 17, 09:14 am</a>
+										<a class="fl-r h-last-number">84</a>
+										<a class="fl-r h-last-message"></a>
+									</div>
+									<div class="h-we-bring mar-b-15">We bring you the best by working</div>
+									<div class="h-last-info mar-b-20">
+										<p class="h-last-des">Phasellus condimentum nulla a arcu lacinia, a venenatis ex congue.Mauris nec ante magna.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="h-last-we">
+							<div class="h-last-outer">
+								<div class="h-img-bock">
+									<img class="h-img" src="img/slider-blog-thumb-2.jpg" />
+									<div class="h-img-cover"></div>
+									<a class="h-how-a">how to</a>
+								</div>
+								<div class="h-last-content">
+									<div class="h-last-meta clearfix">
+										<a class="fl-l h-time">Agust 17, 09:14 am</a>
+										<a class="fl-r h-last-number">84</a>
+										<a class="fl-r h-last-message"></a>
+									</div>
+									<div class="h-we-bring mar-b-15">We know that buying furniture</div>
+									<div class="h-last-info mar-b-20">
+										<p class="h-last-des">Using Lorem Ipsum allows designers to put together layoutsand the form content</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				
+				<!--底部绿色小点-->
+				<ul class="h-last-dots">
+					<li class="h-last-li on"></li>
+					<li class="h-last-li"></li>
+					<li class="h-last-li"></li>
+					<li class="h-last-li"></li>
+				</ul>
+				
+			</div>
+		</div>
+
+		<!--home3 Vereesa’s Instagram Feed-->
+		<div class="h-veesea-box">
+			<div class="h-veesea-camera">
+				<span class="glyphicon glyphicon-camera"></span>
+			</div>
+			<h3 class="h-last-title">Vereesa's Instagram Feed</h3>
+			<div class="h-camrea-box">
+				<div class="h-camera-list">
+					<div class="h-camera-imgbox">
+						<img src="img/item-instagram-1.jpg" />
+						<div class="h-camera-cover">
+							
+						</div>
+						<div class="h-img-camera">
+							<span class="glyphicon glyphicon-camera"></span>
+						</div>
+					</div>
+					
+				</div>
+				<div class="h-camera-list">
+					<div class="h-camera-imgbox">
+						<img src="img/item-instagram-2.jpg" />
+						<div class="h-camera-cover">
+							
+						</div>
+						<div class="h-img-camera">
+							<span class="glyphicon glyphicon-camera"></span>
+						</div>
+					</div>
+				</div>
+				<div class="h-camera-list">
+					<div class="h-camera-imgbox">
+						<img src="img/item-instagram-3.jpg" />
+						<div class="h-camera-cover">
+							
+						</div>
+						<div class="h-img-camera">
+							<span class="glyphicon glyphicon-camera"></span>
+						</div>
+					</div>
+				</div>
+				<div class="h-camera-list">
+					<div class="h-camera-imgbox">
+						<img src="img/item-instagram-4.jpg" />
+						<div class="h-camera-cover">
+							
+						</div>
+						<div class="h-img-camera">
+							<span class="glyphicon glyphicon-camera"></span>
+						</div>
+					</div>
+				</div>
+				<div class="h-camera-list">
+					<div class="h-camera-imgbox">
+						<img src="img/item-instagram-5.jpg" />
+						<div class="h-camera-cover">
+							
+						</div>
+						<div class="h-img-camera">
+							<span class="glyphicon glyphicon-camera"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+  	</body>
+</html>
+<script src="js/jquery-2.1.0.js"></script>
+<script src="js/hj3ajax.js"></script>
+<script src="js/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script src="js/h-hujing.js"></script>
+<script src="js/public-js.js"></script>
+<script src="js/carousez.js" type="text/javascript"></script>
+<script src="js/mengcen.js"></script>

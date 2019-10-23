@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width,inital-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="shortcut icon" href="img/favicon.png" />
+		<link rel="stylesheet" href="css/d-public.css"/>
+		<link rel="stylesheet" href="js/bootstrap-3.3.7-dist/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" href="css/public-page.css" />
+	</head>
+	<body>
+		<!--项目顶部-->
+		<div class="d-header">
+			<!--最顶端-->
+			<div class="d-header-top b-color-g">
+				<div class="d-content content-box f-14">
+					<div class="d-welcome  fl-l">
+						Welcome to our online store
+					</div>
+					<div class="login-or-register fl-r mar-l-10">Login or Register</div>
+					<div  class="d-language fl-r">
+						<div v-on:click.stop="languagetype">
+							<span  class="mar-r-6">{{activeLanguage}}</span><span class="glyphicon glyphicon-menu-down f-12"></span> <span>丨</span>
+						</div>
+						<div class="languageType-box">
+							<div v-on:click="languageselect" class="languageType"v-for="item in languageType">{{item}}</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--小框时的主菜单-->
+			<div v-on:click.stop=" " class="d-left-main-menu">
+				<div class="d-main-menu-title d-mian-menu-content">
+					  <span v-on:click="closemenu" class="d-main-menu-close">x</span> <span v-for="title in menudata.title">{{title}}</span> <span v-on:click="returnmenu" v-show="menudata.title != 'MAIN MENU' " class="d-main-menu-return glyphicon glyphicon-menu-left"></span>
+				</div>
+				<div v-for="content in menudata.content" class="d-mian-menu-content" v-bind:title="content">
+					<span @click="reload" class="">{{content}} </span> 
+					<span v-if="['ACCESSORIES','HOME','SHOP','PAGES','BLOGS','BLOG STYLE','POST LAYOUT'].indexOf(content) >= 0 "  
+						class="d-right-trangle glyphicon glyphicon-menu-right"
+						v-on:click="clicktrangle"></span>
+				</div>
+			</div>
+			<!--标志和搜索框和购物车和登录注册-->
+			<div class="d-header-center">
+				<div class="d-content">
+					<div class="d-header-center-main">
+						<!--logo-->
+						<img class="d-vereesa-logo" src="img/logo.png"/>
+						<!--搜索框-->
+						<div class="d-search-box ">
+							<div class="d-goods-dropdown">
+								<div class="d-activegoodstype"v-on:click.stop="controldrop">
+									{{activegoodstype}} <span class="glyphicon glyphicon-menu-down f-12 mar-l-10"></span>
+								</div>
+								<ul class="d-goodstypes">
+									<li v-on:click="selectedgoodstype" class="d-goodstype" v-for="goodstype in goodstype">{{goodstype}}</li>
+								</ul>
+							</div>
+							<div class="d-input-box">
+								<input class="" type="text" name=""  placeholder="Search here" />
+							</div>
+							<div class="d-search-logo">
+								<img src="img/search-header-2.png"></img>
+							</div>
+						</div>
+						<!--右侧的购物车和登录注册-->
+						<div class="d-shopcar-logon-register">
+							<!--购物车-->
+							<span v-on:click.stop="controlshopcar" class="d-shopcar glyphicon glyphicon-shopping-cart f-28">
+								<div class="d-shopcar-box">
+									<div class="reminder">
+										You have <span class="d-shopcar-count">0 ITEM(S)</span> in your bag
+									</div>
+								</div>
+							</span>
+							<span class="d-shopcargoods">0</span>
+							<!--登录和注册-->
+							<span v-on:click.stop="controllogin" class="d-logon-register glyphicon glyphicon-user f-28">
+							</span>
+							<!--登录注册弹出框-->
+							<div v-on:click.stop="" class="d-login-and-register">
+								<div class="d-form-title"> 
+									<span v-on:click="login" class="login active">Login</span> <span v-on:click="register" class="register">Register</span>
+								</div>
+								<div class="d-form-body">
+									<div class="d-email d-input-box">
+										<input class="d-input" type="email" placeholder="Email"/>
+									</div>
+									<div class="d-password d-input-box">
+										<input class="d-input" type="password" placeholder="Password"/>
+									</div>
+									<input class="d-readme" type="checkbox"/><span class="readme">Read me</span>
+									<div v-on:click="loginsubmit" class="d-public-btn d-login-btn">
+										<span>LOGIN</span>
+									</div>
+									<span class="d-lostpassword">Lost your password?</span>
+								</div>
+							</div>
+							<!--最小屏的时候展现的内容-->
+							<div class="d-768-hide-btn">
+								<!--搜索部分-->
+								<span v-on:click="controlsearchdrop" class="d-little-search glyphicon glyphicon-search"></span>
+								<!--语言选择部分-->
+								<span v-on:click="controllanguagedrop" class="d-little-language glyphicon glyphicon-cog"></span>
+								
+							</div>
+							<div v-on:click.stop="controlMainMenu" class="d-1200-hide-navbtn">
+								<span class="glyphicon glyphicon-menu-hamburger f-18"></span>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--最小屏时候的搜索和语言选择的下拉框-->
+			<div class="d-search-drop d-little-drop">
+				<span class="d-little-drop-close">x</span>
+				<div class="d-little-search-box">
+					<input class="d-search-input" type="text" name="" id="" placeholder="Enter Key Words to search..."/>
+					<a href="">
+						<div class="d-submit">
+							SEARCH
+						</div>	
+					</a>
+				</div>
+			</div>
+			
+			<div class="d-language-drop d-little-drop">
+				<span class="d-little-drop-close">x</span>
+				<h5 class="mar-l-10 d-language-title">Currency</h5>
+				<p class="d-language-lists">
+					<span class="d-language-list">English(USD)</span> <span class="d-language-list">French(EUR)</span> <span class="d-language-list">Japanese(JPY)</span>
+				</p>
+			</div>
+			<!--导航条-->
+			<div class="d-nav">
+				<div v-on:mouseleave="leavenav" class="d-content">
+					<div class="d-block-title">
+						<div v-on:click="controlGoodsClassDrop" class="d-block-click">
+							<span class="d-block-title-logo glyphicon glyphicon-align-left"></span>
+							<span class="d-block-title-text">ALL DEPARTMENTS</span>	
+						</div>
+						<div class="d-goods-class">
+							<a class="d-goods-classify" v-for="item in goodsclass" v-bind:title="item">
+								{{item}}<span v-if="item == 'Accessories'" class="d-right-trangle glyphicon glyphicon-menu-right"></span>
+							</a>
+						</div>
+					</div>
+					
+					<div class="d-nav-title-lists">
+						<div v-on:mouseenter="controldrop" v-for="navtitle in navdata.title" class="d-nav-title-list">
+						 <span @click="reload" v-bind:title="navtitle">{{navtitle}}</span> <span v-if="navtitle != 'ABOUT'" class="d-drop-logo f-12">﹀</span>
+						</div>
+					</div>
+					<!--home部分下拉框-->
+					<div class="d-drop-menu d-home-part">
+						<ul class="d-nav-ul">
+							<li @click="reload" class="d-nav-li navhome" v-for="homelist in navdata.home">{{homelist}}</li>
+						</ul>
+					</div>
+					<!--商城部分下拉框-->
+					<div class="d-drop-menu d-shop-part">
+						<ul class="d-nav-ul">
+							<li @click="reload" class="d-nav-li navshop" v-for="shoplist in navdata.shop" >{{shoplist}}</li>
+						</ul>
+					</div>
+					<!--pages部分下拉框-->
+					<div class="d-drop-menu d-pages-part">
+						<div class="d-nav-ul">
+							<div class="d-pages-content">
+								<div class="d-left-box">
+									<div class="d-title">Shop Pages</div>
+									<div class="d-green-line">
+										
+									</div>
+									<ul class="d-pages-ul">
+										<li @click="reload" class="d-pages-li" v-for="pages in navdata.pages.shoppages">{{pages}}</li>
+									</ul>
+								</div>
+								<div class="d-center-box">
+									<div class="d-title">Product</div>
+									<div class="d-green-line">
+										
+									</div>
+									<ul class="d-pages-ul">
+										<li @click="reload" class="d-pages-li" v-for="products in navdata.pages.product">{{products}}</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--blogs下拉框控制-->
+					<div class="d-drop-menu d-blogs-part">
+						<div class="d-nav-ul">
+							<div class="d-nav-li d-blogs-li">Blog Style  <span class="fl-r f-14"> ＞</span>
+								<div class="d-nav-ul-ul">
+									<div @click="reload" class=" d-nav-li-li "v-for="blogstyle in navdata.blogs.blogstyle">{{blogstyle}}</div> 	
+								</div>
+							</div>
+							<div class="d-nav-li d-blogs-li">Post Layout <span class="fl-r f-14"> ＞</span>
+								<div class="d-nav-ul-ul">
+									<div @click="reload" class="d-nav-li-li "v-for="postlayout in navdata.blogs.postlayout">{{postlayout}}</div> 	
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>		
+		
+		<!--项目body,这里面可以任意修改-->	
+		<div id="d-body">
+				
+		</div>
+		
+		<!--回到顶部-->	
+		<div class="d-return-top-box">
+			<span class="glyphicon glyphicon-menu-up f-12"></span>
+		</div>
+		
+		
+		<!--项目底部-->
+		<div class="d-footer">
+			<div class="d-content">
+				<div class="d-footer-main mar-b-30">
+					<div class="d-vereesa-part col-xs-12 col-sm-6 col-md-6 col-lg-4">
+						<div class="d-img-logo mar-b-20">
+							<img src="img/logo.png"/>
+						</div>
+						<p class="f-14">
+							Shop the latest products right from
+							your home .
+						</p>
+						<p class="f-14">
+							We have furniture supplies & accessories from top brands.
+						</p>
+						<div class="d-black-circle-box">
+							<div class="d-black-circle">
+								<span class="d-bottom-icon glyphicon glyphicon-usd"></span>
+								<div  class="d-hide-circle">
+									
+								</div>
+							</div>
+							<div class="d-black-circle">
+								<span class="d-bottom-icon glyphicon glyphicon-record "></span>
+								<div class="d-hide-circle">
+									
+								</div>
+							</div>
+							<div class="d-black-circle">
+								<span class="d-bottom-icon glyphicon  glyphicon-link"></span>
+								<div class="d-hide-circle">
+									
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					<div v-for="item in hreflink" class="d-bottom-links d-bottom-list-part col-xs-12 col-sm-6 col-md-6 col-lg-2">
+						<div class="d-bottom-list-title">
+							{{item.title}}
+						</div>
+						<ul class="d-bottom-list-content f-14">
+							<li v-for="list in item.list" ><a class="d-menu-href"  href="" target="_blank">{{list}}</a></li>
+						</ul>
+					</div>
+					<div class="d-bottom-list-part col-xs-12 col-sm-6 col-md-6 col-lg-4">
+						<div class="d-bottom-list-title">
+							Newsletter
+						</div>
+						<p class="f-14 d-news-text">
+							Get notified of new products, limited releases, and more.
+						</p>
+						<div class="d-news-input-box">
+							<input class="d-news-input" type="text" placeholder="your email letter"/>
+							<div class="d-news-btn">
+								SUBSCRIBE
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="d-footer-bottom">
+					<span class="d-copy-right f-16">
+						Copyright © 2019 Vereesa . All rights reserved
+					</span>
+					<div class="d-img-box">
+						<img  src="img/payments.png"/>
+					</div>
+				</div>
+			</div>
+			<div class="d-footer-position">
+				
+			</div>
+		</div>
+	    <!--最小屏时，出现在底部的-->
+	    <div class="d-footer-device-mobile">
+	    	<div v-for="item in partdata" class="d-footer-device-item">
+	    		<a @click="links" class="d-footer-device-content">
+	    			<span v-bind:class="item.class"></span>
+	    			<span class="d-footer-device-text">{{item.text}}</span>
+	    		</a>
+	    	</div>
+	    </div>
+	</body>
+</html>
+<script src="js/vue.js"></script>
+<script src="js/jquery-2.1.0.js"></script>
+<script src="js/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script src="js/public-page.js"></script>
+<script src="js/main.js"></script>
+<script type="text/javascript">
+	$('#d-body').load('home01.html')
+</script>
+

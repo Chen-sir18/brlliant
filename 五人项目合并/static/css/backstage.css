@@ -1,0 +1,168 @@
+*{
+	font-family: "微软雅黑";
+}
+.header-top{
+	width: 100%;
+	height: 68px;
+	background: #eeeeee;
+	padding-top: 26px;
+	padding-left: 10px;
+	border-bottom: 3px solid #275e91;
+	position: relative;
+}
+
+.header-top .logo{
+	display: inline-block;
+	vertical-align:top;
+}
+
+.header-top .nav-menu{
+	width: 670px;
+	border: 1px solid #CCCCCC;
+	height: 28px;
+	display: inline-block;
+	vertical-align:text-bottom;
+	margin-left: 26px;
+	position: absolute;
+	bottom: 0px;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fefdfd), color-stop(1, #e6e6e6));
+}
+.nav-menu ul{
+	height: 26px;
+	
+}
+.nav-menu .navlist{
+	height: 100%;
+	vertical-align: top;
+	display: inline-block;
+	padding: 0 23px;
+	font-size: 12px;
+	color: #464646;
+	line-height: 26px;
+	font-family: "microsoft yahei";
+	cursor: pointer;
+}
+.nav-menu .navlist.active{
+	    background-image: -webkit-gradient(linear, 
+	    left top, left bottom,
+	     color-stop(0, #5da9ef),
+	     color-stop(1, #4280ba)); 
+	     color: #FFFFFF;
+}
+.system-box{
+	width: 100%;
+	background: #EEEEEE;
+	font-size: 12px;
+	font-family: "microsoft yahei";
+	color: #464646;
+	height: 26px;
+	padding-left: 88px;
+	padding-top:6px;
+	border-bottom: 1px solid #CCCCCC;
+}
+.system-box .user-name{
+	display: inline-block;
+}
+.system-box .system-part{
+	display: inline-block;
+}
+.system-part .divide{
+	color: #DDDDDD;
+}
+.main-content{
+	position: fixed;
+	display: flex;
+	flex-direction: row;
+	height: 100%;
+	width: 100%;
+	/*position: relative;*/
+}
+/*左边的侧边栏*/
+.left-box{
+	position: relative;
+	min-width: 200px;
+	height: 100%;
+	background: #417eb7;
+}
+.left-box .user-img{
+	position: absolute;
+	border: 2px solid #9d9d9d;
+	left: 15px;
+    top: -22px;
+    width: 52px;
+    height: 52px;
+    background-color: #fff;
+    border-radius: 4px;
+    display: flex;
+}
+.left-box .user-img img{
+	width: 44px;
+	height: 44px;
+	margin: auto;
+}
+.left-box .black-top{
+	color: #FFFFFF;
+	width: 100%;
+	height: 22px;
+	background:#000000;
+	font-size: 12px;
+	padding-left:90px;
+	line-height: 22px;
+	margin-bottom: 12px;
+	border-bottom: 1px solid #2969a6;;
+}
+.left-box .goods-manage{
+	width: 100%;
+	border-top: 1px solid #488bcb;
+}
+.goods-manage .goodsmanagelist{
+	width: 100%;
+	height: 28px;
+	color: #b9ddff;
+	font-size: 12px;
+	line-height: 28px;
+	cursor: pointer;
+}
+
+.goods-manage .goodsmanagelist:hover{
+	background:#2d689f;
+}
+
+.goods-manage .goodsmanagelist.active{
+	background:#2d689f;
+}
+.goodsmanagelist .list-arrow{
+	background: url(../img/side_arrow.gif) no-repeat;
+	display: inline-block;
+	width:8px ;
+	height: 8px;
+	vertical-align:middle;
+	margin-left: 40px;
+}
+.left-box .remind{
+	position: absolute;
+	bottom: 96px;
+	border-top:1px dashed #6298cb;
+	width: 100%;
+	height: 48px;
+	z-index: 100;
+	color: #FFFFFF;
+	font-size: 12px;
+	padding: 9px;
+	background:#417eb7 ;
+}
+.left-box .hide-btn{
+	position: absolute;
+	right: -8px;
+	top: 50%;
+	margin-top: -20px;
+}
+/*ifram部分*/
+.ifram{
+	width: 85%;
+	/*position: absolute;*/
+	margin-left: 10px;
+	margin: 10px;
+	/*height:800px;
+	overflow-y: visible;*/
+}

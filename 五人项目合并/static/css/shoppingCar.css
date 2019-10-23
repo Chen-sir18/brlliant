@@ -1,0 +1,335 @@
+
+/*添加商品*/
+.ch-add-goods{
+	position: absolute;
+    left: 245px;
+    top: 395px
+	
+}
+
+.ch-shopp-car{
+	margin-bottom: 70px;
+}
+.ch-checkout-page{
+		margin: 0 auto;
+	}
+/*内容*/
+.ch-con{
+	margin-top: 40px;	
+	cursor: pointer;
+	
+}
+
+.ch-con .ch-cont,
+.ch-con .ch-total-price{
+	height: 160px;
+	border: 1px solid #e2e2e2;
+	
+}
+.ch-con-one{
+	display: none;
+}
+/*商品图片*/
+.ch-cont .ch-list .ch-img{
+	width: 160px;
+	height: 160px;
+	padding: 30px;
+}
+.ch-cont .ch-list .ch-img img{
+	width: 100%;
+	height: 100%;
+}
+.ch-cont .ch-list li{
+	float: left;
+}
+/*文字介绍*/
+.ch-lists .ch-text {
+	width:408.8px ;
+	height: 109px;
+	/*border: 1px solid red;*/
+	
+}
+/*.ch-lists .ch-text div{
+	height: 48px;
+	border: 1px solid red;
+	margin-top: 20px;
+}*/
+/*.ch-lists .ch-text div p
+{
+	height: 24px;
+	border: 1px solid cyan;
+	margin-top: -8px;
+}*/
+/*数量按钮*/
+.btn-add{
+	width: 265px;
+	height: 100px;
+	margin-top: 20px;
+	
+	/*border: 1px solid red;*/
+}
+/*商品价格*/
+.ch-dollars{
+	width: 233.88px;
+	height: 81px;
+	/*border: 1px solid red;*/
+	
+}
+/*删除键*/
+.ch-delet div{
+	
+	margin-left: 30px;
+}
+
+
+/*总价*/
+.ch-total-price{
+	padding: 50px 60px 50px 30px;
+}
+.ch-total-price .ch-total-price-ul{
+	height: 42px;
+	/*border: 1px solid red;*/
+	position: relative;
+	line-height: 30px;
+}
+/*总价左边*/
+.ch-total-price-ul .float-fl{
+	width: 393px;
+	height: 100%;
+	/*border: 1px solid cyan;*/
+	
+	
+}
+.ch-total-price-ul .float-fl .ch-total-left{
+	font-weight: 600;
+}
+.ch-total-price-ul .float-fl .ch-total-right{
+	height: 42px;
+	border-radius: 42px;
+	width: 265px;
+	padding: 7px 20px;
+}
+.ch-total-price-ul .float-fl .ch-next{
+	font-size: 0;
+    padding: 0;
+    line-height: 60px;
+    color: #aaaaaa;
+    position: absolute;
+    top: -5px;
+    left: 362px;
+    cursor: pointer;
+
+}
+.ch-total-price-ul .float-fl .ch-next img{
+	height: 16px;
+	width: 16px;
+}
+/*总价右边*/
+
+.ch-total-price-ul  .float-rt{
+	width: 125px;
+	height: 100%;
+	/*border: 1px solid red;*/
+}
+
+.ch-total-price .ch-total-price-ul .float-rt div span:last-child{
+	margin-top: 5px;
+}
+/*底部标题*/
+
+.ch-footer-title{
+	height: 100px;
+}
+.ch-footer-title .float-rt .float-fl{
+	display: inline-block;
+	height: 100%;
+	width: 171px;
+	border: 1px solid #e2e2e2;
+	text-align: center;
+	line-height: 44px;
+	border-radius:40px ;
+	margin-right: 50px;
+}
+.ch-footer-title .float-rt .float-rt{
+	display: inline-block;
+	height: 100%;
+	width: 109px;
+	border: 1px solid #e2e2e2;
+	text-align: center;
+	line-height: 44px;
+	border-radius:40px ;
+}
+.ch-con .ch-footer-title .float-rt .float-rt:hover{
+	color: #FFFFFF;
+	background: #85B839;
+}
+.ch-con .ch-footer-title .float-rt .float-fl:hover{
+	color: #FFFFFF;
+	background: #85B839;
+}
+@media only screen and (max-width: 1039px) {
+	.ch-con{
+		width: 714px;
+		height: 100%;
+		}
+	.ch-cont{
+		width: 938px;
+		height: 161px;
+	}
+	.ch-con-one{
+		display: none;
+	}
+	
+	.ch-lists {
+		width: 328px;
+		height: 109px;
+	}
+	.ch-lists .ch-text{
+		width: 100%;
+		height: 100%;
+	}
+	
+
+.ch-cont .ch-list li {
+    float: left;
+}
+	.ch-cont .ch-list .btn-add{
+		width: 206px;
+		height: 100px;
+	}
+	.ch-cont .ch-list .ch-dollars{
+		width: 187px;
+		height: 84px;
+	}
+	.ch-cont .ch-list .ch-delet{
+		width: 20px;
+		height: 84px;
+	}
+	.ch-total-price{
+		width: 938px;
+	}
+	.ch-footer-title{
+		width: 938px;
+	}
+	
+}
+
+@media only screen and (max-width: 991px) {
+	.ch-shopp-car{
+		width: 730px;
+		margin: 0 auto;	
+	}
+	.ch-cont{
+		width: 714px;
+		/*height: 161px;*/
+	}
+	.ch-con-one{
+		display: none;
+	}
+	
+	.ch-lists {
+		width: 251px;
+		height: 69px;
+	}
+	.ch-lists .ch-text{
+		width: 100%;
+		height: 100%;
+	}
+	
+
+.ch-cont .ch-list li {
+    float: left;
+}
+	.ch-cont .ch-list .btn-add{
+		width: 157px;
+		height: 60px;
+	}
+	.ch-cont .ch-list .ch-dollars{
+		width: 39px;
+		height: 27px;
+	}
+	.ch-cont .ch-list .ch-delet{
+		width: 20px;
+		height: 84px;
+	}
+	.ch-total-price{
+		width: 714px;
+	}
+	.ch-footer-title {
+		width: 714px;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.ch-shopp-car{
+		height: 100%;
+		/*border: 1px solid blueviolet;*/
+		width: 100%;
+	}
+	.ch-con{
+		width: 100%;
+		height: 100%;
+		border: 1px solid red;
+		display: none;
+	}
+	.ch-con-one{
+		display: block;
+		margin-top: 25px;
+	}
+	.ch-con-one .ch-cont{
+		width: 100%;
+		height: 475px;
+		border: 1px solid gainsboro;
+	}
+	.ch-con-one .ch-cont .ch-list li{
+		width: 100%;
+		/*border: 1px solid cyan;*/
+		text-align:center ;
+		
+	}
+	
+	.ch-con-one .ch-cont .ch-list .ch-delet  img{
+		width: 20px;
+		height: 20px;
+	}
+
+	.ch-con-one .ch-cont .ch-list li .ch-img{
+		width: 100%;
+		height: 220px;
+		padding: 5px;
+		margin-top: -45px;
+	}
+	.ch-con-one .ch-cont .ch-list li .ch-img img{
+		width: 200px;
+		height: 200px;
+		
+	}
+	.ch-con-one .ch-cont .ch-list .ch-lists{
+		height: 69px;
+		padding: 10px;
+	}
+	.ch-con-one .ch-cont .ch-list .ch-lists p{
+		display: block;
+		height: 24px;
+		/*border: 1px solid red;*/
+		line-height: 8px;
+	}
+	.ch-con-one .ch-cont .ch-list .btn-add{
+		width: 100%;
+		
+	}
+	.ch-con-one .ch-cont .ch-list .btn-add .add-subtract-btn{
+		margin-top: -22px;
+		margin-left: 46%;
+	}
+	.ch-con-one .ch-cont .ch-list .ch-dollars div{
+		line-height: 0;
+	}
+	.ch-con-one .ch-total-price
+	{
+		width: 100%;
+	}
+	.ch-con-one .ch-footer-title{
+		width: 100%;
+	}
+	
+}

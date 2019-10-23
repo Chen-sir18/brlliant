@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/d-public.css" />
+		<link rel="stylesheet" href="js/bootstrap-3.3.7-dist/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" href="css/public-page.css" />
+		<link rel="stylesheet" type="text/css" href="css/d-about.css"/>
+	</head>
+	<body>
+		<!--项目body,这里面可以任意修改-->
+		<div class="d-about-us">
+			<div class="d-content">
+				<!--上面的链接-->
+				<div class="d-about-links">
+					<a class="d-home-link" href="">Home</a> <span class="glyphicon glyphicon-forward f-12 mar-6"></span> <span class="d-about-link"> About Us</span>
+				</div>	
+				<div class="d-about-title">
+					About Us
+				</div>
+				<div class="d-about-banner clearfix">
+					<div class="col-lg-5 col-md-offset-7 d-about-banner-inner">
+						<h2 class="d-about-banner-title">
+							Vereesa  Lighting & Accessories for Room					
+						</h2>
+						<p class="d-about-sub-title">Shop the latest products right from your home with vereesashop.
+						We have beard supplies, clothing & accessories from top brands.
+						</p>
+						<a href="">
+							<div class="d-shop-btn">
+								LET'S SHOPPING
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--服务三步走-->
+		<div class="d-about-three">
+			<div class="d-content clearfix">
+				<div class="col-lg-3 col-md-4 col-sm-4 d-about-three-item">
+					<div class="d-logo">
+						<span class="d-about-banner-text">01</span>
+						<span class="glyphicon glyphicon-plane"></span>
+					</div>
+					<p class="d-about-three-title">
+						EU Free Delivery
+					</p>
+					<div class="d-about-three-text">
+						Free Delivery on all order from EU with price more than €90.00
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-4 col-lg-offset-1 d-about-three-item">
+					<div class="d-logo">
+						<span class="d-about-banner-text">02</span>
+						<span class="glyphicon glyphicon-credit-card"></span>
+					</div>
+					<p class="d-about-three-title">
+						Money Guarantee
+					</p>
+					<div class="d-about-three-text">
+						30 Days money back guarantee no question asked!
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-4 col-lg-offset-1 d-about-three-item">
+					<div class="d-logo">
+						<span class="d-about-banner-text">03</span>
+						<span class="glyphicon glyphicon-leaf"></span>
+					</div>
+					<p class="d-about-three-title">
+						Online Support 24/7
+					</p>
+					<div class="d-about-three-text">
+						We’re here to support to you 24/7. Let’s shopping now!
+					</div>
+				</div>
+			</div>
+			
+		</div>	
+		<!--重要成员-->
+		<div class="d-important-person">
+			<div class="d-content">
+				<h2 class="d-important-person-title">
+					Vereesa’s Important Persons
+				</h2>
+				<div class="d-important-person-carousel">
+					<div v-on:click="moveLeft" class="d-carousel-left d-carousel-arrow">
+						<span class="glyphicon glyphicon-menu-left"></span>
+					</div>
+					<div v-on:click="moveRight" class="d-carousel-right d-carousel-arrow">
+						<span class="glyphicon glyphicon-menu-right"></span>
+					</div>
+					<div class="d-person-carousel-inner clearfix">
+						<div v-for="info in importantPerson" class="d-important-person-item">
+							<img class="d-important-person-img" v-bind:src="info.img"/>
+							<p class="d-important-person-name">{{info.name}}</p>
+							<p class="d-important-person-position">
+								{{info.position}}
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+    </body>
+</html>
+
+<script src="js/jquery-2.1.0.js"></script>
+<script src="js/vue.js"></script>
+<script src="js/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script src="js/d-about.js"></script>
+
+

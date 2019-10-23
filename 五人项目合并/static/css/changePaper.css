@@ -1,0 +1,25 @@
+/*换页*/
+.d-change-box{
+	font-size: 0;
+}
+.d-change-box .d-change-btn{
+	width: 42px;
+	height: 42px;
+	display: inline-block;
+	border: 1px solid #aaaaaa;
+	border-radius: 20px;
+	color: #888888;
+	text-align: center;
+	line-height:40px;
+	font-size: 16px;
+	cursor: pointer;
+	margin: 10px 2px;
+}
+.d-change-box .d-change-btn:hover{
+	background: #85B839;
+	color: #FFFFFF;
+}
+.d-change-box .d-change-paper.active{
+	background: #85B839;
+	color: #FFFFFF;	
+}

@@ -1,0 +1,28 @@
+	/*设置div的样式*/
+	.add-subtract-btn {
+		width: 75px;
+		border: 1px solid gainsboro;
+		padding: 0px 6px;
+	}
+	.add-subtract-btn a {
+		cursor: pointer;
+		font-size: 23px;
+		color: #d9d9d9;
+		font-weight: 700;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+	}
+	
+	.add-subtract-btn input {
+		width: 34px;
+		height: 38px;
+		text-align: center;
+		border: none;
+		font-size: 16px;
+		color: #333333;
+	}
+	/*鼠标划过按钮是的状态*/
+	.add-subtract-btn .btn:hover {
+		color: #85B839;
+	}

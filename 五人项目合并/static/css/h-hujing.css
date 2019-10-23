@@ -1,0 +1,5083 @@
+
+/*home1顶部轮播*/
+.h-container-pub{
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+.h-outer{
+	width: 100%;
+	padding: 0 15px;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	position: relative;
+}
+.h-outer .h-carouselbox{
+	position: relative;
+	display: inline-block;
+	width: 773px;
+	height: 597px;
+	overflow: hidden;
+}
+.h-outer .h-imgbox{
+	min-width: 773px;
+	/*弹性盒子*/
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	position: relative;
+}
+
+.h-outer .h-imgbox .item{
+	min-width: 773px;
+	height: 597px;
+	margin-right: 10px;
+	overflow: hidden;
+}
+.h-outer .h-imgbox .h-item1{
+	width: 773px;
+	background: url(../img/slider-thumb4.jpg) no-repeat;
+	background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+}
+.h-outer .h-imgbox .h-item2{
+	width: 773px;
+	background: url(../img/slider-thumb5.jpg) no-repeat;
+	background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+}
+.h-outer .h-imgbox .h-item3{
+	width: 773px;
+	height: 597px;
+	background: url(../img/slider-thumb6.jpg) no-repeat;
+	background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+}
+
+
+.h-outer .h-info{
+	padding-bottom: 161px;
+    padding-top: 234px;
+    padding-left: 50px;
+    padding-right: 396px;
+    
+}
+.h-outer .h-info .h-title-small{
+	display: inline-block;
+	color: #85B839;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    padding: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    
+}
+.animated{
+	animation-duration: 1.5s;
+}
+/*.animated.bounceInDown{
+	transition: all 2s linear;
+}*/
+.h-outer .h-info h3{
+	margin-top: 0px;
+}
+.h-outer .h-info .h-title-big{
+	display: inline-block;
+	font-size: 34px;
+    font-weight: 600;
+    line-height: 1.2;
+    max-width: 370px;
+}
+.h-outer .h-info .h-title-price{
+	font-size: 18px;
+    color: #777;
+    letter-spacing: -0.05em;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 35px;
+	
+}
+.h-outer .h-info .h-title-price .h-number-price{
+	text-transform: uppercase;
+    font-size: 28px;
+    color: #85B839;
+    text-decoration: underline;
+}
+.h-outer .h-info .h-button-c{
+	display: inline-block;
+	padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background: #000;
+    border: 1px solid #000;
+    color: #fff;
+    margin-right: 5px;
+    min-width: 110px;
+    border-radius: 40px;
+    transition: all 0.4s ease 0s;
+}
+.h-outer .h-info .h-button-c:hover{
+	text-decoration: none;
+	background: #85b839;
+	cursor: pointer;
+	border-color: #85b839;
+	transition: all 0.4s ease 0s;
+}
+.h-outer .h-slick-dots{
+	position: absolute;
+    bottom: 25px;
+    left: 75%;
+    z-index: 10;
+    transform: translateX(-50%);
+}
+.h-slick-dots{
+	list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+    text-align: center;
+    margin-top: 40px;
+}
+.h-slick-dots .h-li{
+	list-style: none;
+    display: inline-block;
+    font-size: 0;
+    padding: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: all 0.25s ease 0s;
+}
+.h-slick-dots .h-li.active{
+	border-color: transparent;
+    background-color: #85B839;
+    width: 25px;
+}
+
+/*顶部轮播右边*/
+.h-small-right{
+	display: inline-block;
+	width: 376px;
+	height: 620px;
+	margin-left: 10px;
+	vertical-align: top;
+}
+/*.h-small-right .h-commoditity{
+	width: 100%;
+	height: 290px;
+	margin-bottom: 20px;
+	background: url;
+	padding: 58px 165px 59px 30px;
+}*/
+.h-commoditity.h-top .h-inner{
+	height: 290px;
+	background: url(../img/banner-home-5.jpg);
+} 
+.h-commoditity.h-bottom .h-inner{
+	height: 290px;
+	background: url(../img/banner-home-6.jpg);
+}
+.h-commoditity .h-inner{
+	height: 290px;
+	margin-bottom: 20px;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    position: relative;
+}
+.h-commoditity .h-inner .h-content h3{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.h-commoditity.h-top .h-content{
+	padding: 58px 165px 59px 30px;
+	
+}
+.h-commoditity.h-bottom .h-content{
+	padding: 53px 166px 76px 30px;
+	
+}
+.h-title{
+	font-size: 28px;
+	color: #000000;
+	line-height: 32px;
+	margin-bottom: 10px;
+	font-weight: 400;
+}
+.h-description{
+	font-size: 16px;
+	color: #888888;
+	line-height: 22px;
+	margin-bottom: 15px;
+}
+.h-shop{
+	font-size: 12px;
+	padding: 7px 20px;
+	color: #fff;
+	background: #85B839;
+	border-radius: 40px;
+	text-align: center;
+	line-height: 40px;
+	transition: all 0.4s ease 0s;
+	border: 1px solid #85B839;
+}
+.h-shop:hover{
+	cursor: pointer;
+	background: #000;
+	color: #FFFFFF;
+	border: 1px solid #000;
+	text-decoration: none;
+	transition: all 0.4s ease 0s;
+}
+.h-price{
+	font-size: 22px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #85b839;
+    text-decoration: underline;
+}
+
+/*home1 响应开始轮播*/
+.h-change-this{
+	width: 970px;
+	margin: 0 auto;
+	padding: 0 15px;
+	margin-top: 20px;
+	position: relative;
+	display: none;
+}
+.h-change-outer{
+	width: 100%;
+	height: 550px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	position: relative;
+}
+.h-change-outer .item{
+	width: 100%;
+	height: 100%;
+}
+.h-change-outer .h-change-item{
+	width: 100%;
+	height: 100%;
+	
+}
+.h-change-outer img{
+	width: 100%;
+	height: 100%;
+	border-radius: 8px;
+}
+.h-change-outer .h-caption{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	text-align: left;
+	text-shadow: none;
+	padding: 200px 500px 175px 50px;
+}
+.h-change-title{
+	color: #85B839;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 19px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.h-change-big{
+	font-size: 28px;
+	color: #000;
+	margin-top: 0px;
+	line-height: 33px;
+	margin-bottom: 10px;
+	font-weight: 500;
+}
+.h-change-big:last-child{
+	margin-bottom: 20px;
+}
+.h-change-price{
+	margin-bottom: 35px;
+	line-height: 28px;
+	color: #777;
+	font-weight: 600;
+	font-size: 18px;
+}
+.h-change-price .h-change-number{
+	color: #85B839;
+	text-decoration: underline;
+	font-size: 28px;
+	line-height: 38px;
+}
+.h-button-change{
+	display: inline-block;
+	width: 112px;
+	height: 40px;
+	border-radius: 40px;
+	background: #000000;
+	color: #FFFFFF;
+	padding: 12px 20px;
+	font-size: 12px;
+	cursor: pointer;
+	text-align: center;
+	/*将英语小写转换为大写*/
+	text-transform: uppercase;
+	font-weight: 600;
+	margin-right: 5px;
+	transition: all 0.4s ease 0s;
+	
+}
+.h-button-change:hover{
+	background: #85B839;
+	color: #FFFFFF;
+	transition: all 0.4s ease 0s;
+}
+
+/*小点*/
+.h-change-dots{
+	list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+    text-align: center;
+    
+}
+.h-change-dots .h-change-li{
+	list-style: none;
+	width: 940px;
+	margin-bottom: -20px;
+    display: inline-block;
+    font-size: 0;
+    padding: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: all 0.25s ease 0s;
+}
+.h-change-li.active{
+	border-color: transparent;
+    background-color: #85B839;
+    width: 25px;
+}
+/*轮播下面两个小部分*/
+.h-change-bottom{
+	width: 100%;
+	padding: 0px 15px;
+	margin-top: 20px;
+	/*弹性盒子*/
+	display: -webkit-box;
+	/*子盒子均匀分布剩余空间*/
+	-webkit-box-pack: justify;
+}
+.h-change-inner{
+	width: 460px;
+	height: 236px;
+	display: none;
+	/*background: red;*/
+}
+.h-inner-box1{
+	width: 100%;
+	height: 100%;
+	padding: 58px 165px 59px 30px;
+	background: url(../img/banner-home-5.jpg) no-repeat;
+	background-position: center;
+	background-size: cover;
+	border-radius: 8px;
+}
+.h-inner-box2{
+	width: 100%;
+	height: 100%;
+	padding: 58px 165px 59px 30px;
+	background: url(../img/banner-home-6.jpg) no-repeat;
+	background-position: center;
+	background-size: cover;
+	border-radius: 8px;
+}
+h3{
+	margin-top: 0px;
+}
+
+/*home1 Living Room Furniture*/
+.h-live-header{
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 30px;
+	position: relative;
+}
+.h-live-banner{
+	width: 100%;
+	margin: 0 auto;
+	padding: 0px 15px;
+	position: relative;
+}
+.h-live-inner{
+	width: 100%;
+	height: 298px;
+	background: url(../img/banner-home-15.jpg) no-repeat;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    position: relative;
+}
+.h-live-content{
+	padding: 46px 15px 61px 40px;
+}
+.h-live-title{
+	font-size: 30px;
+	color: #000000;
+	line-height: 32px;
+	margin-bottom: 5px;
+	
+}
+.h-live-description{
+	font-size: 16px;
+	color: #888888;
+	
+	line-height: 22px;
+}
+.h-live-price{
+	font-size: 16px;
+	color: #888888;
+	line-height: 28px;
+	margin-bottom: 22px;
+	
+}
+.h-live-number{
+	font-size: 30px;
+	color: #85B839;
+	line-height: 41px;
+	font-weight: 500;
+}
+.btn-shop-now{
+	border-radius: 40px;
+    color: #fff;
+    background: #85b839;
+    padding: 10px 20px;
+    margin-right: 5px;
+    text-align: center;
+    font-weight: 600;
+    transition: all 0.4s ease 0s;
+    text-transform: uppercase
+}
+.btn-view{
+	border-radius: 40px;
+    color: #fff;
+    background: #85b839;
+    padding: 10px 20px;
+    margin-right: 5px;
+    text-align: center;
+    transition: all 0.4s ease 0s;
+    text-transform: uppercase
+}
+.btn-shop-now:hover{
+	cursor: pointer;
+	background: #000000;
+	color: #fff;
+	transition: all 0.4s ease 0s;
+}
+.btn-view:hover{
+	cursor: pointer;
+	background: #000000;
+	color: #fff;
+	transition: all 0.4s ease 0s;
+}
+/*Lounge Chair*/
+.h-chair{
+	width: 1200px;
+	height: 298px;
+	margin: 0 auto;
+	padding: 0px 15px;
+	margin-top: 30px;
+	/*弹性盒子*/
+	display: -webkit-box;
+	/*子盒子均匀分布剩余空间*/
+	-webkit-box-pack: justify;
+}
+.h-chair-left{
+	width: 570px;
+	height: 298px;
+	
+}
+.h-chair-inner{
+	width: 100%;
+	height: 100%;
+	background: url(../img/banner-home-2.jpg) no-repeat;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    position: relative;
+}
+.h-chair-inner1{
+	width: 100%;
+	height: 100%;
+	background: url(../img/banner-home-3.jpg) no-repeat;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    position: relative;
+}
+.h-chair-content{
+	width: 100%;
+	height: 100%;
+	padding: 56px 300px 60px 40px;
+}
+.h-chair-info{
+	font-size: 14px;
+	color: #85B839;
+	margin-bottom: 5px;
+	line-height: 26px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.hot{
+	margin-bottom: 28px;
+}
+.h-live-description span{
+	font-weight: 600;
+    color: #85b839;
+    text-decoration: underline;
+}
+
+
+/*home1 our last news*/
+.h1-last-news{
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+.h-last-box{
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 58px;
+	padding-bottom: 63px;
+	overflow: hidden;
+}
+.h-lastbox-outer{
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+.h-last-outbox{
+	width: 100%;
+	margin: 0 auto;
+	display: -webkit-box;
+	/*-moz-box-orient: horizontal;*/
+	-webkit-box-pack: justify;
+	/*overflow: hidden;*/
+}
+.h-last-we{
+	width: 33.3%;
+	height: 429px;
+	padding: 0px 15px;
+	position: relative;
+}
+/*标题*/
+.h-last-title{
+	font-size: 32px;
+	color: #222222;
+	line-height: 45px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	display: table;
+	position: relative;
+	
+}
+.h-last-title:before{
+	position: absolute;
+    content: '';
+    width: 40px;
+    text-align: center;
+    border-bottom: 2px solid #85B839;
+    top: 50%;
+    right: calc(100% + 10px);
+}
+.h-last-title:after{
+	position: absolute;
+    content: '';
+    width: 40px;
+    text-align: center;
+    border-bottom: 2px solid #85B839;
+    top: 50%;
+    left: calc(100% + 10px);
+}
+
+/*our last news 图片盒子*/
+.h-last-outer{
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	position: relative;
+}
+.h-img-bock{
+	width: 100%;
+	height: 280px;
+}
+.h-img{
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	width: 100%;
+	height: 280px;
+}
+.h-how-a{
+	display: inline-block;
+    padding: 0 10px;
+    background: #85B839;
+    min-width: 77px;
+    height: 26px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 26px;
+    text-align: center;
+    border-radius: 26px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+.h-how-a:hover{
+	color: #fff;
+	background: #85B839;
+	text-decoration: none;
+}
+.h-img-cover{
+	visibility: hidden;
+	width: 100%;
+	height: 280px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #000000;
+	opacity: 0;
+	cursor: pointer;
+}
+.h-img-cover{
+	transition: all 0.4s ease 0s;
+}
+.h-img-bock:hover .h-img-cover{
+	visibility: visible;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #000000;
+	opacity: 0.4;
+	transition: all 0.4s ease 0s;
+}
+
+.h-last-content{
+	width: 100%;
+	height: 149px;
+	border: 1px solid #f1f1f1;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+}
+.h-last-meta{
+	width: 100%;
+	padding: 10px 20px 5px;
+    border-top: 1px solid #efefef;
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+}
+.h-last-meta a{
+	display: inline-block;
+}
+.h-last-meta a{
+	font-size: 12px;
+    color: #aaa;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.h-time{
+	font-size: 12px;
+    color: #aaa;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.h-we-bring{
+	padding: 0 20px;
+	font-size: 18px;
+	color: #333333;
+	font-weight: 500;
+	line-height: 25px;
+}
+.h-we-bring:hover{
+	color: #85B839;
+	cursor: pointer;
+}
+.h-last-info{
+	padding: 0 20px;
+	
+}
+.h-last-info .h-last-des{
+	font-size: 14px;
+	line-height: 24px;
+	color: #888888;
+}
+/*底部绿色小点*/
+.h-last-dots{
+	width: 100%;
+	margin-top: 40px;
+	text-align: center;
+}
+.h-last-li{
+	width: 8px;
+	height: 8px;
+	background: #CCCCCC;
+	border: 1px solid #CCCCCC;
+	border-radius: 10px;
+	margin: 0 5px;
+	cursor: pointer;
+	display: inline-block;
+	transition: all 0.25s ease 0s;
+}
+.h-last-li.on{
+	width: 25px;
+	height: 8px;
+	border: 1px solid #85B839;
+	display: inline-block;
+	background:#85B839;
+	border-radius: 10px;
+}
+
+/*home2 顶部轮播*/
+/*home2 顶部轮播*/
+.h-carousel-box{
+	width: 100%;
+	height: 551px;
+	display: inline-block;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.h-carousel-centent{
+	width: 100%;
+	display: -webkit-box;
+	-webkit-box-pack: justify;
+	position: relative;
+	/*弹性盒子*/
+	/*弹性盒子*/
+	/*display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	position: relative;*/
+	
+}
+.h-carousel-centent .item{
+	width: 100%;
+	height: 100%;
+}
+.h-carousel-item1{
+	width: 100%;
+	height: 100%;
+	background: url(../img/slider-thumb-full-1.jpg) no-repeat;
+	background-position: center;
+	background-size: cover;
+    position: relative;
+    border-radius: 8px;
+}
+.h-carousel-item2{
+	width: 100%;
+	height: 100%;
+	background: url(../img/slider-thumb-full-2.jpg) no-repeat;
+	background-position: center;
+	background-size: cover;
+    position: relative;
+    border-radius: 8px;
+}
+.h-carousel-item3{
+	width: 100%;
+	height: 100%;
+	background: url(../img/slider-thumb-full-3.jpg) no-repeat;
+	background-position: center;
+	background-size: cover;
+    position: relative;
+    border-radius: 8px;
+}
+/*轮播里的文字*/
+.h-crousel-info{
+	width: 1170px;
+	margin: 0 auto;
+	padding-bottom: 154px;
+    padding-top: 119px;
+    padding-left: 735px;
+    padding-right: 30px;
+}
+.h-info-title{
+	color: #85B839;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 0;
+    margin-top: 0px;
+    margin-bottom: 3px;
+    text-transform: uppercase;
+}
+.h-info-big{
+	font-size: 44px;
+	color: #000000;
+	line-height: 52px;
+	/*font-weight: 600;*/
+	margin-bottom: 10px;
+}
+.h-info-price{
+	color: #777777;
+	font-size: 18px;
+	margin-bottom: 35px;
+}
+.h-info-span{
+	color: #85B839;
+	font-size: 28px;
+	line-height: 38px;
+	text-decoration: underline;
+}
+.h-info-botton{
+	display: inline-block;
+	border-radius: 40px;
+    color: #fff;
+    background: #000;
+    padding: 10px 20px;
+    margin-right: 5px;
+    text-align: center;
+    transition: all 0.4s ease 0s;
+    text-transform: uppercase
+}
+.h-info-botton:hover{
+	display: inline-block;
+	cursor: pointer;
+	background: #85B839;
+	color: #fff;
+	transition: all 0.4s ease 0s;
+}
+/*home2 顶部轮播小点的位置*/
+.h2-position{
+	position: absolute;
+	bottom: 50px;
+}
+
+/*轮播按钮以及其效果*/
+.h-conctrol-pub.left{
+	width: 52px;
+    height: 52px;
+    background: #fff;
+    font-size: 30px;
+    text-align: center;
+    line-height: 52px;
+    color: #222222;
+    opacity: 0;
+    border-radius: 50%;
+    position: absolute;
+    top: 45%;
+	left: 30px;
+    transition: all 0.45s ease 0s;
+    visibility: hidden;
+}
+.h-carousel-centent:hover .h-conctrol-pub.left{
+	width: 52px;
+    height: 52px;
+    background: #fff;
+    font-size: 30px;
+    text-align: center;
+    line-height: 52px;
+    opacity: 1;
+    border-radius: 50%;
+    position: absolute;
+    top: 45%;
+    left: 10px;
+	visibility: visible;
+}
+.h-conctrol-pub.right{
+	width: 52px;
+    height: 52px;
+    background: #fff;
+    font-size: 30px;
+    text-align: center;
+    line-height: 52px;
+    color: #222222;
+    opacity: 0;
+    border-radius: 50%;
+    position: absolute;
+    top: 45%;
+	right: 30px;
+    transition: all 0.45s ease 0s;
+    visibility: hidden;
+}
+.h-carousel-centent:hover .h-conctrol-pub.right{
+	width: 52px;
+    height: 52px;
+    background: #fff;
+    font-size: 30px;
+    text-align: center;
+    line-height: 52px;
+    opacity: 1;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+	visibility: visible;
+}
+.h-conctrol-pub:hover{
+	color: #85B839;
+}
+/*注销bootstrap 中的原样式*/
+.carousel-control.left,
+.carousel-control.right{
+	background-image: none;
+}
+/*home3 顶部轮播*/
+.h-pub-container{
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 30px;
+	position: relative;
+}
+.h-up-box{
+	width: 100%;
+	height: 477px;
+	display: inline-block;
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 0 15px;
+	margin-bottom: 30px;
+}
+.h-car3-centent{
+	width: 100%;
+	height: 100%;
+	/*弹性盒子*/
+	display: -webkit-box;
+	-webkit-box-pack: justify;
+	position: relative;
+}
+/*home3 轮播左右按钮以及其效果*/
+.h-car3-centent.left{
+	width: 52px;
+    height: 52px;
+    background: #fff;
+    font-size: 30px;
+    text-align: center;
+    line-height: 52px;
+    color: #222222;
+    opacity: 0;
+    border-radius: 50%;
+    position: absolute;
+    top: 45%;
+	left: 45px;
+    transition: all 0.45s ease 0s;
+    visibility: hidden;
+}
+.h-car3-centent:hover .h-conctrol-pub.left{
+	width: 52px;
+    height: 52px;
+    background: #fff;
+    font-size: 30px;
+    text-align: center;
+    line-height: 52px;
+    opacity: 1;
+    border-radius: 50%;
+    position: absolute;
+    top: 45%;
+    left: 15px;
+	visibility: visible;
+}
+.h-car3-centent.right{
+	width: 52px;
+    height: 52px;
+    background: #fff;
+    font-size: 30px;
+    text-align: center;
+    line-height: 52px;
+    color: #222222;
+    opacity: 0;
+    border-radius: 50%;
+    position: absolute;
+    top: 45%;
+	right: 45px;
+    transition: all 0.45s ease 0s;
+    visibility: hidden;
+}
+.h-car3-centent:hover .h-conctrol-pub.right{
+	width: 52px;
+    height: 52px;
+    background: #fff;
+    font-size: 30px;
+    text-align: center;
+    line-height: 52px;
+    opacity: 1;
+    border-radius: 50%;
+    position: absolute;
+    right: 15px;
+	visibility: visible;
+}
+.h-car3-centent .item{
+	width: 100%;
+	height: 100%;
+}					
+.h-car3-item1{
+	width: 100%;
+	height: 100%;
+	background: url(../img/slider-thumb1.jpg) no-repeat;
+	background-position/img/slider-thumb-full-1.jpg: center;
+	background-size: cover;
+    position: relative;
+    border-radius: 8px;
+}
+.h-car3-item2{
+	width: 100%;
+	height: 100%;
+	background: url(../img/slider-thumb2.jpg) no-repeat;
+	background-position/img/slider-thumb-full-1.jpg: center;
+	background-size: cover;
+    position: relative;
+    border-radius: 8px;
+}
+.h-car3-item3{
+	width: 100%;
+	height: 100%;
+	background: url(../img/slider-thumb3.jpg) no-repeat;
+	background-position/img/slider-thumb-full-1.jpg: center;
+	background-size: cover;
+    position: relative;
+    border-radius: 8px;
+}
+/*home3 轮播里的文字*/
+.h-car3-info{
+	width: 1170px;
+	margin: 0 auto;
+	padding: 155px 170px 160px 680px;
+}
+.h3-info-big{
+	font-size: 34px;
+	color: #000000;
+	line-height: 40px;
+	/*font-weight: 600;*/
+	margin-bottom: 10px;
+}
+.h-info-price{
+	color: #777777;
+	font-size: 18px;
+	margin-bottom: 35px;
+}
+.h-info-span{
+	color: #85B839;
+	font-size: 28px;
+	line-height: 38px;
+	text-decoration: underline;
+}
+
+/*home 2 our last news*/
+/*home 2 our last news*/
+.h-last-news{
+	width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+.h2-lastbox-outer{
+	width: 100%;
+	margin 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+.h2-last-box{
+	width: 100%;
+	margin: 0 auto;
+	display: -webkit-box;
+	-moz-box-pack: justify;
+	position: relative;
+}
+.h2-img-box{
+	width: 50%;
+	height: 300px;
+	padding: 0 15px;
+	/*display: inline-block;*/
+	position: relative;
+}
+.h2-img-boll{
+	position: relative;
+	width: 230px;
+	height: 300px;
+	float: left;
+	/*display: inline-block;*/
+}
+.h2-img{
+	width: 230px;
+	height: 300px;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+	/*float: left;*/
+	/*display: inline-block;*/
+}
+/*遮罩*/
+.h2-img-cover{
+	visibility: hidden;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #000000;
+	opacity: 0;
+	cursor: pointer;
+}
+.h2-img-cover{
+	transition: all 0.45s ease 0s;
+}
+.h2-img-boll:hover .h2-img-cover{
+	visibility: visible;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #000000;
+	opacity: 0.4;
+	transition: all 0.45s ease 0s;
+}
+.h2-last-content{
+	background: #F5F5F5;
+	float: left;
+	width: 340px;
+	height: 300px;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	display: inline-block;
+}
+.h-last-lamp{
+	padding: 3px 10px;
+	margin: 20px 20px;
+	border-radius: 20px;
+	background: #85B839;
+	color: #FFFFFF;
+	font-size: 12px;
+	text-align: center;
+	line-height: 23px;
+	text-transform: uppercase;
+	display: inline-block;
+}
+.h2-last-title{
+	font-size: 12px;
+    color: #aaa;
+    padding: 15px 20px 0;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.h-please{
+	margin-bottom: 59px;
+	line-height: 25px;
+	height: 75px;
+	overflow: hidden;
+}
+.h-header{
+	width: 300px;
+	height: 48px;
+	margin-left: 10px;
+	padding: 10px 0px;
+	border-top: 1px solid #e4e4e4;
+}
+.h-header span{
+	display: inline-block;
+	height: 32px;
+	line-height: 32px;
+}
+.h-header img{
+	width: 32px;
+	height: 32px;
+	margin-right: 5px;
+	border-radius: 50%;
+	display: inline-block;
+}
+.h-header-name{
+	display: inline-block;
+	font-size: 16px;
+    color: #333;
+    line-height: 32px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.h-header-numder{
+	display: inline-block;
+	color: #aaa;
+    font-size: 13px;
+    line-height: 32px;
+}
+/*home2 用户*/
+/*home2 用户*/
+.h-user-bigbox{
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+.h-user-box{
+	width: 1200px;
+	height: 300px;
+	margin-bottom: 30px;
+	position: relative;
+	/*display: -webkit-box;
+    -webkit-box-pack: justify;*/
+   display: flex;
+   justify-content: space-around;
+   
+}
+.h-user-carousel{
+	position: relative;
+	display: inline-block;
+	width: 900px;
+	height: 300px;
+	padding: 0px 15px;
+	overflow: hidden;
+}
+.h-user-inner{
+	width: 100%;
+	height: 100%;
+}
+.h-user-inner .item{
+	width: 100%;
+	height: 100%;
+}
+.h-user-item{
+	width: 100%;
+	height: 100%;
+	background: url(../img/testimonials-bg.jpg) no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	border-radius: 8px;
+}
+
+/*轮播内容*/
+.h-user-content{
+	width: 100%;
+	height: 100%;
+	padding: 67px 60px 66px 60px;
+	overflow: hidden;
+}
+.h-user-content img{
+	display: inline-block;
+	width: 167px;
+	height: 167px;
+	float: left;
+	border-radius: 50%;
+}
+.h-user-info{
+	display:inline-block;
+    overflow: hidden;
+    height: auto;
+    float: left;
+    /*vertical-align: top;*/
+    /*line-height: 167px;*/
+    padding: 0px 10px 0px 50px;
+    position: relative;
+}
+.h-user-info .h-user-text{
+	font-size: 16px;
+    line-height: 26px;
+    color: #888888;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.h-user-name{
+	font-size: 16px;
+    margin-bottom: 0;
+    color: #000000;
+    margin-top: 0;
+    line-height: 22px;
+    text-transform: capitalize;
+}
+.h-user-name span{
+	display: block;
+    font-size: 14px;
+    color: #85B839;
+}
+/*home2 user轮播右边内容*/
+.h-user-news{
+	/*margin-right: -15px;*/
+	margin-bottom: 30px;
+	margin: 0 15px;
+	width: 270px;
+	height: 300px;
+	background: url(../img/newsletter-bg.jpg) no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	border-radius: 8px;
+}
+.h-user-title{
+	width: 100%;
+	height: 100%;
+	padding: 30px 30px 35px;
+}
+.h-newsletter{
+	font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: #000000;
+    line-height: 39px;
+}
+.h-subtitle{
+	font-size: 15px;
+    color: #aaa;
+    line-height: 24px;
+    margin-bottom: 54px;
+}
+.h-user-input{
+	margin-bottom: 10px;
+    width: 100%;
+    background: #fff;
+    font-size: 14px;
+    text-align: center;
+    color: #888;
+    border-color: #fff;
+    height: 42px;
+    border-radius: 42px;
+    padding: 7px 20px;
+    /*max-width: 100%;*/
+}
+.h-user-input:focus{
+	border-color: #85B839;
+}
+.h-user-subbtn{
+	width: 100%;
+	display: inline-block;
+    padding: 9px 20px;
+    color: #fff;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 40px;
+    background: #85B839;
+}
+/*home2 user轮播下的三小块*/
+.h-free-outer{
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+.h-free-inner{
+	width: 1200px;
+	font-size: 0;
+	margin-bottom: 23px;
+	display: -webkit-box;
+	-webkit-box-pack: justify;
+	position: relative;
+	
+}
+.h-free-box{
+	width: 400px;
+	height: 150px;
+	padding: 0 15px;
+}
+.h-free-inbox{
+	height: 150px;
+    padding: 50px 10px;
+    background: #f1f1f1;
+    border-radius: 8px;
+}
+/*home2 user轮播下三小块里的图标盒子*/
+.h-iconbox{
+	display: table;
+    vertical-align: middle;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.h-user-icon{
+	color: #85B839;
+	font-size: 50px;
+    padding: 0 20px;
+    line-height: 50px;
+    display: table-cell;
+    vertical-align: middle;
+}
+.h-user-icon .glyphicon{
+	display: inline-block;
+	font-size: inherit;
+	text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+.h-user-txt{
+	display: inline-block;
+	display: table-cell;
+    vertical-align: middle;
+}
+.h-user-free{
+	color: #222;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+.h-user-order{
+	font-size: 14px;
+	color: #888888;
+}
+/*home3 user轮播下Extra off 75%*/
+.h-user-extra{
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	position: relative;
+}
+.h-extra-outer{
+	width: 1200px;
+	display: -webkit-box;
+	-webkit-box-pack: justify;
+	position: relative;
+}
+.h-extra-box{
+	width: 50%;
+	height: 378px;
+	padding: 0 15px;
+}
+.h-extra-bgbox{
+	width: 100%;
+	height: 378px;
+	padding: 74px 300px 77px 40px;
+}
+.h-extra-bg1{
+	height: 100%;
+	width: 100%;
+	background: url(../img/banner-home-7.jpg) no-repeat;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    position: relative;
+}
+.h-extra-bg2{
+	width: 100%;
+	height: 100%;
+	padding: 144px 0px 140px 0px;
+	background: #DDDDDD;
+}
+.h-extra-bg2:hover{
+	background: #EEEEEE;
+}
+.h-load-img{
+	width: 70px;
+	height: 70px;
+	margin: 0 auto;
+	background: url(../img/load.png) no-repeat;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.h-extra-confuse{
+	text-align: center;
+	font-size: 14px;
+	color: #8f8f8f;
+	margin-top: 10px;
+}
+/*extra 里的文本内容*/
+.h-extra-first{
+	color: #85B839;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0 0 5px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+.h-extra-number{
+	color: #000000;
+	font-size: 48px;
+	line-height: 52px;
+	margin-bottom: 5px;
+}
+.btn-shop-now{
+	display: inline-block;
+}
+.h-extra-code{
+	font-size: 14px;
+    color: #888888;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 26px;
+}
+.h-extra-code span{
+	font-size: 18px;
+	color: #85B839;
+	text-decoration: underline;
+}
+
+
+/*<!--home3轮播底部内容 三个小块-->
+<!--home3轮播底部内容 三个小块-->*/
+.h-best-box{
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: 35px;
+	position: relative;
+}
+.h-best-outer{
+	width: 100%;
+	display: -webkit-box;
+	-webkit-box-pack: justify;
+	position: relative;
+}
+.h-best-inner{
+	width: 400px;
+	height: 250px;
+	margin-bottom: 30px;
+	padding: 0 15px;
+}
+.h-best-content{
+	width: 100%;
+	height: 100%;
+	padding: 53px 160px 57px 23px;
+}
+.h-best-contents{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	padding: 45px 30px;
+}
+.h-best-bg1{
+	width: 100%;
+	height: 100%;
+	background: url(../img/banner-home-10.jpg) no-repeat;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    position: relative;
+}
+.h-best-bg2{
+	width: 100%;
+	height: 100%;
+	background: url(../img/banner-home-12.jpg) no-repeat;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    position: relative;
+}
+.h-best-bg3{
+	width: 100%;
+	height: 100%;
+	background: url(../img/banner-home-11.jpg) no-repeat;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    position: relative;
+}
+/*轮播底部内容 三个小块 内容*/
+.h-best-seller{
+	font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 5px;
+    color: #000000;
+}
+.h-best-check{
+	display: inline-block;
+	font-size: 16px;
+    color: #888;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+/*home3 save bedroom*/
+/*home3 save bedroom*/
+.h-bed-box{
+	width: 100%;
+	margin-bottom: 60px;
+	position: relative;
+}
+.h-bed-outer{
+	width: 100%;
+	height: 566px;
+	background: url(../img/banner-home-4.jpg) no-repeat;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    position: relative;
+}
+.h-bed-inner{
+	width: 1200px;
+	height: 100%;
+	margin: 0 auto;
+}
+.h-bed-content{
+	width: 1200px;
+	height: 100%;
+	padding: 180px 0px;
+}
+.h-btn-view{
+	display: inline-block;
+    height: 40px;
+    border-radius: 40px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    background: #85b839;
+    padding: 10px 20px;
+    margin: 0 auto;
+    text-align: center;
+    transition: all 0.4s ease 0s;
+    text-transform: uppercase;
+}
+.h-btn-view:hover{
+	color: #FFFFFF;
+	background: #000000;
+}
+/*home3 Featured Products*/
+/*home3 Featured Products*/
+.h-featured-box{
+	width: 1200px;
+	margin: 0 auto;
+}
+.h-featured-title{
+	width: 100%;
+	text-align: center;
+}
+/*商品内容*/
+.h-last-commondity{
+	width: 1200px;
+	/*弹性盒子*/
+	display: flex;
+	/*不换行*/
+	flex-wrap: wrap;
+	/*子盒子均匀分布父级空隙*/
+	justify-content: space-around;
+	position: relative;
+}
+.h-last-lists{
+	width: 400px;
+	height:172px;
+	padding: 0px 15px;
+	margin-bottom: 30px;
+	position: relative;
+}
+.h-last-list{
+	position: relative;
+	width: 100%;
+	height: 170px;
+	padding: 10px;
+	background: #f8f8f8;
+	border-radius: 8px;
+}
+.h-last-list:hover{
+	border-radius: 8px;
+	border: 1px solid #85B839;
+}
+.h-list-imgbox{
+	position: relative;
+	width: 150px;
+	height: 150px;
+	margin-right: 10px;
+	cursor: pointer;
+	display: inline-block;
+}
+.h-list-imgbox img{
+	width: 150px;
+	height: 150px;
+	display: inline-block;
+}
+.h-last-cirle{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	text-align: center;
+	display: flex;
+}
+.h-last-cirle .glyphicon{
+	width: 50px;
+	height: 50px;
+	margin: auto;
+	background: #FFFFFF;
+	opacity: 0.8;
+	color: #000;
+	border-radius: 50%;
+	font-size: 14px;
+	text-align: center;
+	line-height: 50px;
+	transition: all 0.4s ease 0s;
+	display: none;
+}
+.h-list-imgbox:hover .h-last-cirle .glyphicon{
+	display: block;
+	cursor: pointer;
+	transition: all 0.4s ease 0s;
+}
+.h-last-cirle .glyphicon:hover{
+	transition: all 0.4s ease 0s;
+	background: #85B839;
+	opacity: 1;
+	color: #fff;
+}
+/*图片右边内容*/
+.h-list-content{
+	vertical-align: top;
+	position: relative;
+	width: 183px;
+	height: 133px;
+	display: inline-block;
+	overflow: hidden;
+    text-align: left;
+}
+.h-list-title{
+	font-size: 16px;
+    margin: 0;
+    cursor: pointer;
+    margin-bottom: 4px;
+}
+.h-list-title span{
+	overflow: hidden;
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: 13px;
+}
+.h-group-ingo{
+	margin-top: 10px;
+}
+.h-group-icon{
+	/*display: inline-block;*/
+	width: 100%;
+	height: 24px;
+	font-size: 0;
+	line-height: 24px;
+}
+.h-list-star{
+    position: relative;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    font-size: 12px;
+    overflow: hidden;
+}
+.h-group-icon .glyphicon{
+	font-size: 14px;
+	line-height: 24px;
+	color: #ffb933;
+}
+.h-list-price{
+	display: block;
+	margin-bottom: 20px;
+	font-size: 16px;
+	color: #111111;
+}
+.btn-shop-list{
+	border-radius: 30px;
+    color: #fff;
+    background: #000000;
+	padding: 8px 15px;
+    margin-right: 5px;
+    font-size: 12px;
+    text-align: center;
+    transition: all 0.4s ease 0s;
+    text-transform: uppercase;
+}
+.btn-shop-list:hover{
+	background: #85b839;
+	color: #fff;
+	cursor: pointer;
+}
+
+/*home3 Big deal of day*/
+/*home3 Big deal of day*/
+.h-big-box{
+	width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+.h-big-outer{
+	width: 1200px;
+	height: 305px;
+	margin-bottom: 30px;
+	display: flex;
+	/*子盒子均匀分布父级空隙*/
+	justify-content: space-around;
+	position: relative;
+}
+.h-big-left{
+	width: 500px;
+	height: 305px;
+	padding: 0 15px;
+	/*background: indianred;*/
+}
+.h-big-right{
+	width: 700px;
+	height: 305px;
+	padding: 0 15px;
+}
+.h-deal-content{
+	width: 100%;
+	height: 100%;
+	padding: 80px 200px 75px 50px;
+	background: url(../img/banner-home-8.jpg) no-repeat;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    position: relative;
+}
+.h-right-content{
+	width: 100%;
+	height: 100%;
+	padding: 70px 330px 63px 50px;
+	background: url(../img/banner-home-9.jpg) no-repeat;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    position: relative;
+}
+.h-deal-bigtext{
+	font-size: 42px;
+	color: #000000;
+	line-height: 48px;
+}
+.h-deal-title{
+	color: #000000;
+	font-size: 28px;
+	line-height: 32px;
+	margin-bottom: 5px;
+}
+/*home3 Vereesa’s Instagram Feed*/
+/*home3 Vereesa’s Instagram Feed*/
+.h-veesea-box{
+	width: 100%;
+	border-top: 1px solid #eee;
+	margin: 0 auto;
+	padding-top: 60px;
+	overflow: hidden;
+	position: relative;
+}
+.h-veesea-camera{
+	text-align: center;
+	color: #85B839;
+	margin-bottom: 15px;
+}
+.h-veesea-camera .glyphicon{
+	width: 60px;
+	height: 60px;
+	font-size: 52px;
+	line-height: 60px;
+}
+.h-camrea-box{
+	width: 100%;
+	font-size: 0;
+	display: flex;
+	justify-content: space-around;
+	position: relative;
+}
+.h-camera-list{
+	width: 20%;
+	height: 259px;
+	position: relative;
+}
+.h-camera-imgbox{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.h-camera-imgbox img{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+.h-img-camera{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	top: 0px;
+	display: flex;
+	text-align: center;
+}
+/*遮盖图片*/
+.h-camera-cover{
+	position: absolute;
+	left: 128px;
+	top: 150px;
+	width: 0;
+	height: 0;
+	background: #000000;
+	opacity: 0;
+}
+.h-camera-cover{
+	transition: all 0.5s ease 0s;
+}
+.h-camera-imgbox:hover .h-camera-cover{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.5;
+}
+.h-img-camera .glyphicon{
+	width: 36px;
+	height: 36px;
+	color: #fff;
+	margin: auto;
+	line-height: 36px;
+	font-size: 32px;
+	transition: all 0.4s ease 0s;
+	display: none;
+}
+.h-camera-imgbox:hover .h-img-camera .glyphicon{
+	display: block;
+	width: 36px;
+	height: 36px;
+	margin: auto;
+	color: #fff;
+	line-height: 36px;
+	font-size: 32px;
+}
+
+/*home1 Sign up Newsletter*/
+/*home1 Sign up Newsletter*/
+.h-sign-box{
+	width: 1200px;
+	margin: 0 auto;
+	margin-bottom: 70px;
+	position: relative;
+}
+.h-sign-outer{
+	width: 100%;
+	height: 200px;
+	padding: 0 15px;
+	position: relative;
+}
+.h-sign-inner{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	padding: 57px 40px 62px;
+	background: url(../img/newsletter-bg-2.jpg) no-repeat;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+	position: relative;
+}
+/*<!--左边文字-->*/
+.h-sign-text{
+	width: 278px;
+    display: inline-block;
+    float: left;
+    margin-right: 35px;
+}
+.h-sign-title{
+	font-size: 26px;
+	color: #000000;
+	line-height: 30px;
+	margin-bottom: 3px;
+}
+.h-sign-content{
+	font-size: 14px;
+	color: #888888;
+	line-height: 24px;
+	margin-bottom: 0;
+}
+.h-login-box{
+	display: inline-block;
+	overflow: hidden;
+	float: left;
+	margin-top: 20px;
+}
+.h-sign-input{
+	width: 313px;
+	margin-right: 5px;
+    border-color: #e9e9e9;
+    background: #fff;
+    color: #888;
+    margin-bottom: 10px;
+    border: none;
+    text-align: center;
+    height: 42px;
+    padding: 7px 20px;
+    max-width: 100%;
+    border-radius: 42px;
+}
+
+/*home bestseller new arrays*/
+/*顶部文字处理*/
+.h-new-title{
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 50px;
+	text-align: center;
+	position: relative;
+}
+.h-new-text{
+	padding: 0 10px;
+	font-size: 22px;
+	color: #BBBBBB;
+	text-align: center;
+	display: inline-block;
+	position: relative;
+}
+.h-new-font{
+	display: inline-block;
+	font-size: 22px;
+	color: #BBBBBB;
+	line-height: 33px;
+	padding: 0px 0px 3px;
+}
+.h-new-font:hover{
+	color: #BBBBBB;
+}
+.h-new-font.action{
+	color: #222222;
+}
+.h-new-hover.active{
+	visibility: visible;
+	width: 84%;
+	height: 16px;
+	opacity: 0.6;
+	left: 9%;
+	margin: 0 auto;
+	background: #85B839;
+	bottom: 0px;
+	position: absolute;
+}
+.h-new-hover{
+	visibility: hidden;
+	width: 0px;
+	height: 0px;
+	opacity: 0.6;
+	margin: 0 auto;
+	background: #85B839;
+	bottom: 0px;
+	left: 50%;
+	position: absolute;
+}
+
+.h-new-hover{
+	transition: all 0.4s ease 0s;
+}
+.h-new-text:hover .h-new-hover{
+	visibility: visible;
+	width: 84%;
+	height: 16px;
+	color: #BBBBBB;
+	opacity: 0.6;
+	left: 9%;
+	margin: 0 auto;
+	background: #85B839;
+	bottom: 0px;
+	position: absolute;
+	
+}
+/*标题底部商品内容*/
+.h-new-outerbox{
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	display: none;
+}
+.h-new-outerbox.show{
+	display: block;
+}
+.h-newarray-outer{
+	width: 100%;
+	text-align: left;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	position: relative;
+}
+.h-new-box{
+	width: 25%;
+	padding: 0 15px;
+	height: 362px;
+	border-radius: 8px;
+	margin-bottom: 30px;
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
+}
+.h-new-inner:hover{
+	border: 1px solid #85B839;
+}
+.h-new-inner{
+	width: 100%;
+	height: 100%;
+	background: #F8F8F8;
+	text-align: center;
+	padding: 20px;
+	border-radius: 8px;
+	position: relative;
+}
+.h-new-imgbox{
+	width: 100%;
+	height: 228px;
+	position: relative;
+}
+.h-new-img{
+	width: 100%;
+	height: 100%;
+}
+.h-new{
+	position: absolute;
+	display: inline-block;
+	padding: 3px 10px;
+	color: #FFFFFF;
+	background: #85B839;
+	top: 0px;
+	left: 0px;
+	font-size: 12px;
+	text-transform: uppercase;
+	border-radius: 12px;
+}
+.h-new:hover{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.h-new-imgbox .glyphicon{
+	display: inline-block;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	color: #ccc;
+	font-size: 22px;
+}
+/*.h-new-inner .glyphicon.hover{
+	display: none;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	color: #85B839;
+	font-size: 22px;
+	z-index: 100;
+}*/
+/*.h-new-inner .glyphicon:hover .h-new-inner .glyphicon.hover{
+	display: inline-block;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	color: #85B839;
+	z-index: 100;
+	font-size: 22px;
+}*/
+.h-new-imgbox .glyphicon.h-search{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: #FFFFFF;
+	position: absolute;
+	left: 40%;
+	top: 50%;
+	opacity: 0.8;
+	text-align: center;
+	line-height: 50px;
+	color: #222222;
+	font-size: 14px;
+	transition: all 0.4s ease-in 0s;
+	display: none;
+}
+.h-new-imgbox .glyphicon.h-search:hover{
+	color: #FFFFFF;
+	background: #85B839;
+	opacity: 1;
+}
+.h-new-inner:hover .h-new-imgbox .glyphicon.h-search{
+	display: inline-block;
+}
+
+/*文本内容*/
+.h-new-info{
+	width: 100%;
+	text-align: center;
+	position: relative;
+	
+}
+.h-plastic{
+	color: #333;
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+.h-new-info .glyphicon{
+	color: #ffb933;
+	font-size: 14px;
+	
+}
+.h-new-abandon{
+	color: #AAAAAA;
+	font-size: 14px;
+	text-decoration: line-through;
+}
+.h-new-now{
+	color: #111111;
+	font-size: 16px;
+}
+.h-add-cart{
+	position: absolute;
+	bottom: -40px;
+	width: 228px;
+	height: 42px;
+	background: #FFFFFF;
+	border-radius: 20px;
+	border: 1px solid #85b839;
+	color: #333333;
+	text-align: center;
+	line-height: 40px;
+	font-size: 12px;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-weight: 600;
+	visibility: hidden;
+	transition: all 0.2s ease 0s;
+}
+.h-add-cart:hover{
+	background: #85B839;
+	color: #FFFFFF;
+	transition: all 0.4s ease 0s;
+}
+.h-new-inner:hover .h-new-info{
+	display: none;
+}
+.h-new-inner:hover .h-add-cart{
+	visibility: visible;
+	position: absolute;
+	bottom: 40px;
+}
+
+/*home deal of day*/
+.h-deal-outer{
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+.h-deal-day{
+	width: 100%;
+	margin: 0 auto;
+	/*overflow: hidden;*/
+	display: -webkit-box;
+	-webkit-box-pack: justify;
+	position: relative;
+}
+
+/*bestselling*/
+.h-bestling-outer{
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+.h-bestselling{
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	/*overflow: hidden;*/
+	display: -webkit-box;
+	-webkit-box-pack: justify;
+	position: relative;
+}
+.h-bestselling-con{
+	width: 50%;
+	height: 312px;
+	padding: 0px 15px;
+}
+.h-bs-list{
+	position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    font-size: 0;
+    background: #f8f8f8;
+    border-radius: 8px;
+}
+.h-bs-imgbox{
+	position: relative;
+    width: 270px;
+    height: 270px;
+    margin-right: 10px;
+    cursor: pointer;
+    display: inline-block;
+  }
+.h-bs-imgbox img{
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+}
+.h-bs-circle{
+	width: 50px;
+    height: 50px;
+    background: #FFFFFF;
+    opacity: 0.8;
+    color: #000;
+    border-radius: 50%;
+    font-size: 14px;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    left: 40%;
+    top: 40%;
+    transition: all 0.4s ease 0s;
+    display: none;
+}
+.h-bs-imgbox:hover .h-bs-circle{
+	display: block;
+}
+.h-group-icon .h-bs-number{
+	font-size: 14px;
+	color: #888888;
+	display: inline-block;
+}
+.h-bs-circle:hover{
+    background: #85B839;
+    /*color: #FFFFFF;*/
+    opacity: 1;
+    color: #000;
+    display: block;
+    transition: all 0.4s ease 0s;
+}
+.h-bs-circle:hover .glyphicon{
+	color: #fff;
+	transition: all 0.4s ease 0s;
+}
+.h-list-style{
+	text-align: left;
+    padding-left: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    opacity: 1;
+    max-width: 250px;
+}
+.h-bs-title{
+	font-size: 20px;
+	margin-bottom: 9px;
+	color: #000000;
+}
+.h-bs-desc{
+	font-size: 16px;
+    color: #555555;
+    margin-bottom: 15px;
+    line-height: 24px;
+    overflow: hidden;
+}
+/*左右按钮控制*/
+
+.h-bs-left .glyphicon{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: #FFFFFF;
+	border: 1px solid #CCCCCC;
+	position: absolute;
+	top: 45%;
+	left: 0;
+	font-size: 14px;
+	color: #888888;
+	cursor: pointer;
+	text-align: center;
+	line-height: 48px;
+	display: none;
+	transition: all 0.45s ease 0s;
+}
+.h-bs-right .glyphicon{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: #FFFFFF;
+	border: 1px solid #CCCCCC;
+	position: absolute;
+	top: 45%;
+	right: 0;
+	font-size: 14px;
+	color: #888888;
+	cursor: pointer;
+	transition: all 0.45s ease 0s;
+	text-align: center;
+	line-height: 48px;
+	display: none;
+	
+}
+.h-bestling-outer:hover .h-bs-right .glyphicon{
+	display: block;
+}
+.h-bestling-outer:hover .h-bs-left .glyphicon{
+	display: block;
+}
+.h-bs-right .glyphicon:hover,
+.h-bs-left .glyphicon:hover{
+	color: #FFFFFF;
+	background: #85B839;
+	border: 1px solid #85B839;
+}
+
+/*home2 lookbook*/
+.h-look-box{
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 50px;
+	position: relative;
+}
+.h-look-outer{
+	width: 100%;
+	height: 583px;
+	position: relative;
+}
+.h-look-inner{
+	width: 100%;
+	height: 100%;
+	padding: 180px 15px 180px 830px;
+	background: url(../img/banner-home-19.jpg) no-repeat;
+	background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+@media only screen and (max-width: 1200px){
+	/*home1 顶部轮播*/
+	.h-container-pub{
+		width: 970px;
+		margin: 0 auto;
+		position: relative;
+	}
+	.h-outer{
+		display: none;
+	}
+	.h-change-this{
+		width: 100%;
+		height: 550px;
+		padding: 0px 15px;
+		position: relative;
+		margin: 0 auto;
+		display: block;
+	}
+	.h-change-inner{
+		display: block;
+	}
+	
+	/*home1 Living Room Furniture*/
+	/*home1 Living Room Furniture*/
+	.h-live-header{
+		width: 970px;
+		margin: 0 auto;
+		margin-top: 30px;
+		position: relative;
+	}
+	.h-live-banner{
+		width: 100%;
+		margin: 0 auto;
+		padding: 0px 15px;
+		position: relative;
+	}
+	/*中间椅子模块*/
+	.h-chair{
+		width: 970px;
+		height: 298px;
+		margin: 0 auto;
+		padding: 0px 0px;
+		margin-top: 30px;
+		/*弹性盒子*/
+		display: -webkit-box;
+		/*子盒子均匀分布剩余空间*/
+		-webkit-box-pack: justify;
+	}
+	.h-chair-left{
+		width: 50%;
+		padding: 0 15px;
+		height: 298px;
+	}
+	
+	.h-chair-content{
+		width: 100%;
+		height: 100%;
+		padding: 56px 130px 60px 40px;
+	}
+	
+	/*home1 our last news*/
+	.h1-last-news{
+		width: 970px;
+		margin: 0 auto;
+		position: relative;
+	}
+	.h-last-box{
+		position: relative;
+		width: 100%;
+		margin: 0 auto;
+		padding-top: 58px;
+		padding-bottom: 63px;
+		overflow: hidden;
+	}
+	.h-last-outbox{
+		width: 100%;
+		margin: 0 auto;
+		display: -webkit-box;
+		/*-moz-box-orient: horizontal;*/
+		-webkit-box-pack: justify;
+		/*overflow: hidden;*/
+	}
+	.h-last-we{
+		width: 33.3%;
+		height: 440px;
+		padding: 0px 15px;
+		position: relative;
+	}
+	.h-last-title{
+		font-size: 26px;
+		color: #222222;
+		line-height: 37px;
+		margin: 0 auto;
+		margin-bottom: 35px;
+		display: table;
+		position: relative;
+	}
+	.h-img-bock{
+		width: 100%;
+		height: auto;
+	}
+	.h-img{
+		width: 100%;
+		height: auto;
+	}
+	.h-img-cover{
+		visibility: hidden;
+		width: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		background: #000000;
+		opacity: 0;
+		cursor: pointer;
+		transition: all 0.45s ease 0s;
+	}
+	
+	.h-last-content{
+		width: 100%;
+		height: 198px;
+		border: 1px solid #f1f1f1;
+	    border-top: none;
+	    border-radius: 0 0 8px 8px;
+	}
+	.h-img{
+		width: 100%;
+		height: auto;
+	}
+	
+	
+	/*home2 轮播变化*/
+	/*轮播里的文字*/
+	.h-crousel-info{
+		width: 940px;
+		margin: 0 auto;
+		padding-bottom: 154px;
+	    padding-top: 119px;
+	    padding-left: 200px;
+	    padding-right: 30px;
+	}
+	.h-info-big{
+		font-size: 36px;
+		color: #000000;
+		line-height: 43px;
+		/*font-weight: 600;*/
+		margin-bottom: 10px;
+	}
+	/*home2 顶部轮播小点的位置*/
+	.h2-position{
+		position: absolute;
+		bottom: 70px;
+	}
+	
+	/*home3 顶部轮播*/
+	.h-pub-container{
+		width: 970px;
+		margin: 0 auto;
+		margin-top: 30px;
+		position: relative;
+	}
+	.h-up-box{
+		width: 100%;
+		height: 463px;
+		display: inline-block;
+		overflow: hidden;
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+	.h-car3-centent{
+		width: 100%;
+		height: 100%;
+		padding: 0 15px;
+		/*弹性盒子*/
+		display: -webkit-box;
+		-webkit-box-pack: justify;
+		position: relative;
+	}
+	/*home3 轮播里的文字*/
+	.h-car3-info{
+		width: 100%;
+		margin: 0 auto;
+		padding: 155px 170px 160px 200px;
+	}
+	.h3-info-big{
+		font-size: 28px;
+		color: #000000;
+		line-height: 33px;
+		/*font-weight: 600;*/
+		margin-bottom: 10px;
+	}
+	
+	/*home 2 our last news*/
+	/*home 2 our last news*/
+	.h-last-news{
+		width: 970px;
+		margin: 0 auto;
+		overflow: hidden;
+		position: relative;
+	}
+	.h2-last-box{
+		width: 100%;
+		margin: 0 auto;
+		display: -webkit-box;
+		-moz-box-pack: justify;
+		position: relative;
+	}
+	.h2-img-box{
+		width: 100%;
+		height: 300px;
+		padding: 0 15px;
+		position: relative;
+	}
+	
+	.h2-last-content{
+		background: #F5F5F5;
+		float: left;
+		width: 700px;
+		height: 300px;
+		display: inline-block;
+	}
+	/*头像以及评论*/
+	.h-header{
+		width: 660px;
+		height: 48px;
+		margin-left: 10px;
+		padding: 10px 0px;
+		border-top: 1px solid #e4e4e4;
+	}
+	
+	/*home3 Vereesa’s Instagram Feed*/
+	/*home3 Vereesa’s Instagram Feed*/
+	.h-camrea-box{
+		width: 100%;
+		display: -webkit-box;
+		-webkit-box-pack: justify;
+		overflow: hidden;
+		position: relative;
+	}
+	.h-camera-list{
+		width: 25%;
+		height: 259px;
+		position: relative;
+	}
+	.h-camera-imgbox{
+		display: inline-block;
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+	.h-camera-imgbox img{
+		display: inline-block;
+		width: 100%;
+		height: 100%;
+	}
+	.h-img-camera{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0px;
+		top: 0px;
+		display: flex;
+		
+		text-align: center;
+	}
+	/*遮盖图片*/
+	.h-camera-cover{
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		width: 0;
+		height: 0;
+		background: #000000;
+		opacity: 0;
+	}
+	/*home2 用户*/
+	/*home2 用户*/
+	.h-user-bigbox{
+		width: 970px;
+		margin: 0 auto;
+		position: relative;
+	}
+	.h-user-box{
+		width: 970px;
+		height: 600px;
+		/*margin-bottom: 30px;*/
+		position: relative;
+		display: -webkit-box;
+	    -webkit-box-pack: justify;
+	   display: flex;
+	   flex-wrap: wrap;
+	   margin-bottom: 0;
+	   justify-content: space-around;
+	   
+	}
+	.h-user-carousel{
+		position: relative;
+		width: 970px;
+		height: 300px;
+		padding: 0px 15px;
+		overflow: hidden;
+	}
+	.h-user-inner{
+		width: 100%;
+		height: 100%;
+	}
+	.h-user-inner .item{
+		width: 100%;
+		height: 100%;
+	}
+	.h-user-item{
+		width: 100%;
+		height: 100%;
+		background: url(../img/testimonials-bg.jpg) no-repeat;
+		background-position: center;
+		background-size: cover;
+		position: relative;
+		border-radius: 8px;
+	}
+	/*轮播内容*/
+	.h-user-content{
+		width: 940px;
+		height: 100%;
+		padding: 67px 60px 66px 60px;
+		overflow: hidden;
+	}
+	/*home2 user轮播右边内容*/
+	.h-user-news{
+		/*margin: 0 15px;*/
+		/*margin-bottom: 30px;*/
+		width: 940px;
+		height: 242px;
+		background: url(../img/newsletter-bg.jpg) no-repeat;
+		background-position: center;
+		background-size: cover;
+		position: relative;
+		margin-bottom: 0;
+		border-radius: 8px;
+	}
+	.h-user-title{
+		width: 100%;
+		height: 100%;
+		padding: 30px 30px 35px;
+	}
+	.h-subtitle{
+		font-size: 15px;
+	    color: #aaa;
+	    line-height: 24px;
+	    margin-bottom: 20px;
+	}
+	/*<!--三小块-->*/
+	.h-free-outer{
+		width: 970px;
+		height: 100px;
+		margin: 0 auto;
+		position: relative;
+	}
+	.h-free-inner{
+		width: 970px;
+		font-size: 0;
+		margin: 0 auto;
+		margin-bottom: 23px;
+		display: flex;
+		justify-content: space-around;
+		position: relative;
+		
+	}
+	.h-free-box{
+		width: 33%;
+		height: 100px;
+		padding: 0 15px;
+	}
+	.h-free-inbox{
+		height: 100%;
+	    padding: 25px 10px;
+	    background: #f1f1f1;
+	    border-radius: 8px;
+	}
+	.h-user-order{
+		display: inline-block;
+		font-size: 14px;
+		color: #888888;
+	}
+	/*home3 user轮播下Extra off 75%*/
+	.h-user-extra{
+		width: 970px;
+		margin: 0 auto;
+		margin-top: 30px;
+		margin-bottom: 0px;
+		position: relative;
+	}
+	.h-extra-outer{
+		overflow: hidden;
+		width: 970px;
+		/*弹性盒子*/
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		position: relative;
+	}
+	.h-extra-box{
+		width: 100%;
+		height: 318px;
+		margin-bottom: 30px;
+		padding: 0 15px;
+	}
+	.h-extra-bgbox{
+		width: 100%;
+		height: 318px;
+		padding: 74px 15px 77px 40px;
+	}
+	.h-extra-bg1{
+		height: 100%;
+		width: 100%;
+		background: url(../img/banner-home-7.jpg) no-repeat;
+		background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    border-radius: 8px;
+	    position: relative;
+	}
+	.h-extra-bg2{
+		width: 100%;
+		height: 100%;
+		padding: 144px 0px 140px 0px;
+		background: #DDDDDD;
+	}
+	/*<!--home3轮播底部内容 三个小块-->
+	<!--home3轮播底部内容 三个小块-->*/
+	.h-best-outer{
+		width: 100%;
+		display: -webkit-box;
+		-webkit-box-pack: justify;
+		position: relative;
+	}
+	.h-best-inner{
+		width: 33%;
+		height: 250px;
+		margin-bottom: 30px;
+		padding: 0 15px;
+	}
+	.h-best-content{
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		padding: 45px 30px;
+	}
+	/*home1 Sign up Newsletter*/
+	/*home1 Sign up Newsletter*/
+	.h-sign-box{
+		width: 970px;
+		margin: 0 auto;
+		margin-bottom: 70px;
+		position: relative;
+	}
+	/*home3 Featured Products*/
+	.h-featured-box{
+		width: 970px;
+		margin: 0 auto;
+		position: relative;
+	}
+	.h-featured-title{
+		width: 100%;
+		text-align: center;
+	}
+	/*商品内容*/
+	.h-last-commondity{
+		width: 970px;
+		/*弹性盒子*/
+		display: flex;
+		/*换行*/
+		flex-wrap: wrap;
+		/*子盒子均匀分布父级空隙*/
+		justify-content: space-around;
+		position: relative;
+	}
+	.h-last-lists{
+		width: 50%;
+		height:172px;
+		padding: 0px 15px;
+		margin-bottom: 30px;
+		position: relative;
+	}
+	
+	/*home3 Big deal of day*/
+	.h-big-box{
+		width: 970px;
+		margin: 0 auto;
+		overflow: hidden;
+		position: relative;
+	}
+	.h-big-outer{
+		width: 100%;
+		height: 305px;
+		margin-bottom: 30px;
+		display: flex;
+		/*子盒子均匀分布父级空隙*/
+		justify-content: space-around;
+		position: relative;
+	}
+	.h-big-left{
+		width: 40%;
+		height: 305px;
+		padding: 0 15px;
+		/*background: indianred;*/
+	}
+	.h-big-right{
+		width: 60%;
+		height: 305px;
+		padding: 0 15px;
+	}
+	.h-deal-content{
+		width: 100%;
+		height: 100%;
+		padding: 80px 40px 75px;
+		background: url(../img/banner-home-8.jpg) no-repeat;
+		background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    border-radius: 8px;
+	    position: relative;
+	}
+	.h-right-content{
+		width: 100%;
+		height: 100%;
+		padding: 70px 160px 63px 50px;
+		background: url(../img/banner-home-9.jpg) no-repeat;
+		background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    border-radius: 8px;
+	    position: relative;
+	}
+	/*home bestseller new arrays*/
+	.h-newarray-outer{
+		width: 100%;
+		text-align: left;
+		margin: 0 auto;
+		display: flex;
+		/*flex-direction: row;*/
+		/*弹性盒子从左到右*/
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		position: relative;
+	}
+	.h-new-box{
+		width: 33.3%;
+		padding: 0 15px;
+		height: 362px;
+		border-radius: 8px;
+		margin-bottom: 30px;
+		cursor: pointer;
+		overflow: hidden;
+		position: relative;
+	}
+	.h-add-cart{
+		width: 250px;
+		height: 42px;
+	}
+	/*home3 save bedroom*/
+	/*.h-bed-box{
+		width: 100%;
+		margin-bottom: 60px;
+		position: relative;
+	}*/
+	.h-bed-outer{
+		height: 424px;
+	}
+	.h-bed-inner{
+		width: 940px;
+		height: 100%;
+		margin: 0 auto;
+	}
+	.h-bed-content{
+		width: 100%;
+		height: 100%;
+		padding: 120px 0px;
+	}
+	.h-extra-number{
+		font-size: 36px;
+	}
+	.btn-shop-now{
+		font-size: 12px;
+	}
+	/*home2 bestselling*/
+	
+	.h-bestselling-con{
+		width: 100%;
+		height: 312px;
+		padding: 0px 15px;
+	}
+	/*home2 lookbook*/
+	.h-look-box{
+		width: 100%;
+		margin: 0 auto;
+		margin-top: 30px;
+		margin-bottom: 50px;
+		position: relative;
+	}
+	.h-look-outer{
+		width: 100%;
+		height: 355px;
+		position: relative;
+	}
+	.h-look-inner{
+		width: 100%;
+		height: 100%;
+		padding: 80px 15px 80px 530px;
+	    position: relative;
+	}
+	
+}
+@media only screen and (max-width: 998px) {
+	/*home1 顶部轮播*/
+	.h-container-pub{
+		width: 750px;
+		margin: 0 auto;
+		position: relative;
+	}
+	.h-change-this{
+		width: 100%;
+		height: 603px;
+		margin: 0 auto;
+		padding: 0 15px;
+		margin-top: 20px;
+		position: relative;
+		
+	}
+	.h-change-outer{
+		width: 100%;
+		height: 100%;
+		border-radius: 8px;
+		background: #f1f1f1;
+		overflow: hidden;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		position: relative;
+	}
+	
+	.h-change-outer .item{
+		width: 100%;
+		height: 100%;
+	}
+	.h-change-outer .h-change-item{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+	.h-change-outer img{
+		display: inline-block;
+		width: 100%;
+		height: 583px;
+		border-radius: 8px;
+	}
+	.h-change-outer .h-caption{
+		position: absolute;
+		width: 720px;
+		height: 100%;
+		left: 0;
+		top: 0;
+		text-align: left;
+		text-shadow: none;
+		padding: 224px 400px 161px 50px;
+	}
+	.h-change-bottom{
+		width: 100%;
+		height: 290px;
+		margin-top: 20px;
+		/*弹性盒子*/
+		display: -webkit-box;
+		/*子盒子均匀分布剩余空间*/
+		-webkit-box-pack: justify;
+	}
+	.h-change-inner{
+		width: 350px;
+		height: 290px;
+	}
+	/*home1 Living Room Furniture*/
+	.h-live-header{
+		width: 750px;
+		margin: 0 auto;
+		margin-top: 30px;
+		position: relative;
+	}
+	.h-live-banner{
+		width: 100%;
+		margin: 0 auto;
+		padding: 0px 15px;
+		position: relative;
+	}
+	/*中间椅子模块*/
+	.h-chair{
+		width: 750px;
+		height: auto;
+		height: auto;
+		margin: 0 auto;
+		padding: 0 15px;
+		margin-top: 30px;
+		/*弹性盒子*/
+		display: flex;
+		flex-wrap: wrap;
+		/*子盒子均匀分布剩余空间*/
+		justify-content: space-around;
+	}
+	.h-chair-left{
+		width: 100%;
+		height: 298px;
+		padding: 0px;
+		margin-bottom: 30px;
+	}
+	.h-chair-content{
+		width: 100%;
+		height: 100%;
+		padding: 56px 130px 60px 40px;
+	}
+	/*home1 our last news*/
+	.h1-last-news{
+		width: 750px;
+		margin: 0 auto;
+		position: relative;
+	}
+	.h-last-box{
+		position: relative;
+		width: 100%;
+		margin: 0 auto;
+		padding-top: 58px;
+		padding-bottom: 63px;
+		overflow: hidden;
+	}
+	.h-last-outbox{
+		width: 100%;
+		margin: 0 auto;
+		display: -webkit-box;
+		/*-moz-box-orient: horizontal;*/
+		-webkit-box-pack: justify;
+		/*overflow: hidden;*/
+	}
+	.h-last-we{
+		width: 50%;
+		height: 410px;
+		padding: 0px 15px;
+		position: relative;
+	}
+	
+	.h-last-title{
+		font-size: 26px;
+		color: #222222;
+		line-height: 37px;
+		margin: 0 auto;
+		margin-bottom: 35px;
+		display: table;
+		position: relative;
+	}
+	
+	.h-last-content{
+		width: 100%;
+		height: 149px;
+		border: 1px solid #f1f1f1;
+	    border-top: none;
+	    border-radius: 0 0 8px 8px;
+	}
+	.h-img{
+		width: 100%;
+		height: auto;
+	}
+	.h-img-cover{
+		visibility: hidden;
+		width: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		background: #000000;
+		opacity: 0;
+		cursor: pointer;
+		transition: all 0.45s ease 0s;
+	}
+	
+	/*home2 轮播变化*/
+	/*轮播里的文字*/
+	.h-crousel-info{
+		width: 720px;
+		margin: 0 auto;
+		padding-bottom: 154px;
+	    padding-top: 119px;
+	    padding-left: 200px;
+	    padding-right: 30px;
+	}
+	
+	/*home3 顶部轮播*/
+	.h-pub-container{
+		max-width: 750px;
+		margin: 0 auto;
+		margin-top: 30px;
+		position: relative;
+	}
+	.h-up-box{
+		width: 100%;
+		height: 463px;
+		display: inline-block;
+		overflow: hidden;
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+	.h-car3-centent{
+		width: 100%;
+		height: 100%;
+		padding: 0 15px;
+		/*弹性盒子*/
+		display: -webkit-box;
+		-webkit-box-pack: justify;
+		position: relative;
+	}
+	/*home3 轮播里的文字*/
+	.h-car3-info{
+		width: 100%;
+		margin: 0 auto;
+		padding: 155px 170px 160px 200px;
+	}
+	/*home 2 our last news*/
+	/*home 2 our last news*/
+	.h-last-news{
+		width: 750px;
+		margin: 0 auto;
+		overflow: hidden;
+		position: relative;
+	}
+	.h2-last-box{
+		width: 100%;
+		margin: 0 auto;
+		display: -webkit-box;
+		-moz-box-pack: justify;
+		position: relative;
+	}
+	.h2-img-box{
+		width: 100%;
+		height: 300px;
+		padding: 0 15px;
+		position: relative;
+	}
+	
+	.h2-last-content{
+		background: #F5F5F5;
+		float: left;
+		width: 460px;
+		height: 300px;
+		display: inline-block;
+	}
+	/*头像以及评论*/
+	.h-header{
+		width: 420px;
+		height: 48px;
+		margin-left: 10px;
+		padding: 10px 0px;
+		border-top: 1px solid #e4e4e4;
+	}
+	
+	/*home3 Vereesa’s Instagram Feed*/
+	/*home3 Vereesa’s Instagram Feed*/
+	/*home3 Vereesa’s Instagram Feed*/
+	.h-camrea-box{
+		width: 100%;
+		max-height: 312px;
+		display: -webkit-box;
+		-webkit-box-pack: justify;
+		position: relative;
+	}
+	
+	.h-camera-list{
+		width: 33.3%;
+		height: 100%;
+		position: relative;
+	}
+	.h-camera-imgbox{
+		display: inline-block;
+		width: 100%;
+		height: auto;
+		position: relative;
+	}
+	.h-camera-imgbox img{
+		display: inline-block;
+		width: 100%;
+		height: 100%;
+	}
+	.h-img-camera{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0px;
+		top: 0px;
+		display: flex;
+		text-align: center;
+	}
+	/*遮盖图片*/
+	.h-camera-cover{
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		width: 0;
+		height: 0;
+		background: #000000;
+		opacity: 0;
+	}
+	/*home2 用户*/
+	/*home2 用户*/
+	.h-user-bigbox{
+		width: 750px;
+		margin: 0 auto;
+		position: relative;
+	}
+	.h-user-box{
+		width: 750px;
+		/*height: 600px;*/
+		/*margin-bottom: 30px;*/
+		position: relative;
+		display: -webkit-box;
+	    -webkit-box-pack: justify;
+	   display: flex;
+	   flex-wrap: wrap;
+	   margin-bottom: 0;
+	   justify-content: space-around;
+	}
+	.h-user-carousel{
+		position: relative;
+		width: 750px;
+		height: 317px;
+		padding: 0px 15px;
+		overflow: hidden;
+	}
+	/*轮播内容*/
+	.h-user-content{
+		width: 720px;
+		height: 100%;
+		padding: 67px 60px 66px 60px;
+		overflow: hidden;
+	}
+	/*home2 user轮播右边内容*/
+	.h-user-news{
+		/*margin: 0 15px;*/
+		/*margin-bottom: 30px;*/
+		width: 720px;
+		height: 242px;
+		background: url(../img/newsletter-bg.jpg) no-repeat;
+		background-position: center;
+		background-size: cover;
+		position: relative;
+		margin-bottom: 0;
+		border-radius: 8px;
+	}
+	/*<!--三小块-->*/
+	.h-free-outer{
+		width: 750px;
+		height: 147px;
+		margin: 0 auto;
+		position: relative;
+	}
+	.h-free-inner{
+		width: 100%;
+		height: 147px;
+		font-size: 0;
+		margin: 0 auto;
+		margin-bottom: 23px;
+		display: flex;
+		justify-content: space-around;
+		position: relative;
+	}
+	.h-free-box{
+		width: 33%;
+		height: 100%;
+		padding: 0 15px;
+	}
+	.h-free-inbox{
+		height: 100%;
+	    padding: 25px 10px;
+	    background: #f1f1f1;
+	    border-radius: 8px;
+	}
+	/*home2 user轮播下三小块里的图标盒子*/
+	.h-iconbox{
+		display: block;
+		text-align: center;
+	    vertical-align: middle;
+	    overflow: hidden;
+	    margin: 0 auto;
+	}
+	.h-user-icon{
+		width: 100%;
+		color: #85B839;
+		font-size: 50px;
+	    padding: 0px;
+	    line-height: 48px;
+	    display: block;
+	    vertical-align: middle;
+	}
+	.h-user-txt{
+		width: 100%;
+		display: block;
+		padding: 0;
+	    vertical-align: middle;
+	}
+	.h-user-free{
+		color: #222;
+	    margin-bottom: 0;
+	    font-size: 18px;
+	    line-height: 24px;
+	    font-weight: 600;
+	}
+	.h-user-order{
+		line-height: 24px;
+		font-size: 14px;
+		color: #888888;
+	}
+	/*home3 user轮播下Extra off 75%*/
+	.h-user-extra{
+		width: 750px;
+		margin: 0 auto;
+		margin-top: 30px;
+		margin-bottom: 0px;
+		position: relative;
+	}
+	.h-extra-outer{
+		overflow: hidden;
+		width: 750px;
+		/*弹性盒子*/
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		position: relative;
+	}
+	/*<!--home3轮播底部内容 三个小块-->
+	<!--home3轮播底部内容 三个小块-->*/
+	.h-best-outer{
+		width: 100%;
+		/*弹性盒子*/
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		position: relative;
+	}
+	.h-best-inner{
+		width: 100%;
+		height: 250px;
+		margin-bottom: 30px;
+		padding: 0 15px;
+	}
+	.h-best-content{
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		padding: 45px 30px;
+	}
+	/*轮播底部内容 三个小块 内容*/
+	.h-best-check{
+		display: block;
+		font-size: 16px;
+	    color: #888;
+	    line-height: 22px;
+	    margin-bottom: 20px;
+	}
+	/*home1 Sign up Newsletter*/
+	/*home1 Sign up Newsletter*/
+	.h-sign-box{
+		width: 750px;
+		margin: 0 auto;
+		margin-bottom: 70px;
+		position: relative;
+	}
+	.h-sign-outer{
+		width: 100%;
+		height: 279px;
+		padding: 0 15px;
+		position: relative;
+	}
+	/*home3 Featured Products*/
+	.h-featured-box{
+		width: 750px;
+		margin: 0 auto;
+		position: relative;
+	}
+	.h-featured-title{
+		width: 100%;
+		text-align: center;
+	}
+	/*商品内容*/
+	.h-last-commondity{
+		width: 100%;
+		/*弹性盒子*/
+		display: flex;
+		/*换行*/
+		flex-wrap: wrap;
+		/*子盒子均匀分布父级空隙*/
+		justify-content: space-around;
+		position: relative;
+	}
+	.h-last-lists{
+		width: 375px;
+		height:172px;
+		padding: 0px 15px;
+		margin-bottom: 30px;
+		position: relative;
+	}
+	/*图片右边内容*/
+	.h-list-content{
+		vertical-align: top;
+		position: relative;
+		width: 156px;
+		height: 133px;
+		display: inline-block;
+		overflow: hidden;
+	    text-align: left;
+	}
+	
+	/*home3 Big deal of day*/
+	.h-big-box{
+		width: 750px;
+		margin: 0 auto;
+		overflow: hidden;
+		position: relative;
+	}
+	.h-big-outer{
+		width: 100%;
+		height: auto;
+		margin-bottom: 30px;
+		display: flex;
+		/*子盒子均匀分布父级空隙*/
+		flex-wrap: wrap;
+		justify-content: space-around;
+		position: relative;
+	}
+	.h-big-left{
+		width: 100%;
+		height: auto;
+		padding: 0 15px;
+		margin-bottom: 30px;
+		/*background: indianred;*/
+	}
+	.h-big-right{
+		width: 100%;
+		height: auto;
+		padding: 0 15px;
+	}
+	.h-deal-content{
+		width: 100%;
+		height: 100%;
+		padding: 80px 40px 75px;
+		background: url(../img/banner-home-8.jpg) no-repeat;
+		background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    border-radius: 8px;
+	    position: relative;
+	}
+	.h-right-content{
+		width: 100%;
+		height: 100%;
+		padding: 70px 160px 63px 50px;
+		background: url(../img/banner-home-9.jpg) no-repeat;
+		background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    border-radius: 8px;
+	    position: relative;
+	}
+	/*home bestseller new arrays*/
+	.h-newarray-outer{
+		width: 100%;
+		margin: 0 auto;
+		display: flex;
+		/*flex-direction: row;*/
+		/*弹性盒子从左到右*/
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		position: relative;
+	}
+	.h-new-box{
+		width: 50%;
+		padding: 0 15px;
+		height: auto;
+		border-radius: 8px;
+		margin-bottom: 30px;
+		cursor: pointer;
+		overflow: hidden;
+		position: relative;
+	}
+	/*图片盒子*/
+	.h-new-imgbox{
+		width: 100%;
+		height: auto;
+		position: relative;
+	}
+	.h-add-cart{
+		width: 263px;
+		height: 42px;
+		margin: 0 20px;
+	}
+	/*home3 save bedroom*/
+	.h-bed-outer{
+		height: 424px;
+	}
+	.h-bed-inner{
+		width: 720px;
+	}
+	.h-bed-content{
+		width: 100%;
+	}
+	
+	/*home2 lookbook*/
+	.h-look-box{
+		width: 100%;
+		margin: 0 auto;
+		margin-top: 30px;
+		margin-bottom: 50px;
+		position: relative;
+	}
+	.h-look-outer{
+		width: 100%;
+		height: 355px;
+		position: relative;
+	}
+	.h-look-inner{
+		width: 100%;
+		height: 100%;
+		padding: 80px 15px 80px 340px;
+	    position: relative;
+	}
+
+	
+}
+@media only screen and (max-width: 768px) {
+	/*home1 顶部轮播*/
+	.h-container-pub{
+		max-width: 100%;
+		margin: 0 auto;
+		position: relative;
+	}
+	.h-change-this{
+		width: 100%;
+		height: 303px;
+		padding: 0 15px;
+		overflow: hidden;;
+	    display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		position: relative;
+	}
+	.h-change-outer{
+		width: 100%;
+		height: 100%;
+		border-radius: 8px;
+		background: #f1f1f1;
+		overflow: hidden;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		position: relative;
+	}
+	.h-change-outer .item{
+		height: 303px;
+	}
+	.h-change-outer .h-change-item{
+		position: absolute;
+		width: 100%;
+		height: 303px;
+	}
+	.h-change-outer img{
+		position: absolute;
+		top: -50%;
+		width: 80%;
+		height: auto;
+	}
+	.h-change-outer .h-caption{
+		position: absolute;
+		height: 100%;
+		left: 0;
+		top: 0;
+		text-align: left;
+		text-shadow: none;
+		padding: 70px 30px;
+	}
+	.h-change-big{
+		font-size: 26px;
+		color: #000;
+		margin-top: 0px;
+		line-height: 31px;
+		margin-bottom: 10px;
+		font-weight: 500;
+	}
+	/*轮播下面两个小部分*/
+	.h-change-bottom{
+		width: 100%;
+		height: auto;
+		/*弹性盒子*/
+		display: flex;
+		/*子盒子均匀分布剩余空间*/
+		flex-direction: column;
+		margin-top: 20px;
+		
+	}
+	.h-change-inner{
+		width: 100%;
+		height: 236px;
+		margin-bottom: 20px;
+	}
+	.h-inner-box1{
+		width: 100%;
+		height: 100%;
+		padding: 58px 165px 59px 30px;
+		background: url(../img/banner-home-5.jpg) no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+	.h-inner-box2{
+		width: 100%;
+		height: 100%;
+		padding: 58px 165px 59px 30px;
+		background: url(../img/banner-home-6.jpg) no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+	/*home1 Living Room Furniture*/
+	/*home1 Living Room Furniture*/
+	.h-live-header{
+		width: 100%;
+		margin: 0 auto;
+		margin-top: 30px;
+		padding: 0 15px;
+		position: relative;
+	}
+	.h-live-banner{
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+		padding: 0px;
+		position: relative;
+	}
+	/*中间椅子模块*/
+	.h-chair{
+		width: 100%;
+		height: 298px;
+		height: auto;
+		margin: 0 auto;
+		padding: 0px;
+		margin-top: 30px;
+		/*弹性盒子*/
+		display: flex;
+		flex-wrap: wrap;
+		/*子盒子均匀分布剩余空间*/
+		justify-content: space-around;
+	}
+	.h-chair-left{
+		width: 100%;
+		height: 298px;
+		padding: 0px;
+		margin-bottom: 30px;
+	}
+	.h-chair-content{
+		width: 100%;
+		height: 100%;
+		padding: 56px 130px 60px 40px;
+	}
+	/*home1 our last news*/
+	.h1-last-news{
+		width: 100%;
+		margin: 0 auto;
+		position: relative;
+	}
+	.h-last-box{
+		position: relative;
+		width: 100%;
+		margin: 0 auto;
+		padding-top: 58px;
+		padding-bottom: 63px;
+		overflow: hidden;
+	}
+	.h-last-outbox{
+		width: 100%;
+		margin: 0 auto;
+		display: -webkit-box;
+		/*-moz-box-orient: horizontal;*/
+		-webkit-box-pack: justify;
+		/*overflow: hidden;*/
+	}
+	.h-last-we{
+		width: 50%;
+		height: auto;
+		padding: 0px 15px;
+		position: relative;
+	}
+	.h-last-title{
+		font-size: 26px;
+		color: #222222;
+		line-height: 37px;
+		margin: 0 auto;
+		margin-bottom: 35px;
+		display: table;
+		position: relative;
+	}
+	
+	.h-last-content{
+		width: 100%;
+		height: auto;
+		border: 1px solid #f1f1f1;
+	    border-top: none;
+	    border-radius: 0 0 8px 8px;
+	}
+	.h-img{
+		width: 100%;
+		height: auto;
+	}
+	.h-img-cover{
+		visibility: hidden;
+		width: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		background: #000000;
+		opacity: 0;
+		cursor: pointer;
+		transition: all 0.45s ease 0s;
+	}
+	
+	/*home2 轮播变化*/
+	.h-carousel-box{
+		width: 100%;
+		height: 358px;
+		display: inline-block;
+		overflow: hidden;
+		margin: 0 auto;
+	}
+	/*轮播里的文字*/
+	.h-crousel-info{
+		max-width: 704px;
+		margin: 0 auto;
+		padding: 70px 30px;
+	}
+	/*home2 顶部轮播小点的位置*/
+	.h2-position{
+		position: absolute;
+		bottom: 20px;
+	}
+	
+	/*home3 顶部轮播*/
+	.h-pub-container{
+		width: 100%;
+		margin: 0 auto;
+		margin-top: 30px;
+		position: relative;
+	}
+	.h-up-box{
+		width: 100%;
+		height: 334px;
+		display: inline-block;
+		overflow: hidden;
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+	/*home3 轮播里的文字*/
+	.h-car3-info{
+		width: 100%;
+		margin: 0 auto;
+		padding: 70px 30px;
+	}
+	.h3-info-big{
+		font-size: 26px;
+		color: #000000;
+		line-height: 31px;
+		/*font-weight: 600;*/
+		margin-bottom: 10px;
+	}
+	/*home 2 our last news*/
+	/*home 2 our last news*/
+	.h-last-news{
+		width: 100%;
+		margin: 0 auto;
+		overflow: hidden;
+		position: relative;
+	}
+	.h2-last-box{
+		width: 100%;
+		margin: 0 auto;
+		display: -webkit-box;
+		-moz-box-pack: justify;
+		position: relative;
+	}
+	.h2-img-box{
+		width: 100%;
+		height: 360px;
+		padding: 0 15px;
+		position: relative;
+	}
+	
+	.h2-last-content{
+		background: #F5F5F5;
+		float: left;
+		width: calc(108% - 300px);
+		height: 300px;
+		overflow: visible;
+		/*eight: 300px;*/
+		display: block;
+	}
+	.h2-last-title{
+		width: 100%;
+		height: auto;
+		font-size: 12px;
+	    color: #aaa;
+	    padding: 15px 20px 0;
+	    margin-bottom: 5px;
+	    text-transform: uppercase;
+	    font-weight: 600;
+	}
+	.h-please{
+		margin-bottom: 59px;
+		line-height: 25px;
+		height: 75px;
+		overflow: hidden;
+	}
+	
+	/*头像以及评论*/
+	.h-header{
+		width: 90%;
+		height: 48px;
+		margin-left: 10px;
+		padding: 10px 0px;
+		border-top: 1px solid #e4e4e4;
+	}
+	/*home3 Vereesa’s Instagram Feed*/
+	/*home3 Vereesa’s Instagram Feed*/
+	.h-camrea-box{
+		width: 100%;
+		max-height: 334px;
+		display: -webkit-box;
+		-webkit-box-pack: justify;
+		position: relative;
+	}
+	
+	.h-camera-list{
+		width: 50%;
+		height: 100%;
+		position: relative;
+	}
+	.h-camera-imgbox{
+		display: inline-block;
+		width: 100%;
+		height: auto;
+		position: relative;
+	}
+	.h-camera-imgbox img{
+		display: inline-block;
+		width: 100%;
+		height: 100%;
+	}
+	
+	.h-img-camera{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0px;
+		top: 0px;
+		display: flex;
+		text-align: center;
+	}
+	/*遮盖图片*/
+	.h-camera-cover{
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		width: 0;
+		height: 0;
+		background: #000000;
+		opacity: 0;
+	}
+	/*home2 用户*/
+	/*home2 用户*/
+	.h-user-bigbox{
+		width: 100%;
+		padding: 0 15px;
+		margin: 0 auto;
+		position: relative;
+	}
+	.h-user-box{
+		width: 100%;
+		height: auto;
+		/*height: 600px;*/
+		
+		position: relative;
+		display: -webkit-box;
+	    -webkit-box-pack: justify;
+	   display: flex;
+	   flex-wrap: wrap;
+	   margin-bottom: 0;
+	   justify-content: space-around;
+	}
+	.h-user-carousel{
+		position: relative;
+		width: 100%;
+		margin-bottom: 30px;
+		height: auto;
+		padding: 0px 15px;
+		overflow: hidden;
+	}
+	/*轮播内容*/
+	.h-user-content{
+		width: 100%;
+		height: auto;
+		padding: 67px 15px 66px;
+		overflow: hidden;
+	}
+	.h-user-info{
+		display: block;
+		height: auto;
+	    overflow: hidden;
+	    padding: 0px 10px 0px 20px;
+	    position: relative;
+	}
+	/*home2 user轮播右边内容*/
+	.h-user-news{
+		/*margin: 0 15px;*/
+		/*margin-bottom: 30px;*/
+		width: 100%;
+		height: 242px;
+		background: url(../img/newsletter-bg.jpg) no-repeat;
+		background-position: center;
+		background-size: cover;
+		position: relative;
+		margin-bottom: 30px;
+		border-radius: 8px;
+	}
+	/*<!--三小块-->*/
+	.h-free-outer{
+		max-width: 100%;
+		height: auto;
+		margin: 0 auto;
+		position: relative;
+	}
+	.h-free-inner{
+		width: 100%;
+		height: auto;
+		font-size: 0;
+		margin: 0 auto;
+		margin-bottom: 0px;
+		display: flex;
+		/*换行*/
+		flex-wrap: wrap;
+		justify-content: space-around;
+		position: relative;
+	}
+	.h-free-box{
+		width: 100%;
+		height: 147px;
+		padding: 0 15px;
+		margin-bottom: 30px;
+	}
+	.h-free-box:last-child{
+		margin-bottom: 0px;
+	}
+	.h-free-inbox{
+		height: 100%;
+	    padding: 25px 10px;
+	    background: #f1f1f1;
+	    border-radius: 8px;
+	}
+	/*home2 user轮播下三小块里的图标盒子*/
+	.h-iconbox{
+		display: block;
+		text-align: center;
+	    vertical-align: middle;
+	    overflow: hidden;
+	    margin: 0 auto;
+	}
+	.h-user-icon{
+		width: 100%;
+		color: #85B839;
+		font-size: 50px;
+	    padding: 0px;
+	    line-height: 48px;
+	    display: block;
+	    vertical-align: middle;
+	}
+	.h-user-txt{
+		width: 100%;
+		display: block;
+		padding: 0;
+	    vertical-align: middle;
+	}
+	.h-user-free{
+		color: #222;
+	    margin-bottom: 0;
+	    font-size: 18px;
+	    line-height: 24px;
+	    font-weight: 600;
+	}
+	.h-user-order{
+		line-height: 24px;
+		font-size: 14px;
+		color: #888888;
+	}
+	/*home3 user轮播下Extra off 75%*/
+	.h-user-extra{
+		width: 100%;
+		margin: 0 auto;
+		margin-top: 30px;
+		margin-bottom: 0px;
+		position: relative;
+	}
+	.h-extra-outer{
+		overflow: hidden;
+		width: 100%;
+		/*弹性盒子*/
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		position: relative;
+	}
+	/*<!--home3轮播底部内容 三个小块-->
+	<!--home3轮播底部内容 三个小块-->*/
+	.h-best-outer{
+		width: 100%;
+		/*弹性盒子*/
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		position: relative;
+	}
+	.h-best-inner{
+		width: 100%;
+		height: 228px;
+		margin-bottom: 30px;
+		/*padding: 0 15px;*/
+	}
+	.h-best-content{
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		padding: 45px 30px;
+	}
+	/*轮播底部内容 三个小块 内容*/
+	.h-best-check{
+		display: block;
+		font-size: 16px;
+	    color: #888;
+	    line-height: 22px;
+	    margin-bottom: 20px;
+	}
+	/*home1 Sign up Newsletter*/
+	/*home1 Sign up Newsletter*/
+	.h-sign-box{
+		width: 100%;
+		margin: 0 auto;
+		margin-bottom: 70px;
+		position: relative;
+	}
+	.h-sign-outer{
+		width: 100%;
+		height: auto;
+		padding: 0 15px;
+		position: relative;
+	}
+	/*home3 Featured Products*/
+	.h-featured-box{
+		width: 100%;
+		margin: 0 auto;
+		position: relative;
+	}
+	.h-featured-title{
+		width: 100%;
+		text-align: center;
+	}
+	/*商品内容*/
+	.h-last-commondity{
+		width: 100%;
+		/*弹性盒子*/
+		display: flex;
+		/*换行*/
+		flex-wrap: wrap;
+		/*子盒子均匀分布父级空隙*/
+		justify-content: space-around;
+		position: relative;
+	}
+	.h-last-lists{
+		text-align: center;
+		width: 50%;
+		height:381px;
+		padding: 0px 15px;
+		margin-bottom: 30px;
+		position: relative;
+	}
+	.h-last-list{
+		position: relative;
+		width: 100%;
+		height: 100%;
+		padding: 10px;
+		background: #f8f8f8;
+		border-radius: 8px;
+	}
+	.h-list-imgbox{
+		position: relative;
+		width: 100%;
+		height: 260px;
+		/*max-height: 260px;*/
+		margin-right: 10px;
+		cursor: pointer;
+		display: block;
+	}
+	.h-list-imgbox img{
+		width: 100%;
+		height: auto;
+		vertical-align: middle;
+		display: inline-block;
+	}
+	/*.h-list-imgbox{
+	position: relative;
+	width: 150px;
+	height: 150px;
+	margin-right: 10px;
+	cursor: pointer;
+	display: inline-block;
+}*/
+/*.h-list-imgbox img{
+	width: 150px;
+	height: 150px;
+	display: inline-block;
+}*/
+	.h-last-cirle{
+		width: 100%;
+		max-height: 260px;
+		position: absolute;
+		left: 0;
+		top: 0;
+		text-align: center;
+		display: flex;
+	}
+	.h-last-cirle .glyphicon{
+		width: 50px;
+		height: 50px;
+		margin: auto;
+		background: #FFFFFF;
+		opacity: 0.8;
+		color: #000;
+		border-radius: 50%;
+		font-size: 14px;
+		text-align: center;
+		line-height: 50px;
+		transition: all 0.4s ease 0s;
+		display: none;
+	}
+	.h-list-imgbox:hover .h-last-cirle .glyphicon{
+		display: block;
+		cursor: pointer;
+		transition: all 0.4s ease 0s;
+	}
+	.h-last-cirle .glyphicon:hover{
+		transition: all 0.4s ease 0s;
+		background: #85B839;
+		opacity: 1;
+		color: #fff;
+	}
+	
+	
+	/*home3 Featured Products 图片右边内容*/
+	.h-list-content{
+		vertical-align: top;
+		position:relative;
+		width: 100%;
+		height: 100px;
+		display: inline-block;
+	    text-align: center;
+	}
+	/*home3 Big deal of day*/
+	.h-big-box{
+		width: 100%;
+		margin: 0 auto;
+		overflow: hidden;
+		position: relative;
+	}
+	.h-big-outer{
+		width: 100%;
+		height: auto;
+		margin-bottom: 30px;
+		display: flex;
+		/*子盒子均匀分布父级空隙*/
+		flex-wrap: wrap;
+		justify-content: space-around;
+		position: relative;
+	}
+	.h-big-left{
+		width: 100%;
+		height: 257px;
+		margin-top: 30px;
+		padding: 0 15px;
+		margin-bottom: 30px;
+		/*background: indianred;*/
+	}
+	.h-big-right{
+		width: 100%;
+		height: 305px;
+		padding: 0 15px;
+	}
+	/*home bestseller new arrays*/
+	.h-newarray-outer{
+		width: 100%;
+		margin: 0 auto;
+		display: flex;
+		/*flex-direction: row;*/
+		/*弹性盒子从左到右*/
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		position: relative;
+	}
+	.h-new-box{
+		width: 50%;
+		padding: 0 15px;
+		height: auto;
+		border-radius: 8px;
+		margin-bottom: 30px;
+		cursor: pointer;
+		overflow: hidden;
+		position: relative;
+	}
+	/*图片盒子*/
+	.h-new-imgbox{
+		width: 100%;
+		height: auto;
+		position: relative;
+	}
+	.h-new-inner:hover .h-add-cart{
+		visibility: hidden;
+		position: absolute;
+		bottom: 40px;
+	}
+	.h-new-inner:hover .h-new-info{
+		display: inline-block;
+	}
+	/*home3 save bedroom*/
+	
+	.h-bed-inner{
+		width: 100%;
+		padding: 0 15px;
+	}
+	.h-bed-content{
+		width: 100%;
+	}
+	.h-extra-number{
+		font-size: 22px;
+		line-height: 30px;
+	}
+	/*home2 bestselling*/
+	.h-bestselling-con{
+		width: 100%;
+		height: 520px;
+		padding: 0px 15px;
+	}
+	.h-bs-list{
+		text-align: center;
+	}
+	.h-bs-imgbox{
+	    width: 100%;
+	    height: 300px;
+	    text-align: center;
+   }
+   .h-bs-imgbox img{
+		width: 300px;
+		height: 300px;
+		display: inline-block;
+	}
+	.h-list-style{
+		text-align: center;
+	    padding: 0px;
+	    max-width: 100%;
+	    height: auto;
+	}
+	/*home2 lookbook*/
+	.h-look-box{
+		width: 100%;
+		margin: 0 auto;
+		margin-top: 30px;
+		margin-bottom: 50px;
+		position: relative;
+	}
+	.h-look-outer{
+		width: 100%;
+		height: 303px;
+		position: relative;
+	}
+	.h-look-inner{
+		width: 100%;
+		height: 100%;
+		padding: 60px 15px 60px 264px;
+	    position: relative;
+	}
+	
+}
+@media only screen and (max-width: 480px) {
+	.h-change-this{
+		width: 100%;
+		height: 293px;
+		padding: 0px 15px;
+		overflow: hidden;;
+	    display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		position: relative;
+	}
+	.h-change-outer{
+		width: 100%;
+		height: 100%;
+		border-radius: 8px;
+		background: #f1f1f1;
+		overflow: hidden;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		position: relative;
+	}
+	.h-change-outer .item{
+		height: auto;
+	}
+	.h-change-outer .h-change-item{
+		position: absolute;
+		width: 100%;
+		height: 293px;
+	}
+	.h-change-outer img{
+		width: 428px;
+		height: 293px;
+		position: absolute;
+		top: 0;
+	}
+	.h-change-outer .h-caption{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		max-width: 428px;
+		left: 0;
+		top: 0;
+		text-align: center;
+		text-shadow: none;
+		padding: 55px 0px;
+	}
+	.h-change-big{
+		font-size: 26px;
+		color: #000;
+		margin-top: 0px;
+		line-height: 31px;
+		margin-bottom: 10px;
+		font-weight: 500;
+	}
+	/*轮播下面两个小部分*/
+	.h-change-bottom{
+		width: 100%;
+		height: auto;
+		/*弹性盒子*/
+		display: flex;
+		/*子盒子均匀分布剩余空间*/
+		flex-direction: column;
+		margin-top: 20px;
+		
+	}
+	.h-change-inner{
+		width: 100%;
+		height: 236px;
+		margin-bottom: 20px;
+	}
+	
+	.h-inner-box1{
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		padding: 58px 15px 59px 15px;
+		background: url(../img/banner-home-5.jpg) no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+	.h-inner-box2{
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		padding: 58px 15px 59px 15px;
+		background: url(../img/banner-home-6.jpg) no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+	/*home1 Living Room Furniture*/
+	.h-live-header{
+		width: 100%;
+		margin: 0 auto;
+		margin-top: 30px;
+		padding: 0 15px;
+		position: relative;
+	}
+	.h-live-banner{
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+		padding: 0px;
+		position: relative;
+	}
+	
+	.h-live-content{
+		/*min-height: 420px;*/
+		padding: 46px 15px 61px;
+		text-align: center;
+	}
+	.h-live-inner{
+		width: 100%;
+		height: auto;
+		background: url(../img/banner-home-15.jpg) no-repeat;
+		background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    border-radius: 8px;
+	    position: relative;
+	}
+	.btn-shop-now{
+		display: block;
+		width: 120px;
+		height: 40px;
+		border-radius: 40px;
+	    color: #fff;
+	    font-size: 12px;
+	    background: #85b839;
+	    padding: 10px 20px;
+	    margin: 0 auto;
+	    text-align: center;
+	    transition: all 0.4s ease 0s;
+	    text-transform: uppercase
+	}
+	.btn-view{
+		display: block;
+		width: 150px;
+		height: 40px;
+		font-size: 12px;
+		border-radius: 40px;
+	    color: #fff;
+	    background: #85b839;
+	    padding: 10px 20px;
+	    margin: 0 auto;
+	    text-align: center;
+	    transition: all 0.4s ease 0s;
+	    text-transform: uppercase
+	  
+	}
+	
+	/*中间椅子模块*/
+	.h-chair{
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+		padding: 0px;
+		margin-top: 30px;
+		/*弹性盒子*/
+		display: flex;
+		flex-wrap: wrap;
+		/*子盒子均匀分布剩余空间*/
+		justify-content: space-around;
+	}
+	.h-chair-left{
+		width: 100%;
+		height: 298px;
+		padding: 0px;
+		margin-bottom: 30px;
+	}
+	.h-chair-content{
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		padding: 56px 15px 60px;
+	}
+	/*home1 our last news*/
+	.h-last-box{
+		position: relative;
+		width: 100%;
+		/*height: ;*/
+		margin: 0 auto;
+		padding-top: 46px;
+		padding-bottom: 52px;
+		overflow: hidden;
+	}
+	.h-last-outbox{
+		width: 100%;
+		display: -webkit-box;
+		-moz-box-pack: justify;
+		/*overflow: hidden;*/
+	}
+	.h-last-title{
+		font-size: 24px;
+		color: #222222;
+		line-height: 37px;
+		margin: 0 auto;
+		margin-bottom: 35px;
+		display: table;
+		position: relative;
+	}
+	.h-last-we{
+		width: 100%;
+		height: auto;
+		padding: 0 15px;
+		position: relative;
+	}
+	.h-img-cover{
+		visibility: hidden;
+		width: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		background: #000000;
+		opacity: 0;
+		cursor: pointer;
+		transition: all 0.45s ease 0s;
+	}
+	/*home2 轮播变化*/
+	.h-carousel-box{
+		width: 100%;
+		height: 358px;
+		display: inline-block;
+		overflow: hidden;
+		margin: 0 auto;
+	}
+	/*轮播里的文字*/
+	.h-crousel-info{
+		width: 100%;
+		margin: 0 auto;
+		padding: 55px 0px;
+	    text-align: center;
+	}
+	/*home2 顶部轮播小点的位置*/
+	.h2-position{
+		position: absolute;
+		bottom: 40px;
+	}
+	
+	/*home3 顶部轮播*/
+	.h-pub-container{
+		width: 100%;
+		margin: 0 auto;
+		margin-top: 30px;
+		position: relative;
+	}
+	.h-up-box{
+		width: 100%;
+		height: 334px;
+		display: inline-block;
+		overflow: hidden;
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+	
+	/*home3 轮播里的文字*/
+	.h-car3-info{
+		width: 100%;
+		height: 100%;
+		margin: 0 auto;
+		text-align: center;
+		padding: 55px 0px;
+	}
+	.h3-info-big{
+		font-size: 26px;
+		color: #000000;
+		line-height: 31px;
+		
+		/*font-weight: 600;*/
+		margin-bottom: 10px;
+	}
+	/*home2 用户*/
+	/*home2 用户*/
+	.h-user-bigbox{
+		width: 100%;
+		padding: 0 15px;
+		margin: 0 auto;
+		position: relative;
+	}
+	.h-user-box{
+		width: 100%;
+		height: auto;
+		/*height: 600px;*/
+		margin-bottom: 30px;
+		position: relative;
+		display: -webkit-box;
+	    -webkit-box-pack: justify;
+	   display: flex;
+	   flex-wrap: wrap;
+	   margin-bottom: 0;
+	   justify-content: space-around;
+	}
+	.h-user-carousel{
+		position: relative;
+		width: 100%;
+		height: auto;
+		padding: 0px 15px;
+		overflow: hidden;
+	}
+	/*轮播内容*/
+	.h-user-content{
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		padding: 20px;
+		overflow: hidden;
+		display: flex;
+		flex-wrap: wrap;
+		position: relative;
+	}
+	.h-user-content img{
+		display: block;
+		width: 167px;
+		height: 167px;
+		margin: 0 auto;
+		border-radius: 50%;
+	}
+	.h-user-info{
+		display:block;
+	    overflow: hidden;
+	    height: 100%;
+	    width: 100%;
+	    /*vertical-align: top;*/
+	    /*line-height: 167px;*/
+	    padding: 20px;
+	    position: relative;
+	}
+	/*<!--三小块-->*/
+	.h-free-outer{
+		max-width: 100%;
+		height: auto;
+		margin: 0 auto;
+		position: relative;
+	}
+	.h-free-inner{
+		width: 100%x;
+		height: auto;
+		font-size: 0;
+		margin: 0 auto;
+		margin-bottom: 0px;
+		display: flex;
+		/*换行*/
+		flex-wrap: wrap;
+		justify-content: space-around;
+		position: relative;
+	}
+	.h-free-box{
+		width: 100%;
+		height: 147px;
+		padding: 0 15px;
+		margin-bottom: 30px;
+	}
+	.h-free-box:last-child{
+		margin-bottom: 0px;
+	}
+	.h-free-inbox{
+		height: 100%;
+	    padding: 25px 10px;
+	    background: #f1f1f1;
+	    border-radius: 8px;
+	}
+	/*home2 user轮播下三小块里的图标盒子*/
+	.h-iconbox{
+		display: block;
+		text-align: center;
+	    vertical-align: middle;
+	    overflow: hidden;
+	    margin: 0 auto;
+	}
+	.h-user-icon{
+		width: 100%;
+		color: #85B839;
+		font-size: 50px;
+	    padding: 0px;
+	    line-height: 48px;
+	    display: block;
+	    vertical-align: middle;
+	}
+	.h-user-txt{
+		width: 100%;
+		display: block;
+		padding: 0;
+	    vertical-align: middle;
+	}
+	.h-user-free{
+		color: #222;
+	    margin-bottom: 0;
+	    font-size: 18px;
+	    line-height: 24px;
+	    font-weight: 600;
+	}
+	.h-user-order{
+		line-height: 24px;
+		font-size: 14px;
+		color: #888888;
+	}
+	/*home3 user轮播下Extra off 75%*/
+	.h-user-extra{
+		width: 100%;
+		margin: 0 auto;
+		margin-top: 30px;
+		margin-bottom: 0px;
+		position: relative;
+	}
+	.h-extra-outer{
+		overflow: hidden;
+		width: 100%;
+		/*弹性盒子*/
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		position: relative;
+	}
+	/*home1 Sign up Newsletter*/
+	.h-sign-input{
+		width: 100%;
+		margin-right: 5px;
+	    border-color: #e9e9e9;
+	    background: #fff;
+	    color: #888;
+	    margin-bottom: 10px;
+	    border: none;
+	    text-align: center;
+	    height: 42px;
+	    padding: 7px 20px;
+	    max-width: 100%;
+	    border-radius: 42px;
+	}
+	.h-sign-inner{
+		padding: 40px 15px;
+		text-align: center;
+	}
+	/*<!--左边文字-->*/
+	.h-sign-text{
+		width: auto;
+	    display: inline-block;
+	    float: inherit;
+	    margin-right: 35px;
+	}
+	.h-login-box{
+		display: inline-block;
+		overflow: hidden;
+		width: 100%;
+		float: inherit;
+		margin: 0 auto;
+		margin-top: 20px;
+	}
+	/*home3 Featured Products*/
+	.h-last-lists{
+		text-align: center;
+		width: 100%;
+		height:381px;
+		padding: 0px 15px;
+		margin-bottom: 30px;
+		position: relative;
+	}
+	.h-list-imgbox{
+		position: relative;
+		width: 100%;
+		height: 260px;
+		margin-right: 10px;
+		cursor: pointer;
+		display: block;
+	}
+	.h-list-imgbox img{
+		width: 260px;
+		height: 260px;
+		vertical-align: middle;
+		display: inline-block;
+	}
+	/*home3 Big deal of day*/
+	.h-big-box{
+		width: 100%;
+		margin: 0 auto;
+		overflow: hidden;
+		position: relative;
+	}
+	.h-big-outer{
+		width: 100%;
+		height: auto;
+		margin-bottom: 30px;
+		display: flex;
+		/*子盒子均匀分布父级空隙*/
+		flex-wrap: wrap;
+		justify-content: space-around;
+		position: relative;
+	}
+	.h-big-left{
+		width: 100%;
+		height: 257px;
+		padding: 0 15px;
+		margin-bottom: 30px;
+		/*background: indianred;*/
+	}
+	.h-big-right{
+		width: 100%;
+		height: 305px;
+		padding: 0 15px;
+	}
+	.h-deal-content{
+		text-align: center;
+		padding: 80px 15px 75px;
+	}
+	.h-right-content{
+		text-align: center;
+		padding: 70px 15px 63px;
+	}
+	/*home bestseller new arrays*/
+	.h-newarray-outer{
+		width: 100%;
+		margin: 0 auto;
+		display: flex;
+		/*flex-direction: row;*/
+		/*弹性盒子从左到右*/
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		position: relative;
+	}
+	.h-new-box{
+		width: 100%;
+		padding: 0 15px;
+		height: auto;
+		border-radius: 8px;
+		margin-bottom: 30px;
+		cursor: pointer;
+		overflow: hidden;
+		position: relative;
+	}
+	/*图片盒子*/
+	.h-new-imgbox{
+		width: 100%;
+		height: auto;
+		position: relative;
+	}
+	.h-new-inner:hover .h-add-cart{
+		visibility: hidden;
+		position: absolute;
+		bottom: 40px;
+	}
+	.h-new-inner:hover .h-new-info{
+		display: inline-block;
+	}
+	/*home3 save bedroom*/
+	.h-bed-outer{
+		height: 424px;
+	}
+	.h-bed-inner{
+		width: 100%;
+		padding: 0 15px;
+		text-align: center;
+	}
+	.h-bed-content{
+		width: 100%;
+		padding: 120px 15px;
+	}
+	.h-btn-view{
+		display: inline-block;
+	    height: 40px;
+	    border-radius: 40px;
+	    color: #fff;
+	    font-weight: 600;
+	    font-size: 12px;
+	    background: #85b839;
+	    padding: 10px 20px;
+	    margin: 0 auto;
+	    text-align: center;
+	    transition: all 0.4s ease 0s;
+	    text-transform: uppercase;
+	}
+	/*home2 bestselling*/
+	.h-bestselling-con{
+		width: 100%;
+		height: auto;
+		padding: 0px 15px;
+	}
+	.h-bs-imgbox{
+	    width: 100%;
+	    height: auto;
+	    text-align: center;
+   }
+   .h-bs-imgbox img{
+		width: 100%;
+		height: auto;
+		display: inline-block;
+	}
+	/*home2 lookbook*/
+	
+	.h-look-inner{
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		padding: 60px 15px;
+	    position: relative;
+	}
+	.h2-last-box{
+		width: 100%;
+		margin: 0 auto;
+		display: -webkit-box;
+		-moz-box-pack: justify;
+		position: relative;
+	}
+	.h2-img-box{
+		width: 100%;
+		height: auto;
+		padding: 0 15px;
+		display: flex;
+		flex-wrap: wrap;
+		
+		/*display: inline-block;*/
+		position: relative;
+	}
+	.h2-img-boll{
+		position: relative;
+		width: 100%;
+		height: auto;
+		float: left;
+		/*display: inline-block;*/
+	}
+	.h2-img{
+		width: 100%;
+		height: auto;
+		border-top-left-radius: 8px;
+		border-bottom-left-radius: 8px;
+		/*float: left;*/
+		/*display: inline-block;*/
+	}
+	.h2-last-content{
+		background: #F5F5F5;
+		float: inherit;
+		width: 100%;
+		height: 300px;
+		border-top-right-radius: 8px;
+		border-bottom-right-radius: 8px;
+		display: inline-block;
+	}
+	.h-please{
+		margin-bottom: 20px;
+	}
+	
+	
+}
