@@ -128,7 +128,9 @@ $(function(){
 				
 				$('.h-car3-centent').append(html)
 				
-				
+				$('.carousel').carousel({
+  					interval: 5000
+				})
 			}
 			
 		}

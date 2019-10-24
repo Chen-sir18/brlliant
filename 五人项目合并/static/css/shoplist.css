@@ -33,14 +33,14 @@
     width: 50px;
     border-bottom: 1px solid #85B839;
 }
-.shoprow-left-header li input,.shoprow-left-header li label{
+.shoprow-left-header li label{
     vertical-align: middle;
-    line-height: 28px;
-    font-size: 14px;
+    margin-bottom: 0px;
 }
 .shoprow-left-header li input{
     width: 15px;
     height: 15px;
+    margin: 0px 0px;
 }
 /*  一个点拖动到另一个点 */
 .shop-range-price{
@@ -124,4 +124,12 @@
     height: 42px;
     border-radius: 42px;
     text-align: center;
+}
+.shoprow-left-header li{
+	display: flex;
+	align-items: center;
+	margin-top: 5px;
+}
+.shop-product-item li{
+	margin-bottom: 8px;
 }

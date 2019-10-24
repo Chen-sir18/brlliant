@@ -116,7 +116,9 @@ $(function(){
 				
 				$('.h-imgbox').append(html)
 				
-				
+				$('.carousel').carousel({
+  					interval: 5000
+				})
 			}
 			
 		}

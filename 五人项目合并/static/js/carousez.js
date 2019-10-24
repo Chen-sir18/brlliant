@@ -24,7 +24,7 @@
                     l_mean = ((parseInt(l / opts.vis) - 1) * opts.vis) + (l % opts.vis)
                         }
 //              var w = $(opts.small_elem).find("ul li").outerWidth(true);
-                var w ='130'
+                var w ='122'
                 $(opts.small_elem).find("ul").css("width", l * w + "px");
                 $(opts.small_elem).find("ul li").click(function () {
                     $(this).addClass(opts.state).siblings().removeClass(opts.state);

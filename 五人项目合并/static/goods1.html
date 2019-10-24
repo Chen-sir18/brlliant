@@ -205,7 +205,7 @@
 						datatype:'json',
 						success:function(res){
 							if(res.success == 'ok'){
-								axios.get('http://127.0.0.1:3001/goods',{
+								axios.get('http://192.168.97.218:3001/goods',{
 									params:{
 										key:'Arrivals'
 									}
@@ -237,7 +237,7 @@
 //				}
 //			})
 //使用axios代替$.ajax
-			axios.get('http://127.0.0.1:3001/goods',{
+			axios.get('http://192.168.97.218:3001/goods',{
 				params:{
 					key:'Arrivals'
 				}
@@ -262,7 +262,7 @@
 		el:'.addgoodsmodal',
 		methods:{
 			addgoodsclick:function(){
-				let api = 'http://127.0.0.1:3001/'
+				let api = 'http://192.168.97.218:3001/'
 				let form = document.querySelector('form')
 				let formda = new FormData(form)
 				$.ajax({
@@ -275,7 +275,7 @@
 					success:function(res){
 						console.log(res.success)
 						if(res.success == 'ok'){
-							axios.get('http://127.0.0.1:3001/goods',{
+							axios.get('http://192.168.97.218:3001/goods',{
 							params:{
 								key:'Arrivals'
 							}

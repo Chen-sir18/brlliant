@@ -53,9 +53,11 @@
     margin-bottom:0px;
 }
 .shop-bulik-lunboItem1{
-    background: url(../img/banner-shop1.jpg);
+    background: url(../img/banner-shop1.jpg) no-repeat;
     background-repeat:no-repeat;
     background-position:center;
+    background-position: center;
+    background-size: cover;
 }
 .shop-bulik-lunboItem2{
     background: url(../img/banner-shop2.jpg);
